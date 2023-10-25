@@ -1,0 +1,48 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\usepackage{UniLaTeXPackage}
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{Logbuch}
+    \subtitle{(Fortgeschrittenen) Praktikum 1 in Physik (Universität Konstanz)}
+    \author{Autoren: Tom Folgmann, David Jannack \\ \large{Tutor: x y}}
+    \date{WiSe2023}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    \section*{Einleitung}
+        \subfile{Sektionen/0-Einleitung.tex}
+
+    \newpage
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{Erdfeld-Kernspinresonanz}
+    \subfile{Sektionen/1-Erdfeld-Kernspinresonanz/1-1-Kennenlernen.tex}
+
+
+
+%\includepdf[pages=1-1,scale=0.9,frame=true]{Protokolle/PATH.pdf}
+\end{document}
