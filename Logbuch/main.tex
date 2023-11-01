@@ -1,5 +1,5 @@
 \documentclass[
-    oneside, 
+    twoside=true, 
     footinclude=off, 
     captions=tableheading, 
     DIV=12;usenames,
@@ -35,12 +35,33 @@
     \setcounter{page}{1}
     \pagenumbering{arabic}
 
+%% ---- Dokumentspezifisch ---- %%
+\newtheorem{quest}{Vorbereitungsthema }
+\newtheorem{answ}{Antwort }
+\newenvironment{Frage}{%
+    \begin{center}
+        \begin{minipage}{0.95\textwidth}
+            \dotfill
+            \begin{quest}\end{quest}
+}{
+            
+            \dotfill
+        \end{minipage}
+    \end{center}
+}
+\newenvironment{Antwort}{}{}
+
+
 % -----------------------------------------------------------
 % Dokumentkern
 
 \newpage
 \section{Erdfeld-Kernspinresonanz}
-    \subfile{Sektionen/1-Erdfeld-Kernspinresonanz/1-1-Kennenlernen.tex}
+    \subsection*{Kennenlernen}
+        \subfile{Sektionen/1-Erdfeld-Kernspinresonanz/1-1-Kennenlernen.tex}
+    
+    \subsection*{Vorbereitung}
+        \subfile{Sektionen/1-Erdfeld-Kernspinresonanz/1-2-Versuchsvorbereitung.tex}
 
 
 
