@@ -21,4 +21,60 @@
     \begin{Antwort}
         Bei einem Atomkern kann ebenfalls der \emph{anomale Zeeman-Effekt} auftreten, obwohl die Kernmomente um ca. $10^3$ Größenordnungen kleiner als in der Atomhülle ist. Der anomale Zeemaneffekt betrachtet bei anliegendem (homogenen) Magnetfeld die Spin-Bahn-Kopplung und den Teilcheneigenen Spin zu einem Gesamtdrehimpuls $J = L + S$. Daraus resultiert eine Eigenwertaufspaltung des neuen Hamiltonoperators.
     \end{Antwort}
+
+
+    \begin{Frage}
+        Drehimpuls, $B_0$, $B_1$, Drehmoment, Präzession, Larmor-Frequenz.
+    \end{Frage}
+    \begin{Antwort}
+        Der \href{https://de.wikipedia.org/wiki/Drehimpuls}{\emph{Drehimpuls}} ist ein Maß für die Drehbewegung eines Körpers, beschrieben durch den Abstandsvektor $r\in\R^3$ vom Drehursprung und dem Impuls $p\in\R^3$ des Körpers. Es gilt $L := r\times p$.\\
+
+        Das \href{https://de.wikipedia.org/wiki/Drehmoment}{\emph{Drehmoment}} ist nach der Konstruktion des Drehimpulses, verwendet jedoch $\dv{t}p(t) =: F(t)$ zu $\mcT := r\times F$. \\
+
+        Die \href{https://de.wikipedia.org/w/index.php?title=Präzession&oldid=235094402}{\emph{Präzession}} ist die Drehbewegung eines rotierenden Körpers um eine Achse, welche selbst rotiert. \\
+
+        Die \href{https://de.wikipedia.org/wiki/Larmorpräzession}{\emph{Larmor-Frequenz}} ist die Frequenz, mit der ein magnetischer Dipol um die Richtung eines äußeren Magnetfeldes präzediert. Sie ist gegeben durch $\omega_L = \gamma B_0$ mit dem gyromagnetischen Verhältnis $\gamma$ und der Stärke des äußeren Magnetfeldes $B_0$.\\
+    \end{Antwort}
+
+
+    \begin{Frage}
+        Rotierendes Koordinatensystem (Zerlegung von linear polar. $B_1$ in 2 gegenläufig zirkular polarisierte Komponenten, die um z-Achse rotieren), $B_0$ verschwindet in Resonanz
+    \end{Frage}
+    \begin{Antwort}
+        
+    \end{Antwort}
+
+
+    \begin{Frage}
+        $90\si\degree$ und $180\si\degree$ Puls. 
+    \end{Frage}
+    \begin{Antwort}
+        
+    \end{Antwort}
+
+
+    \begin{Frage}
+        Bloch Gleichungen und freier Induktionszerfall.
+    \end{Frage}
+    \begin{Antwort}
+        Die \href{}{\emph{Bloch-Gleichungen}} stellen als gewöhnliche Differentialgleichungen erster Ordnung die Änderung der Kern- und Elektronenmagnetisierung $M\in\R^3$ einer \emph{flüssigen} Probe (Gültigkeit für Festkörper nur eingeschränkt) unter Einfluss eines äußeren Magnetfeldes $B(t)\in\R^3$ dar. Als System aufgefasst gilt 
+        \[
+            \dv{t}M(t) = \gamma\cdot M(t)\times B(t) - \mbbEins_1\cdot\frac{M(t)_1}{T_2} - \mbbEins_2\cdot\frac{M(t)_2}{T_2} - \mbbEins_3\cdot\frac{M(t)_3 - M_0}{T_1}.
+        \]
+        Dabei stehen $T_1\in\R$ und $T_2\in\R$ für \href{}{\emph{Relaxionszeiten}}, spezifisch beschreibt $T_1$ die Spin-Gitter- und $T_2$ die Spin-Spin-Relaxion. Das DGP besitzt die fastschiefsymmetrische Koeffizientenmatrix $A$ mit affin-linearer Verschiebung $b$ der Form
+        \[
+            A = \begin{pmatrix}
+                -\frac{1}{T_2} & \gamma\cdot B(t)_3 & -\gamma\cdot B(t)_2 \\
+                -\gamma\cdot B(t)_3 & -\frac{1}{T_2} & \gamma\cdot B(t)_1 \\
+                \gamma\cdot B(t)_2 & -\gamma\cdot B(t)_1 & -\frac{1}{T_1}
+            \end{pmatrix},\qquad b = \begin{pmatrix}
+                0\\
+                0\\
+                M_0/T_1
+            \end{pmatrix}
+        \]
+        wobei $\dv{t}M(t) = A\cdot M(t) + b$. \\
+
+        
+    \end{Antwort}
 \end{document}
