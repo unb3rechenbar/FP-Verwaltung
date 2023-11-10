@@ -1,0 +1,13 @@
+# Bloch Simulator for education in MRI and NMR
+	
+	url: https://www.drcmr.dk/bloch
+
+# ---
+# FID and spectrum explorers for NMR/MRI education
+
+	url: https://www.drcmr.dk/FID
+
+# ---
+# CompassMR
+
+	url: https://www.drcmr.dk/CompassMR/
