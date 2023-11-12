@@ -11,7 +11,8 @@
         
         Das \href{https://de.wikipedia.org/wiki/Gyromagnetisches_Verhältnis}{\emph{gyromagnetische Verhältnis}} stellt einen Proportionalitätsfaktor zwischen dem magnetischen Moment $\mu$ und dem Drehimpuls $L$ eines Teilchens dar. Es gilt dabei $\mu = \gamma L$ mit $\gamma\in\R$ und Einheit $\si{\ampere\second\per\kg}$ als gyromagnetisches Verhältnis.\\
 
-        Durch das \href{https://de.wikipedia.org/wiki/Magnetisches_Dipolmoment}{\emph{Magnetische Dipolmoment}} wird die Stärke und Richtung eines magnetischen Dipols in der Dimension $\si{\ampere\metre\squared}$ angegeben. 
+        Durch das \href{https://de.wikipedia.org/wiki/Magnetisches_Dipolmoment}{\emph{Magnetische Dipolmoment}} wird die Stärke und Richtung eines magnetischen Dipols in der Dimension $\si{\ampere\metre\squared}$ angegeben. Speziell für unser Experiment ist die Beschreibung über den Spin durch $\mu = \gamma\cdot s$ interessant. \\
+        Der Lande Faktor verknüpft hier das klassisch berechnete Ergebnis mit dem quantenmechanischen. 
     \end{Antwort}
 
 
@@ -74,6 +75,10 @@
                 \draw[domain=4:7,smooth,variable=\x,green] plot ({\x},{sin(\x * 1000 * pi) * exp(-\x + 4)});
             \end{tikzpicture}
         \end{figure}
+        \begin{itemize}[label=$\to$]
+            \item Die Zeit zur erneuten Ausrichtung der Spins entlang $B_0$ wird gemessen durch die \emph{Relaxionszeit} $T_1$.
+            \item Die Zeit, in welcher ein RFI Signal messbar ist, wird gemessen durch die \emph{Relaxionszeit} $T_2$.
+        \end{itemize}
     \end{Antwort}
 
 
@@ -181,7 +186,17 @@
         \end{itemize}
     \end{Frage}
     \begin{Antwort}
-        
+        Ein MRI Scanner besitzt drei Spulen. 
+        \begin{itemize}[label=$\to$]
+            \item Die äußerste Spule erzeugt ein homogenes Magnetfeld $B_0$. Typischerweise ist es um einen Faktor $10^4$ stärker als das Erdmagnetfeld.
+            \item Die \emph{Gradientenspule} erzeugt ein inhomogenes Magnetfeld, welches linear mit der Position $x\in\R^3$ variiert. Dies wird zur Lokalisierung des RFI-Signals benötigt.
+            \item Um die Orientierung der Spins zu manipulieren, benötigt man noch eine RF-Spule. Sie dient zudem der Messung des FID-Signals. (Im Grunde sind sie Radio-Antennen). 
+        \end{itemize}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[height=5cm]{Bilddateien/GradientCoil.png}
+            \caption{Schema einer Gradientenspule.}
+        \end{figure}
     \end{Antwort}
 
 \end{document}
