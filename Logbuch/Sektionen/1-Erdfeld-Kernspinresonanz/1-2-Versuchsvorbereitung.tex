@@ -32,7 +32,7 @@
 
         Das \href{https://de.wikipedia.org/wiki/Drehmoment}{\emph{Drehmoment}} ist nach der Konstruktion des Drehimpulses, verwendet jedoch $\dv{t}p(t) =: F(t)$ zu $\mcT := r\times F$. \\
 
-        Die \href{https://de.wikipedia.org/w/index.php?title=Präzession&oldid=235094402}{\emph{Präzession}} ist die Drehbewegung eines rotierenden Körpers um eine Achse, welche selbst rotiert. \\
+        Die \href{https://de.wikipedia.org/w/index.php?title=Präzession&oldid=235094402}{\emph{Präzession}} ist die Drehbewegung eines rotierenden Körpers um eine Achse, welche selbst rotiert. Sie kommt zustande, wenn man ein die Orientierung eines rotierenden Objektes ändert. \
 
         Die \href{https://de.wikipedia.org/wiki/Larmorpräzession}{\emph{Larmor-Frequenz}} ist die Frequenz, mit der ein magnetischer Dipol um die Richtung eines äußeren Magnetfeldes präzediert. Sie ist gegeben durch
         \begin{align}
@@ -42,6 +42,11 @@
         \begin{itemize}[label=$\to$]
             \item Die Lamorfrequenz ist bei hoherer Elektronendichte für ein Proton geringer; die Elektronen selbst besitzen ein magnetisches Moment, welches mit dem äußeren Magnetfeld wechselwirkt. Man nennt diese elektronendichten Protonen \enquote{\emph{abgeschirmt}}.
         \end{itemize}
+
+        Durch Kombination der Präzession mit Lamorfrequenz und dem magnetischen Moment des rotierenden Teilchens kann eine Änderung des magnetischen Flusses durch eine Spule gemessen werden:
+        \begin{align}
+            \dv{t}\Phi^{(^1H)}(t) = \dv{t}A(B_0,S)\cdot\sin(\omega_L\cdot t) = A(B_0,S)\cdot\ubra{\omega_L}{\gamma\cdot B_0}\cos(\omega_L\cdot t) = -U^{(^1H)}(t)
+        \end{align}
     \end{Antwort}
 
 
@@ -49,7 +54,19 @@
         Rotierendes Koordinatensystem (Zerlegung von linear polar. $B_1$ in 2 gegenläufig zirkular polarisierte Komponenten, die um z-Achse rotieren), $B_0$ verschwindet in Resonanz
     \end{Frage}
     \begin{Antwort}
-        
+        Der Übergang zu einem rotierenden Koordinatensystem ist mit dem Limes $\omega_L\to 0$ verbunden, da anschaulich die Präzession des Spinvektors von dem Koordinatensystem verfolgt wird. Dadurch wird in einer Funktion $f_\omega(t) = \cos(\omega\cdot t)\cdot\exp(-t)$ durch $\omega\to 0$ der Faktor $\cos(\omega\cdot t)\to 1$ konstant und lediglich der exponentielle Abfall bleibt erhalten:
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                \draw[->] (0,-1) -- (0,2) node[above]{$f_\omega(t)$};
+                \draw[->] (-1,0) -- (4,0) node[right]{$t$};
+
+                \draw[domain=0:4,smooth,variable=\x,blue!20] plot ({\x},{cos(deg(5 * \x))});
+                \draw[domain=0:4,smooth,variable=\x,black!50] plot ({\x},{exp(-\x)});
+
+                \draw[domain=0:4,smooth,variable=\x,red] plot ({\x},{cos(deg(5 * \x)) * exp(-\x)});
+            \end{tikzpicture}
+        \end{figure}
     \end{Antwort}
 
 
@@ -78,6 +95,7 @@
         \begin{itemize}[label=$\to$]
             \item Die Zeit zur erneuten Ausrichtung der Spins entlang $B_0$ wird gemessen durch die \emph{Relaxionszeit} $T_1$.
             \item Die Zeit, in welcher ein RFI Signal messbar ist, wird gemessen durch die \emph{Relaxionszeit} $T_2$.
+            \item Die Amplitude des Signals ist $90\si\degree$ zum Feld $B_0$ maximal.
         \end{itemize}
     \end{Antwort}
 
@@ -103,6 +121,11 @@
             \end{pmatrix}
         \]
         wobei $\dv{t}M(t) = A\cdot M(t) + b$. \\
+
+        Der freie Induktionszerfall beschreibt das in der obigen Grafik angedeutete verhalten des FID-Signals. Es ist die Abnahme der Amplitude des Signals mit der Zeit. Sie wird durch die Dämpfung $\lambda = 1/T_2$ beschrieben:
+        \begin{align}
+            U^{(^1H)}_{FID}(t) = U^{(^1H)}(t)\cdot\exp(-\lambda\cdot t) = A(B_0,S)\cdot\gamma B_0\cdot\cos(\omega_L\cdot t)\cdot\exp(-\lambda\cdot t).
+        \end{align}
     \end{Antwort}
 
     \begin{Frage}
@@ -152,7 +175,7 @@
         Hahn- bzw. Spin-Echo, Carr-Purcell- und CPMG-Pulsfolge, $\pi_x$ und $\pi_y$ Winkel, Phase.
     \end{Frage}
     \begin{Antwort}
-        
+        Die \emph{Echozeit} beschreibt den Zeitraum ab der Anregung bis zur Messung. Sie wird derart gewählt, daß der Kontrast durch verschiedene Relaxionszeiten maximal wird. 
     \end{Antwort}
 
     \begin{Frage}
