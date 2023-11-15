@@ -3,7 +3,7 @@
 \begin{document}
     \subsection*{Versuchsprotokoll} 
         \marginnote{Start 9:20}
-        Wir einigen uns auf den Ordnernamen 
+        Das nötige Passwort lautet \enquote{efnmr732}. Wir einigen uns auf den Ordnernamen 
         \begin{center}
             \texttt{C://Users/fpphysik/Desktop/Daten/WiSe23-24/Tiwary-Jannack-Folgmann/}
         \end{center}
@@ -84,16 +84,45 @@ my_dat = LAD.Afni1D(filename)
             \marginnote{Fit selber machen}
             \begin{figure}
                 \centering
-                \includegraphics[options]{Live-Dokumente/Bilder/T1-20steps/T1.png}
+                \begin{subfigure}[b]{0.4\textwidth}
+                    \centering
+                    \includegraphics[width=5cm]{Live-Dokumente/Bilder/T1-20steps/T1.png}
+                    \caption{Datenpunkte.}
+                \end{subfigure}
+                \
+                \begin{subfigure}[b]{0.4\textwidth}
+                    \centering
+                    \includegraphics[width=5cm]{Live-Dokumente/Bilder/T1-20steps/T1_fit.png}
+                    \caption{Curvefit.}
+                \end{subfigure}
                 \caption{Amplitude $E/E_0$ über der Zeit $t$ der Polarisierungsdauer bei $20$ Schritten.}
                 \label{fig:T1-20steps}
             \end{figure}
+
+        \paragraph*{Versuchsteil 9}
+            \marginnote{Backup Ordner und Log 14:00}
+            Wir nehmen einmal mit Idealeinstellungen auf. Dann variieren wir $x$ auf $+30$ und $-30$. Zu beiden Werten erstellen wir eine gemittelte Aufnahme (\emph{Average}) und eine ungemittelte.
+
+
+        \paragraph*{Versuchsteil 10}
+            Wir verwenden für die $180\si{\degree}$ puls phase den Wert $3.25\si{\ms}$. 
+            \begin{itemize}
+                \item Wir verwenden als \emph{echo time} den Wert $200\si{\ms}$ bzw. als \emph{dwell time} den Wert $90\si{\micro\seconds}$. $\leadsto$ \texttt{CPMG-0-0-constant2-avg}.
+                \item Wir verwenden als \emph{echo time} den Wert $175\si{\ms}$ bzw. als \emph{dwell time} den Wert $90\si{\micro\seconds}$. $\leadsto$ \texttt{CPMG-0-0-constant3-avg}.
+            \end{itemize}
+            Das zweite Wertepaar verwenden wir für die alternierende Pulsmessung. 
+
+        \paragraph*{Versuchsteil 11}
+            Die Messung an der Wasserprobe haben wir am Anfang bereits gemacht. Wir nehmen nun das FID Spektrum mit einer \emph{polarization time} von $500\si{\ms}$ bzw. $4000\si{\ms}$. \\
+
+            Für die $T_1$ Messung mitteln wir über $3$ Iterationen mit $15$ Schritten. 
+
 
         \paragraph*{Dateinamen}
 
         \begin{table}[H]
             \centering
-            \begin{tabular}{c|c|l[4cm]}
+            \begin{tabular}{p{4cm}|c|p{6cm}}
                 \textbf{Dateiname} & \textbf{Nutzbarkeit} & \textbf{Bedeutung} \\
                 \hline\hline
                 \texttt{Exp1} & & \\
@@ -117,7 +146,7 @@ my_dat = LAD.Afni1D(filename)
                 \texttt{T1-Bp-10steps} & & Spin-Gitter-Relaxion im Polarisationsfeld \\
                 \texttt{T1-Bp-20steps} & & \\
                 \hline
-                \texttt{Echo-optimal-positive-multi-average} & & \\
+                \texttt{Echo-optimal-}\texttt{positive-multi-average} & & \\
             \end{tabular}
         \end{table}
 \end{document}
