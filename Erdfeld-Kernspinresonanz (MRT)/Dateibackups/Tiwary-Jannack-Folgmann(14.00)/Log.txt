@@ -1,0 +1,409 @@
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      93.2   2007.3    80.0    190.3
+      93.0   2007.3    80.0    188.9
+      85.3   2007.3    80.0    190.6
+      69.8   2007.3    80.0    187.7
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\test\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\test\plot.pt1
+
+> 
+
+   Error: invalid type for argument 1 in (expName)
+
+
+   Error: result of if statement must be 1 or 0
+   Line reads : if (isdir(expName) == 1)
+   Error occurred in command starting on line #229 of macro 'PulseAndCollect.mac' (command #15 of procedure 'pulse_program')
+     Called from :pulse_program(), line #89 of 'PulseAndCollect.mac' in procedure 'button(7,40)'
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      94.8   2007.3    80.0    185.1
+      94.8   2007.3    80.0    185.4
+      93.1   2007.3    80.0    187.2
+      81.0   2007.3    80.0    187.3
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\2\Exp1\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\2\Exp1\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      69.3   2008.7    60.0    207.1
+      69.7   2008.7    60.0    208.4
+      70.2   2008.0    60.0    202.9
+      73.7   2008.0    80.0    197.4
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\2\Exp2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\2\Exp2\plot.pt1
+
+> 
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung1\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung1\plot.pt1
+
+> 
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung1\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung1\plot.pt1
+
+> 
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3\Messung2\plot.pt1
+
+> 
+
+
+ ----- B1 coil analysis results -----
+
+   B1 Coil capacitance  = (4.25 ± 0.02) nF
+   B1 Coil inductance = (0.4169 ± 0.0006) H
+   B1 Coil f0 = (3780 ± 10) Hz
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\4\Messung1\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\4\Messung1\plot.pt1
+
+> 
+
+
+ ----- B1 coil analysis results -----
+
+   B1 Coil capacitance  = (4.23 ± 0.02) nF
+   B1 Coil inductance = (0.4174 ± 0.0006) H
+   B1 Coil f0 = (3790 ± 10) Hz
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\4\Messung2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\4\Messung2\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      89.3   2008.0    80.0    193.8
+      59.9   2008.0    80.0    181.2
+      65.8   2008.0    80.0    187.9
+      67.2   2008.0    80.0    192.3
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Exp1\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Exp1\plot.pt1
+
+> 
+
+######################## Results ###########################
+#
+# x_shim = -4.28
+# y_shim = -28.84
+# z_shim = 4.12
+# peak   = 37.6694
+# iters  = 37
+# time   = 0: 4:57
+#
+############################################################
+#
+# Data saved to:
+# C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\AutoShim1\data.1d
+# 1D plot save to:
+# C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\AutoShim1\plot.pt1
+#
+############################################################
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      90.3   2008.0    60.0    187.9
+      73.8   2008.0    60.0    189.3
+      60.2   2008.0    60.0    186.6
+      60.3   2008.0    60.0    189.4
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Exp2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Exp2\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      93.7   2009.3    60.0    188.9
+      59.9   2009.3    60.0    185.4
+      63.6   2008.7    60.0    183.7
+      48.7   2008.7    60.0    172.6
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Explore_FID\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Explore_FID\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      78.7   2008.0    80.0    198.8
+      80.8   2008.0    60.0    191.8
+      83.3   2008.0    80.0    190.4
+      82.6   2008.0    80.0    191.8
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Explore_FID2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\Explore_FID2\plot.pt1
+
+> 
+
+######################## Results ###########################
+#
+# x_shim = -3.99
+# y_shim = -28.84
+# z_shim = 3.83
+# peak   = 39.9953
+# iters  = 37
+# time   = 0: 4:57
+#
+############################################################
+#
+# Data saved to:
+# C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\AutoShim2\data.1d
+# 1D plot save to:
+# C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\AutoShim2\plot.pt1
+#
+############################################################
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      77.5   2006.7   100.0    204.1
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+     113.3   2006.7   230.0    578.1
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      93.9   2006.0   230.0    582.3
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\C_Opti\plot.pt1
+
+> 
+ ---------- B1 duration experimental output ---------- 
+
+   Length (ms)      Amplitude
+
+      0.3            59.8
+      0.5            152.2
+      0.8            165.5
+      1.0            212.8
+      1.3            217.5
+      1.5            230.8
+      1.8            232.0
+      2.0            206.6
+      2.3            193.0
+      2.5            147.3
+      2.8            120.5
+      3.0            111.6
+      3.3            110.6
+      3.5            144.8
+      3.8            152.4
+      4.0            181.8
+      4.3            188.9
+      4.5            182.9
+      4.8            173.5
+      5.0            150.7
+      5.3            132.2
+      5.5            102.9
+      5.8            85.5
+      6.0            106.6
+      6.3            110.3
+      6.5            142.8
+
+   Ascii tab delimited data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\B1DurationFast\data.txt
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\B1DurationFast\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+     119.0   2008.0   100.0    593.7
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\B1_Opti\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\5\B1_Opti\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      73.6   2008.7   280.0    194.3
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise\plot.pt1
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      88.4   2008.7   240.0    191.7
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise_2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise_2\plot.pt1
+
+> 
+
+    ---------- T1 Bp results ---------- 
+ 
+         Delay (ms),  Amplitude (uV) 
+
+            250         58.5
+
+> 
+
+
+ ----- Pulse and Collect Results -----
+
+
+      Max     Freq    Phase   Integral
+
+      86.6   2008.0   253.0    193.7
+
+
+   Data saved to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise_2\data.1d
+   1D plot save to:
+     C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\7\FID_Characterise_2\plot.pt1
+
+> 
+
+    ---------- T1 Bp results ---------- 
+ 
+         Delay (ms),  Amplitude (uV) 
+
+            250         42.4
+            650         77.6
+           1050        125.7
+           1450        147.5
+           1850        177.1
+           2250        204.3
+           2650        241.0
+           3050        250.4
+           3450        263.2
+           3850        256.2
+
+
+   T1 = (2300 ± 300) ms
+
+   Ascii tab delimited data saved to:
+      C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\8\T1-Bp-10steps\data.txt
+   1D plot save to:
+      C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\8\T1-Bp-10steps\plot.pt1
