@@ -77,8 +77,16 @@ my_dat = LAD.Afni1D(filename)
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=5cm]{Live-Dokumente/Bilder/B1-10steps/T1.png}
-                \caption{Amplitude $E/E_0$ über der Zeit $t$ der Polarisierungsdauer.}
+                \caption{Amplitude $E/E_0$ über der Zeit $t$ der Polarisierungsdauer bei $10$ Schritten.}
                 \label{fig:T1}
+            \end{figure}
+            Wir erzeugen noch eine $20$ Schritt Messung und erhalten eine Kurve mit ausgeprägterer Sättigung.
+            \marginnote{Fit selber machen}
+            \begin{figure}
+                \centering
+                \includegraphics[options]{Live-Dokumente/Bilder/T1-20steps/T1.png}
+                \caption{Amplitude $E/E_0$ über der Zeit $t$ der Polarisierungsdauer bei $20$ Schritten.}
+                \label{fig:T1-20steps}
             \end{figure}
 
         \paragraph*{Dateinamen}
@@ -108,6 +116,8 @@ my_dat = LAD.Afni1D(filename)
                 \hline
                 \texttt{T1-Bp-10steps} & & Spin-Gitter-Relaxion im Polarisationsfeld \\
                 \texttt{T1-Bp-20steps} & & \\
+                \hline
+                \texttt{Echo-optimal-positive-multi-average} & & \\
             \end{tabular}
         \end{table}
 \end{document}
