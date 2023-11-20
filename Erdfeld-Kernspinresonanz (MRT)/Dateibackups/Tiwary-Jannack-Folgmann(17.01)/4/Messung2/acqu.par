@@ -1,0 +1,7 @@
+z_shim = 4.5
+y_shim = -28.62
+x_shim = -4.4
+expName = "Messung2"
+dataDirectory = "C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\4"
+position = [1338,331]
+experiment = "AnalyseCoil"

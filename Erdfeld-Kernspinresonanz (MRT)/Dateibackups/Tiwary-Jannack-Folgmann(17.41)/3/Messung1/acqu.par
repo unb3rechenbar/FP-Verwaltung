@@ -1,0 +1,13 @@
+expName = "Messung1"
+dataDirectory = "C:\Users\fpphysik\Desktop\Daten\WiSe23-24\Tiwary-Jannack-Folgmann\3"
+maxFreqAmp = 10
+freqRange = 5500
+maxTimeAmp = 50
+b1freq = 2012
+cap = 10.8
+rxGain = 2
+nrPnts = 16384
+acqTime = 0.5
+nrScans = 40
+position = [1326,445]
+experiment = "MonitorNoise"

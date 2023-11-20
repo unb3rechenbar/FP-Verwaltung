@@ -10,6 +10,11 @@
 *.lof
 *.lot
 *.bbl
+*.mtc
+*.mtc0
+*.maf
+*.blg
+*.bcf
 
 # Apple
 .DS_Store
