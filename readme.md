@@ -1,5 +1,5 @@
 # Fortgeschrittenenpraktikumsrepository
-## Tom Folgmann, David Jannack
+.. geführt von Tom Folgmann, David Jannack
 
 ### Inhalt
 * [Magnetresonanztomographie](#MRT)
