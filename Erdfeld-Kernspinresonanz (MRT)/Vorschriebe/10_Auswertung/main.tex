@@ -2,6 +2,8 @@
 
 \usepackage{kern}
 
+\usepackage{pdfpages}
+
 \begin{document}
     \subsection*{Phasenwinkelvariation}
 
@@ -31,8 +33,120 @@
             \caption{Gemittelte Auswirkungen der Pulsphasenwinkel auf die Relaxionszeit $T_2$ im Wasser.}
         \end{table}
 
-        \begin{figure}
+        
+
+        \begin{figure}[h]
             \centering
-            \includegraphics[options]{../Bilddateien/CPMG-0-0-constant-avg.svg}
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-0-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-0-0-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-0-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-0-0-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 0$, $\varphi_2 = 0$.}
+            \label{fig:CPMG-0-0-avg}
         \end{figure}
+
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-90-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-0-90-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-90-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-0-90-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 0$, $\varphi_2 = 90$.}
+            \label{fig:CPMG-0-90-avg}
+        \end{figure}
+        
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-180-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-0-180-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-180-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-0-180-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 0$, $\varphi_2 = 180$.}
+            \label{fig:CPMG-0-180-avg}
+        \end{figure}
+
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-0-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-90-0-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-0-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-90-0-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 90$, $\varphi_2 = 0$.}
+            \label{fig:CPMG-90-0-avg}
+        \end{figure}
+
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-180-0-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-180-0-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-180-0-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-180-0-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 180$, $\varphi_2 = 0$.}
+            \label{fig:CPMG-180-0-avg}
+        \end{figure}
+
+        \begin{figure}[h]
+            \centering
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-270-constant-avg.png}
+                \caption{mod. const.}
+                \label{fig:CPMG-90-270-constant-avg}
+            \end{subfigure}
+            \
+            \begin{subfigure}[b]{0.4\textwidth}
+                \centering
+                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-270-alternating-avg.png}
+                \caption{mod. alt.}
+                \label{fig:CPMG-90-270-alternating-avg}
+            \end{subfigure}
+            \caption{FID und Amplitudensignale nichtnormiert und gemittelt für $\varphi_1 = 90$, $\varphi_2 = 270$.}
+            \label{fig:CPMG-90-270-avg}
+        \end{figure}
+        
 \end{document}

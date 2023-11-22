@@ -1,0 +1,75 @@
+Unknown flag: 1050
+Unknown flag: 1000
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/3/Messung1
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+
+ Found Spectrum.txt: Noise_Spectrum.txt
+Maximum found at 250, 4.68899
+Searching for: 250,4.68899
+Line of max_SPEC in dataset: 126
+using lines 1 to 1176 (range = 1050)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -1.0000
+  Std Dev:         9459.3068
+  Sample StdDev:   9459.5955
+  Skewness:           0.0000
+  Kurtosis:           1.8000
+  Avg Dev:         8192.0000
+  Sum:           -16384.0000
+  Sum Sq.:       1.46602e+12
+
+  Mean Err.:         73.9008
+  Std Dev Err.:      52.2558
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:       -16384.0000 [    0]
+  Maximum:        16382.0000 [16383]
+  Quartile:       -8193.0000 
+  Median:            -1.0000 
+  Quartile:        8191.0000 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.0457
+  Std Dev:            0.1281
+  Sample StdDev:      0.1281
+  Skewness:          19.6316
+  Kurtosis:         540.8036
+  Avg Dev:            0.0379
+  Sum:              749.4855
+  Sum Sq.:          303.1305
+
+  Mean Err.:          0.0010
+  Std Dev Err.:       0.0007
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0005 [14369]
+  Maximum:            4.6890 [ 8067]
+  Quartile:           0.0146 
+  Median:             0.0249 
+  Quartile:           0.0426 
+

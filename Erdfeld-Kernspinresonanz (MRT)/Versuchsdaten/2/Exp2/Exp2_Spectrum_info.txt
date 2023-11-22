@@ -1,0 +1,74 @@
+Unknown flag: 25
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/2/Exp2
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+
+ Found Spectrum.txt: Exp2_Spectrum.txt
+Maximum found at 2008, 73.6923
+Searching for: 2008,73.6923
+Line of max_SPEC in dataset: 3013
+using lines 2988 to 3038 (range = 25)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -0.3333
+  Std Dev:         3153.1023
+  Sample StdDev:   3153.1985
+  Skewness:      3.87176e-10
+  Kurtosis:           1.8000
+  Avg Dev:         2730.6667
+  Sum:            -5461.3300
+  Sum Sq.:       1.62891e+11
+
+  Mean Err.:         24.6336
+  Std Dev Err.:      17.4186
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:        -5461.3300 [    0]
+  Maximum:         5460.6700 [16383]
+  Quartile:       -2731.0000 
+  Median:            -0.3333 
+  Quartile:        2730.3350 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.1416
+  Std Dev:            1.2108
+  Sample StdDev:      1.2108
+  Skewness:          43.4556
+  Kurtosis:        2287.8518
+  Avg Dev:            0.1563
+  Sum:             2319.9450
+  Sum Sq.:        24346.1563
+
+  Mean Err.:          0.0095
+  Std Dev Err.:       0.0067
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0004 [16030]
+  Maximum:           73.6923 [ 5180]
+  Quartile:           0.0307 
+  Median:             0.0516 
+  Quartile:           0.0892 
+

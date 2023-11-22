@@ -13,6 +13,7 @@ plot_spectrum=0
 plot_fid=0
 plot_error=0
 min_ratio_FID=0.01
+start=0
 
 # check for user flags
 while [[ $# -gt 0 ]]; do
@@ -28,6 +29,9 @@ while [[ $# -gt 0 ]]; do
             ;;
         -ep|--errorplot)
             plot_error=1
+            ;;
+        -sw|--start)
+            start="$2"
             ;;
         *)
             echo "Unknown flag: $1"
@@ -58,14 +62,14 @@ Error=$(ls | grep *_withError.txt)
 # check if files exist and execute accordingly
 # ------------------- FID -------------------
 
-if [ -z "$FID" ]; then
+if [ -z "$FID" ] && [ "$plot_fid" = 1 ]; then
     echo "No FID.txt found!"
 elif [ $plot_fid = 1 ]; then
     echo "Found FID.txt: $FID"
 
     # strip the file endings and replace '_' with ' '
     FID_name=${FID%.*}
-    FID_name=${FID_name//_/ }
+    FID_name_space=${FID_name//_/ }
 
     # get maximum value of FID
     max_FID=$(awk -F',' 'BEGIN{max_FID=0} {if ($2+0>max_FID+0) {max_FID=$2; xvalue=$1}} END {print xvalue,max_FID}' "$FID")
@@ -74,8 +78,11 @@ elif [ $plot_fid = 1 ]; then
     # manipulate max_FID string for search
     maxsearch=${max_FID// /,}
 
+    # remove x Values up to start
+    awk '$1 >= '"$start"' {print $0}' "$FID" > "$FID_name"_tmp
+
     # get line of maximum value
-    maxline=$(grep -n "$maxsearch" "$FID" | awk -F':' '{print $1}')
+    maxline=$(grep -n "$maxsearch" "$FID_name"_tmp | awk -F':' '{print $1}')
     echo "Line of max_FID in dataset: $maxline"
 
     # set range for sed
@@ -88,11 +95,11 @@ elif [ $plot_fid = 1 ]; then
 
     # plot the files
     gnuplot -e "filename='"$FID_name"_tmp'; \
-                legname='$FID_name'; \
-                set title '$FID_name'; \
+                legname='$FID_name_space'; \
+                set title '$FID_name_space'; \
                 set xlabel 'Time [s]'; \
                 set ylabel 'Signal U [uV]'; \
-                outputname='FID_plot.svg'" \
+                outputname='$FID_name.svg'" \
             "$CODEDIR"/BasicPlot.gp
 
     # remove temporary file
@@ -101,7 +108,7 @@ fi
 
 # ------------------- Spectrum -------------------
 
-if [ -z "$Spectrum" ]; then
+if [ -z "$Spectrum" ] && [ "$plot_spectrum" = 1 ]; then
     echo "No Spectrum.txt found!"
 elif [ $plot_spectrum = 1 ]; then
     echo "\n Found Spectrum.txt: $Spectrum"
@@ -109,7 +116,7 @@ elif [ $plot_spectrum = 1 ]; then
     Spectrum_name=${Spectrum%.*}
     Spectrum_name_space=${Spectrum_name//_/ } 
 
-    # remove negative x values from spectrum
+    # remove negative x values from spectrum (or more)
     awk '$1 >= 0 {print $0}' "$Spectrum" > "$Spectrum"_tmp
     
     # get maximum value of Spectrum
@@ -151,7 +158,7 @@ elif [ $plot_spectrum = 1 ]; then
 fi
 
 # ------------------- Ratios -------------------
-if [ -z "$Error" ]; then
+if [ -z "$Error" ] && [ "$plot_error" = 1 ]; then
     echo "No *_withError.txt found!"
 elif [ $plot_error = 1 ]; then
     echo "\n Found *_withError.txt: $Error"
