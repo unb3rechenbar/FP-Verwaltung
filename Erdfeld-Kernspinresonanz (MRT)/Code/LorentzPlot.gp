@@ -11,10 +11,10 @@ set title font "Helvetica,25"
 set lmargin 20
 set rmargin 10
 
-a = 1
+a = 1000
 w0 = 2000
-gamma = 10
-d = 0.1
+gamma = 20
+d = 0.5
 
 
 # lorentz function

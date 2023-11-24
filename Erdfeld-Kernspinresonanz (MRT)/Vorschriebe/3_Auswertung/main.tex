@@ -17,7 +17,7 @@
         (u\circ\text{FWHM})(f_G) = \ubra{2\cdot\sqrt{2\cdot\ln(2)}}{=:c}\cdot (u\circ\sigma)(f_G).
     \] 
     Die Auswertung der Daten anhand dieser Zusammenhänge liefert uns die folgende Übersichtstabelle \ref{tab:3:PeakInfo}.
-    \begin{table}[h]
+    \begin{table}[H]
        \centering
        \begin{tabular}{c|ll|ll}
             \textbf{Durchgang} & $\max(f_G)$ & $(u\circ\max)(f_G)$ & $\text{FWHM}(f_G)/c$ & $(u\circ\text{FWHM})(f_G)/c$ \\
@@ -29,18 +29,23 @@
         \label{tab:3:PeakInfo}
     \end{table}
     Die einzelnen Unsicherheiten ergeben sich durch die asymptotische Standardabweichung der Kurvenanpassung. Das aufkommende Rauschen besitzt nach der verwendeten Prospa Software einen \emph{root mean square} (rms) von $8.7\si{\micro\volt}$ ohne Bekannte Unsicherheit, stimmt jedoch mit der Standardabweichung $\sigma = 8.6841$ des Rauschdatensatzes überein. \\
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{../Bilddateien/Messung1_Noise_Spectrum_Gaussian.png}
         \caption{Gaußanpassung an die Rauschkurve des Schwingkreises für Durchgang 1.}
         \label{fig:3:GaussFit1}
     \end{figure}
     Betrachten wir die in Kapitel \ref{sec:2:LarmorBestimmungWasser} bestimmte Larmorfrequenz, so liegen LC-Schwingkreis Resonanzfrequenz und selbige bereits dicht beieinander. Dies deutet auf bereits gut gewählte Startwerte in der Konfiguration \ref{fig:3:MonitorNoiseConfig} hin. 
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includegraphics[width=8cm]{../Bilddateien/Sec3_Monitor_Noise_Configuration.png}
         \caption{Konfiguration der Messung der Rauschkurve des Schwingkreises.}
         \label{fig:3:MonitorNoiseConfig}
+    \end{figure}
+    Betrachtet man das Spektrum einmal in einem größeren Frequenzintervall, so sind wie in Abb. \ref{fig:3:NoiseSpectrum} ersichtlich mehrere Nebenpeaks in empirischen Abständen von $50\si{\herth}$ zu erkennen. Diese sind auf die Netzfrequenz von $50\si{\hertz}$ zurückzuführen. Dieses als \emph{Oberschwingungen} bekannte Phänomen ist in erster Linie auf die im Versuchsaufbau verwendeten Kabel und Kondensatoren, sowie weitere elektrische Bauteile zurückzuführen \cite[TÜV]{TUEV:Oberschwingungen}.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=10cm]{../Bilddateien/Messung1_Noise_Spectrum.png}
     \end{figure}
 
     \bibliography{../Literatur.bib}

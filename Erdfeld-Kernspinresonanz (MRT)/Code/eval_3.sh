@@ -37,7 +37,7 @@ for f in */; do
                     set xlabel 'Frequency [Hz]'; \
                     set ylabel 'Signal U [uV]'; \
                     outputname='Noise_Spectrum_Lorentz.svg'" \
-                "$CODEMRI"/LorentzPlot.gp
+                "$CODEMRI"/LorentzPlot.gp 2> "Noise_Spectrum_Lorentz_info.txt"
 
         rm -f "Noise_Spectrum_tmp"
 

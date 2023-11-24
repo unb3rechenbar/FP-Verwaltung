@@ -1,0 +1,27 @@
+iter      chisq       delta/lim  lambda   a             w0            gamma         d            
+   0 1.8069263609e+02   0.00e+00  2.50e-01    1.000000e+03   2.000000e+03   2.000000e+01   5.000000e-01
+   1 5.4299291496e+01  -2.33e+05  2.50e-02    1.000043e+03   1.998760e+03   1.999914e+01   1.447479e-01
+   2 5.4299286602e+01  -9.01e-03  2.50e-03    1.004405e+03   1.872731e+03   1.991375e+01   1.446592e-01
+iter      chisq       delta/lim  lambda   a             w0            gamma         d            
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 54.2993
+rel. change during last iteration : -9.0127e-08
+
+degrees of freedom    (FIT_NDF)                        : 997
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.233372
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0544627
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 1004.4           +/- 3.785e+08    (3.769e+07%)
+w0              = 1872.73          +/- 1.656e+06    (8.841e+04%)
+gamma           = 19.9137          +/- 4.726e+06    (2.373e+07%)
+d               = 0.144659         +/- 0.007613     (5.263%)
+
+correlation matrix of the fit parameters:
+                a      w0     gamma  d      
+a               1.000 
+w0             -0.099  1.000 
+gamma           0.950 -0.131  1.000 
+d              -0.222  0.012 -0.177  1.000 

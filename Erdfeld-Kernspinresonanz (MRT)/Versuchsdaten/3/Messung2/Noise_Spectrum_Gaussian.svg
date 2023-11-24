@@ -1149,12 +1149,14 @@
 </g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>gaussian fit</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="white" stroke="rgb(148,   0, 211)" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(893.70,146.89)" stroke="none" fill="black" font-family="Helvetica" font-size="25.00"  text-anchor="end">
 		<text><tspan font-family="Helvetica" >gaussian fit</tspan></text>
 	</g>
 </g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='rgb(255,   0,   0)'  d='M911.20,138.76 L990.20,138.76 M167.80,516.62 L176.37,516.62 L184.94,516.62 L193.51,516.62 L202.07,516.62 L210.64,516.62
 		L219.21,516.62 L227.78,516.62 L236.35,516.62 L244.92,516.62 L253.49,516.62 L262.05,516.62 L270.62,516.62 L279.19,516.62
 		L287.76,516.62 L296.33,516.62 L304.90,516.62 L313.47,516.62 L322.03,516.62 L330.60,516.62 L339.17,516.62 L347.74,516.62
