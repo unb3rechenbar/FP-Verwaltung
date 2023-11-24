@@ -11,4 +11,12 @@ set title font "Helvetica,25"
 set lmargin 20
 set rmargin 10
 
-plot filename every ::1 using 1:2 w lines title legname
+l = 0.01
+c = 2000
+
+f(x) = 1/sqrt(l * (x + c))
+
+fit f(x) filename u 1:2 via l, c
+
+plot filename u 1:2 w p title legname, \
+    f(x) w l title "f(C,L) fit" lw 3

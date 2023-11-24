@@ -117,7 +117,7 @@ elif [ $plot_spectrum = 1 ]; then
     Spectrum_name_space=${Spectrum_name//_/ } 
 
     # remove negative x values from spectrum (or more)
-    awk '$1 >= 0 {print $0}' "$Spectrum" > "$Spectrum"_tmp
+    awk -F',' '$1 >= '"$start"' {print $0}' "$Spectrum" > "$Spectrum"_tmp
     
     # get maximum value of Spectrum
     max_SPEC=$(awk -F',' 'BEGIN{max_SPEC=0} {if ($2+0>max_SPEC+0) {max_SPEC=$2; xvalue=$1}} END {print xvalue,max_SPEC}' "$Spectrum"_tmp)

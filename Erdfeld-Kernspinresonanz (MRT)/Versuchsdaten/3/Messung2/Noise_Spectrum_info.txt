@@ -1,14 +1,14 @@
-Unknown flag: 1050
+Unknown flag: 400
 Unknown flag: 1000
 Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/3/Messung2
 Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
 
 
  Found Spectrum.txt: Noise_Spectrum.txt
-Maximum found at 250, 4.68161
-Searching for: 250,4.68161
-Line of max_SPEC in dataset: 126
-using lines 1 to 1176 (range = 1050)
+Maximum found at 1952, 4.65856
+Searching for: 1952,4.65856
+Line of max_SPEC in dataset: 477
+using lines 77 to 877 (range = 400)
 
  >-------Details zu x-------<
 

@@ -11,4 +11,16 @@ set title font "Helvetica,25"
 set lmargin 20
 set rmargin 10
 
-plot filename every ::1 using 1:2 w lines title legname
+a = 1
+w0 = 2000
+gamma = 10
+d = 0.1
+
+
+# lorentz function
+f(x) = a / ((x**2 - w0**2)**2 + gamma**2 * w0**2) + d
+
+fit f(x) filename using 1:2 via a, w0, gamma, d
+
+plot filename using 1:2 title legname, \
+     f(x) with lines lc rgb "red" title "lorentz fit"

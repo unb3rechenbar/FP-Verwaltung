@@ -1,0 +1,6 @@
+"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/combine_rf_cap.gp" line 19: warning: Cannot find or open file "Resonance_Freq_vs_Capacitance.txt"
+
+fit f(x) filename u 1:2 via l, c
+         ^
+"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/combine_rf_cap.gp" line 19: Can't read data from
+
