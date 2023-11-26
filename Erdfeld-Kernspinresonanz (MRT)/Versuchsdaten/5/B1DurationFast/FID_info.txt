@@ -1,0 +1,72 @@
+Unknown flag: 1000000
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/B1DurationFast
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+Found FID.txt: FID.txt
+Maximum value of FID: 0 62.6437
+Line of max_FID in dataset: 1
+using lines 1 to 1000001 (range = 1000000)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.7500
+  Std Dev:            0.4330
+  Sample StdDev:      0.4330
+  Skewness:      4.54749e-09
+  Kurtosis:           1.8000
+  Avg Dev:            0.3750
+  Sum:            12287.2500
+  Sum Sq.:        12286.8751
+
+  Mean Err.:          0.0034
+  Std Dev Err.:       0.0024
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0000 [    0]
+  Maximum:            1.4999 [16383]
+  Quartile:           0.3750 
+  Median:             0.7500 
+  Quartile:           1.1250 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              15.3760
+  Std Dev:           15.9394
+  Sample StdDev:     15.9399
+  Skewness:           1.2689
+  Kurtosis:           3.5728
+  Avg Dev:           12.8378
+  Sum:           251919.8842
+  Sum Sq.:       8.03610e+06
+
+  Mean Err.:          0.1245
+  Std Dev Err.:       0.0881
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            1.1476 [16383]
+  Maximum:           62.6437 [    0]
+  Quartile:           3.1192 
+  Median:             8.4789 
+  Quartile:          23.0481 
+

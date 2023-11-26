@@ -1,0 +1,74 @@
+Unknown flag: 25
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/Explore_FID
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+
+ Found Spectrum.txt: Spectrum.txt
+Maximum found at 2008.67, 48.6976
+Searching for: 2008.67,48.6976
+Line of max_SPEC in dataset: 3014
+using lines 2989 to 3039 (range = 25)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -0.3333
+  Std Dev:         3153.1023
+  Sample StdDev:   3153.1985
+  Skewness:      3.87176e-10
+  Kurtosis:           1.8000
+  Avg Dev:         2730.6667
+  Sum:            -5461.3300
+  Sum Sq.:       1.62891e+11
+
+  Mean Err.:         24.6336
+  Std Dev Err.:      17.4186
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:        -5461.3300 [    0]
+  Maximum:         5460.6700 [16383]
+  Quartile:       -2731.0000 
+  Median:            -0.3333 
+  Quartile:        2730.3350 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.1413
+  Std Dev:            0.9745
+  Sample StdDev:      0.9746
+  Skewness:          34.2660
+  Kurtosis:        1420.4023
+  Avg Dev:            0.1510
+  Sum:             2314.5732
+  Sum Sq.:        15886.9147
+
+  Mean Err.:          0.0076
+  Std Dev Err.:       0.0054
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0009 [15687]
+  Maximum:           48.6976 [ 5179]
+  Quartile:           0.0331 
+  Median:             0.0543 
+  Quartile:           0.0924 
+

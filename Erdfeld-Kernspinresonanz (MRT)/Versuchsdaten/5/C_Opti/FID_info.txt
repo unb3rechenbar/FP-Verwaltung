@@ -1,0 +1,72 @@
+Unknown flag: 400
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/C_Opti
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+Found FID.txt: FID.txt
+Maximum value of FID: 0.000274658 2072.22
+Line of max_FID in dataset: 4
+using lines 1 to 404 (range = 400)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.7500
+  Std Dev:            0.4330
+  Sample StdDev:      0.4330
+  Skewness:      4.54749e-09
+  Kurtosis:           1.8000
+  Avg Dev:            0.3750
+  Sum:            12287.2500
+  Sum Sq.:        12286.8751
+
+  Mean Err.:          0.0034
+  Std Dev Err.:       0.0024
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0000 [    0]
+  Maximum:            1.4999 [16383]
+  Quartile:           0.3750 
+  Median:             0.7500 
+  Quartile:           1.1250 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -0.2483
+  Std Dev:          156.9444
+  Sample StdDev:    156.9492
+  Skewness:           0.4777
+  Kurtosis:         156.6205
+  Avg Dev:           33.9244
+  Sum:            -4068.0268
+  Sum Sq.:       4.03564e+08
+
+  Mean Err.:          1.2261
+  Std Dev Err.:       0.8670
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:        -2072.2800 [   32]
+  Maximum:         2072.2200 [   57]
+  Quartile:         -16.6640 
+  Median:            -0.5059 
+  Quartile:          15.3043 
+

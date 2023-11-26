@@ -1,0 +1,74 @@
+Unknown flag: 250
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/B1DurationFast
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+
+ Found Spectrum.txt: MagnitudeSpectrum.txt
+Maximum found at 2008, 26.8164
+Searching for: 2008,26.8164
+Line of max_SPEC in dataset: 3013
+using lines 2763 to 3263 (range = 250)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -0.3333
+  Std Dev:         3153.1023
+  Sample StdDev:   3153.1985
+  Skewness:      3.87176e-10
+  Kurtosis:           1.8000
+  Avg Dev:         2730.6667
+  Sum:            -5461.3300
+  Sum Sq.:       1.62891e+11
+
+  Mean Err.:         24.6336
+  Std Dev Err.:      17.4186
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:        -5461.3300 [    0]
+  Maximum:         5460.6700 [16383]
+  Quartile:       -2731.0000 
+  Median:            -0.3333 
+  Quartile:        2730.3350 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.0966
+  Std Dev:            0.5210
+  Sample StdDev:      0.5210
+  Skewness:          31.9772
+  Kurtosis:        1320.5381
+  Avg Dev:            0.1005
+  Sum:             1583.4653
+  Sum Sq.:         4599.6747
+
+  Mean Err.:          0.0041
+  Std Dev Err.:       0.0029
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0002 [14232]
+  Maximum:           26.8164 [ 5180]
+  Quartile:           0.0223 
+  Median:             0.0384 
+  Quartile:           0.0684 
+

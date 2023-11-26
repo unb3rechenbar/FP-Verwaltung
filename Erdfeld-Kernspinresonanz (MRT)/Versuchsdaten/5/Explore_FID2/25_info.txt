@@ -1,0 +1,13 @@
+Unknown flag: 
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/Explore_FID2
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+No Spectrum.txt found!
+
+ >-------Details zu x-------<
+line 0: warning: Cannot find or open file "25"
+line 0: warning: Can't read data file
+
+ >-------Details zu y-------<
+line 0: warning: Cannot find or open file "25"
+line 0: warning: Can't read data file

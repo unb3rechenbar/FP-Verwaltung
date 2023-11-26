@@ -21,7 +21,7 @@ done
 echo "\n>--------Results---------<"
 cat "$DIR/T2_times.txt"
 
-echo "\n>--------copying---------<"
+echo "\n>--------copying---------<
 
 for f in */; do
 	(

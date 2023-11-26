@@ -1,0 +1,72 @@
+Unknown flag: 1000000
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/5/Explore_FID
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+Found FID.txt: FID.txt
+Maximum value of FID: 0.00256348 90.2451
+Line of max_FID in dataset: 29
+using lines 1 to 1000029 (range = 1000000)
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:               0.7500
+  Std Dev:            0.4330
+  Sample StdDev:      0.4330
+  Skewness:      4.54749e-09
+  Kurtosis:           1.8000
+  Avg Dev:            0.3750
+  Sum:            12287.2500
+  Sum Sq.:        12286.8751
+
+  Mean Err.:          0.0034
+  Std Dev Err.:       0.0024
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:            0.0000 [    0]
+  Maximum:            1.4999 [16383]
+  Quartile:           0.3750 
+  Median:             0.7500 
+  Quartile:           1.1250 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           16384
+  Out of range:          0
+  Invalid:               0
+  Header records:        0
+  Blank:                 0
+  Data Blocks:           1
+
+* COLUMN: 
+  Mean:              -1.1897
+  Std Dev:           20.9838
+  Sample StdDev:     20.9844
+  Skewness:           0.0106
+  Kurtosis:           7.7191
+  Avg Dev:           12.1521
+  Sum:           -19491.4758
+  Sum Sq.:       7.23737e+06
+
+  Mean Err.:          0.1639
+  Std Dev Err.:       0.1159
+  Skewness Err.:      0.0191
+  Kurtosis Err.:      0.0383
+
+  Minimum:          -91.8893 [  341]
+  Maximum:           90.3715 [  398]
+  Quartile:          -6.6403 
+  Median:            -1.2016 
+  Quartile:           4.1739 
+
