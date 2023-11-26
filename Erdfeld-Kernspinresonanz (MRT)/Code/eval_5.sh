@@ -97,8 +97,12 @@ for f in */; do
         # evaluate the FID
             plotandinfoFID $FID 400
 
+            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_FID.png"
+
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 350
+
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
 
         elif [[ $f =~ "B1_Opti" ]]; then
             echo "Evaluating B_Opti"
