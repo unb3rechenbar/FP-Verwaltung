@@ -17,10 +17,14 @@ c = 1
 d = 1
 e = 1
 f = 1
+g = 1
+h = 1
+i = 1
+j = 1
 
-f(x) = a*x**5 + b*x**4 + c*x**3 + d*x**2 + e*x + f
+f(x) = a*x**9 + b*x**8 + c*x**7 + d*x**6 + e*x**5 + f*x**4 + g*x**3 + h*x**2 + i*x + j
 
-fit f(x) filename using 1:2 via a, b, c ,d, e, f
+fit f(x) filename using 1:2 via a, b, c ,d, e, f, g, h, i, j
 
 plot filename using 1:2 title legname, \
-     f(x) with lines lc rgb "red" lw 3 title "poly. fit 5. order"
+     f(x) with lines lc rgb "red" lw 3 title "poly. fit 9. order"

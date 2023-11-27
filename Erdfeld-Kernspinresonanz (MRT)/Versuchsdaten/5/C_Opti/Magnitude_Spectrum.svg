@@ -167,10 +167,10 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>Magnitude Spectrum</title>
+	<g id="gnuplot_plot_1" ><title>datapoints</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(893.70,109.39)" stroke="none" fill="black" font-family="Helvetica" font-size="25.00"  text-anchor="end">
-		<text><tspan font-family="Helvetica" >Magnitude Spectrum</tspan></text>
+		<text><tspan font-family="Helvetica" >datapoints</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">

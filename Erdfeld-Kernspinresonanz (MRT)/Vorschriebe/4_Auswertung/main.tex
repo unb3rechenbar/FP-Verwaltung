@@ -3,6 +3,7 @@
 \usepackage{kern}
 
 \begin{document}
+    \subsection{LCR Resonanzanalyse}\label{subsec:4:LCRResonanzanalyse}
     Wir verwenden unter Betrachtung einer Translalation in $C$ Richtung die Fitfunktion
     \begin{align}
         f(C + C_0,L) = \frac{1}{\sqrt{L\cdot (C + C_0)}}.
@@ -28,10 +29,12 @@
     Mithilfe der durch die Kurvenanpassung erhaltenen Parameter $L$ und $C_0$ können wir unter Hinzuzug der bereits in Kapitel \ref{sec:2:LarmorBestimmungWasser} bestimmten Larmorfrequenz $f_L$ die optimale Kondensatorkapazität $C_{opt}$ bestimmen. Diese ist durch \eqref{eq:4:Capacitance} gegeben und bestimmt sich zu den Werten in Tabelle \ref{tab:4:OptimalCapacitance}.
     \begin{table}
         \centering
-        \begin{tabular}{c|ll}
-             & $C_{opt}$ in $\si{\nano\farad}$ & $u(C_{opt})$ in $\si{\nano\farad}$ \\
+        \begin{tabular}{c|cc}
             \hline
-            avg. & $10.92$ & $1.81$
+             & $C_{opt}$ in $\si{\nano\farad}$ & $u(C_{opt})$ in $\si{\nano\farad}$ \\
+            \hline\hline
+            avg. & $10.92$ & $1.81$\\
+            \hline
         \end{tabular}
         \caption{Optimale Kondensatorkapazität $C_{opt}$ für die beiden Durchgänge gemittelt.}
         \label{tab:4:OptimalCapacitance}

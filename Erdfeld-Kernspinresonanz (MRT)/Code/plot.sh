@@ -95,7 +95,7 @@ elif [ $plot_fid = 1 ]; then
 
     # plot the files
     gnuplot -e "filename='"$FID_name"_tmp'; \
-                legname='$FID_name_space'; \
+                legname='datapoints'; \
                 set title '$FID_name_space'; \
                 set xlabel 'Time [s]'; \
                 set ylabel 'Signal U [uV]'; \
@@ -145,7 +145,7 @@ elif [ $plot_spectrum = 1 ]; then
     sed -n "$negrange,$posrange p" "$Spectrum"_tmp > "$Spectrum"_plotlines
 
     gnuplot -e "filename='"$Spectrum"_plotlines'; \
-                legname='$Spectrum_name_space'; \
+                legname='datapoints'; \
                 set title '$Spectrum_name_space'; \
                 set xlabel 'Frequency [Hz]'; \
                 set ylabel 'Signal U [uV]'; \
@@ -166,8 +166,18 @@ elif [ $plot_error = 1 ]; then
     Error_name=${Error%.*}
     Error_name_space=${Error_name//_/ }
 
+    # get maximum value of Spectrum
+    max_SPEC=$(awk -F',' 'BEGIN{max_SPEC=0} {if ($2+0>max_SPEC+0) {max_SPEC=$2; xvalue=$1}} END {print xvalue,max_SPEC}' "$Error"_tmp)
+
+    max_x_SPEC=$(echo "$max_SPEC" | awk -F' ' '{print $1}')
+    max_y_SPEC=$(echo "$max_SPEC" | awk -F' ' '{print $2}')
+
+    echo "Maximum found at $max_x_SPEC, $max_y_SPEC"
+
+    rm -f "$Error"_tmp
+
     gnuplot -e "filename='"$Error"'; \
-                legname='$Error_name_space'; \
+                legname='datapoints'; \
                 set title '$Error_name_space'; \
                 set xlabel 'Frequency [Hz]'; \
                 set ylabel 'Amplitude E/E_0 [uV]'; \

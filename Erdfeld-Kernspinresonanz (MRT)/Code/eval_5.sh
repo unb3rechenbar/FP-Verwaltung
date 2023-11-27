@@ -36,7 +36,7 @@ for f in */; do
 
     # ----------------- AutoShim -----------------
 
-        if [[ $f =~ "Auto" ]]; then 
+        if [[ $f =~ "Shim2" ]]; then 
             echo "Evaluating AutoShim"
             
             FID=$(ls | grep *FID.txt)
@@ -48,17 +48,23 @@ for f in */; do
         # evaluate the FID
             plotandinfoFID $FID 1000000
 
+            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_FID.png"
+
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 25
 
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+
         # evaluate the max amplitude per iteration data
             gnuplot -e "filename='Iteration.txt'; \
-                        legname='max Amplitude per Iteration'; \
+                        legname='datapoints'; \
                         set title 'Max Amplitude per Iteration'; \
                         set xlabel 'Iteration'; \
-                        set ylabel 'Amplitude'; \
+                        set ylabel 'Amplitude in [uV]'; \
                         outputname='Iteration.svg'" \
                     "$CODEMRI"/BasicPlot.gp 2> "Iteration_info.txt"
+
+            inkscape -w 4000 -h 2400 "Iteration.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Iteration.png"
 
             echo "\n >-------Details zu x-------<" >> "Iteration_info.txt"
             gnuplot -e "set datafile separator ','; stats \"Iteration.txt\" using 1" 2>> "Iteration_info.txt"
@@ -119,6 +125,8 @@ for f in */; do
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 350
 
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+
 
 
         elif [[ $f =~ "B1DurationFast" ]]; then
@@ -158,7 +166,21 @@ for f in */; do
                 set xlabel 'B1 duration [ms]'; \
                 set ylabel 'Amplitude [uV]'; \
                 outputname='$Error_name.svg'" \
-            "$CODEMRI"/ErrorPlot.gp
+            "$CODEMRI"/ErrorPlot.gp 2> "${Error_name}_info.txt"
+
+            # get maximum value of Spectrum
+            max_SPEC=$(awk -F',' 'BEGIN{max_SPEC=0} {if ($2     +0>max_SPEC+0) {max_SPEC=$2; xvalue=$1}} END {print     xvalue,max_SPEC}' "$Error")
+        
+            max_x_SPEC=$(echo "$max_SPEC" | awk -F' ' '{print $1}')
+            max_y_SPEC=$(echo "$max_SPEC" | awk -F' ' '{print $2}')
+        
+            echo "Maximum found at $max_x_SPEC, $max_y_SPEC" > "${Error_name}_info.txt"
+
+            echo "\n >-------Details zu x-------<" >> "${Error_name}_info.txt"
+            gnuplot -e "set datafile separator ','; stats '"$Error"' using 1" 2>> "${Error_name}_info.txt"
+
+            echo "\n >-------Details zu y-------<" >> "${Error_name}_info.txt"
+            gnuplot -e "set datafile separator ','; stats '"$Error"' using 2" 2>> "${Error_name}_info.txt"
 
             inkscape -w 4000 -h 2400 "$Error_name.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_${Error_name}.png"
 

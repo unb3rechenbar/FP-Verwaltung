@@ -132,7 +132,7 @@
 	<path stroke='black'  d='M167.80,73.51 L167.80,524.40 L1016.09,524.40 L1016.09,73.51 L167.80,73.51 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(85.11,298.96) rotate(270)" stroke="none" fill="black" font-family="Helvetica" font-size="25.00"  text-anchor="middle">
-		<text><tspan font-family="Helvetica" >Amplitude</tspan></text>
+		<text><tspan font-family="Helvetica" >Amplitude in [uV]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
