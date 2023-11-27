@@ -36,6 +36,15 @@ for f in */; do
 
         echo "$f" >> "$DIR/Lamour_values.txt"
         grep -n "Maximum found at " "$SPECNAME"_info.txt >> "$DIR/Lamour_values.txt"
+
+        # gnuplot -e "filename='$Spectrum'; \
+        #             legname='datapoints'; \
+        #             set title 'Lorentzian Fit'; \
+        #             set xlabel 'Frequency [Hz]'; \
+        #             set ylabel 'Signal U [uV]'; \
+        #             outputname='${Spectrum%.*}_lorentz.svg'; \
+        #         " "$CODEMRI/LorentzPlot.gp"
+
     )
 done
 

@@ -27,7 +27,7 @@
                 \caption{Amplitudenverlauf während des automatischen Shimmings.}
                 \label{fig:5:AutoShimAmplitudenverlauf}
             \end{figure}
-            Dabei sind bei der Messung des FID und Berechnung des zugehörigen Spektrums die gewünschten Formen deutlich erkennbar [siehe Abb. \ref{}], was auf ein erfolgreiches Shimming hinweist.
+            Dabei sind bei der Messung des FID und Berechnung des zugehörigen Spektrums die gewünschten Formen deutlich erkennbar [siehe Abb. \ref{fig:5:AutoShimFIDSpectrum}], was auf ein erfolgreiches Shimming hinweist.
             \begin{figure}
                 \centering
                 \begin{subfigure}[t]{0.45\textwidth}
@@ -42,12 +42,14 @@
                     \caption{Spektrum.}
                 \end{subfigure}
                 \caption{FID und Spektrum nach automatischem Shimming.}
+                \label{fig:5:AutoShimFIDSpectrum}
             \end{figure}
 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=7cm]{../Bilddateien/AutoShim_Konfigurationsparameter.png}
                 \caption{Konfiguration der automatischen Shimming Pulse Sequence.}
+                \label{fig:5:AutoShimKonfiguration}
             \end{figure}
 
         \subsubsection*{Kapazitätsoptinierung}\label{subsubsec:5:Kapazitaetsoptimierung}
@@ -64,22 +66,21 @@
                     \centering
                     \includegraphics[width=6cm]{../Bilddateien/C_Opti_Spectrum.png}
                     \caption{Messung des Spektrums mit optimierter Kapazität.}
+                    \label{subfig:5:OptiCSpectrum}
                 \end{subfigure}
                 \caption{Messung der FID-Amplitude und des Spektrums mit optimierter Kapazität.}
                 \label{fig:5:OptiCSpectrum}
             \end{figure}
-            Deutlich erkennbar ist die Larmor-Frequenz im optischen Zentrum des Resonanzpeaks des LC-Schwingkreises als Interferenz des scharfen Resonanzpeaks der Nukleonen mit dem einer sinc Funktion folgenden Verlauf der LCR-Schwingkreisresonanz \cite[ch 1.4.5]{doc:EFNMRStudentManual}. Die erkennbaren Nebenpeaks erklären wir uns durch die in Kapitel \ref{subsec:3:Rauschanalyse} bereits diskutierten Oberschwingungen. 
-            
-            
+            Deutlich erkennbar ist die Larmor-Frequenz im optischen Zentrum des Resonanzpeaks des LC-Schwingkreises als Interferenz des scharfen Resonanzpeaks der Nukleonen mit dem einer sinc Funktion folgenden Verlauf der LCR-Schwingkreisresonanz. Ihre Form ist dabei dem Effekt des sogenannten \enquote{coil ring downs} unter Fouriertransformation zuzuschreiben, unter welchem der Abklang der Resonanzreaktion des Schwingkreises über die Zeit verstanden wird \cite[ch 1.4.5]{doc:EFNMRStudentManual}. In unserem Experiment verwenden wir hier eine Zeitverzögerung der Messung von voreingestellten $2\si{\ms}$. Unsere verwendeten Parameter stellen wir in Abbildung \ref{fig:5.1:B1OptiParameter} aus. Die erkennbaren Nebenpeaks erklären wir uns durch die in Kapitel \ref{subsec:3:Rauschanalyse} bereits diskutierten Oberschwingungen. 
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=7cm]{../Bilddateien/C_Abtastparameter.png}
-                \caption{Abtastparameter zur Versuchsdurchführung.}
-                \label{fig:5.1:Abtastparameter}
+                \caption{Messparameter zur optimierten $B_1$ Dauer.}
+                \label{fig:5.1:B1OptiParameter}
             \end{figure}
 
         \subsubsection*{Optimierung der $B_1$ Pulsdauer}\label{subsubsec:5:B1PulsdauerOptimierung}
-
+            Um eine Amplitudenmaximierung des Spektrums weiter zu verfolgen, optimieren wir die $B_1$ Pulsdauer $t_{B_1}$. Diese stellt allgemein als ein Parameter der Auslenkung der Nukleonenmagnetisierungen gegen ihre Ruhelage im Magnetfeld eine Möglichkeit der Amplitudenmaximierung dar. Im Speziellen wählen wir für einen $\pi/2$ Puls die Dauer hin zum ersten Maximum der Kurve, die $\pi$ Pulslänge ergibt sich dann durch die Dauer zum ersten Minimum, da die Nukleonenmagnetisierung hier umgekehrt wird und eine minimale Präzession stattfindet. 
             \begin{figure}[H]
                 \centering
                 \begin{subfigure}[t]{0.45\textwidth}
@@ -97,20 +98,31 @@
                 \end{subfigure}
                 \caption{Messung der FID-Amplitude in Abhängigkeit der B1-Dauer.}
             \end{figure}
-            Obwohl wir mithilfe einer polynomialen Kurvenanpassung eine mögliche Approximation des Kurvenverlaufes erhalten, ist aufgrund unbekanntem theoretischen Hintergrund eine funktionelle Interpretation der Daten nicht fundiert möglich. Die Unsicherheiten der Polynomkoeffizienten liegt des weiteren zwischen $20$ und $30$ Prozent. \\
+            Obwohl wir mithilfe einer polynomialen Kurvenanpassung eine mögliche Approximation des Kurvenverlaufes erhalten, ist aufgrund unbekanntem theoretischen Hintergrund eine funktionelle Interpretation der Daten nicht fundiert möglich. Die Unsicherheiten der Polynom effizienten liegt des weiteren zwischen $20$ und $30$ Prozent. \\
 
-            Es lässt sich aus den Daten jedoch mithilfe des ersten Maximums bei $t_0 = 1.75\si{\ms}$ mit einem Amplitudenwert von $A(t_0) = 232.01(1527)\si{\micro\volt}$. Dies korrelliert mit der am Computer festgelegten Abtastbreite $\delta t = 0.25\si{\ms}$. Im Rahmen des Versuchs entscheiden wir uns für eine $B_1$ Pulsdauer von $t_{B_1} := 1.7\si{\ms}$.
+            Dargestellt in Tabelle \ref{tab:5:OptiB1Duration} sind die aus Abbildung \ref{fig:5:FastFIDampVsB1durationWithError} erhaltenen ersten Maximal- und Minimalargumente der iterativen Amplitudenmessung. Dabei ist die am Computer eingestellte Abtastbreite $\delta t = 0.25\si{\ms}$ ein Maß ihrer Unsicherheit.
 
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{c|cc}
+                    Puls & $t$ in $\si{\ms}$ & $A$ in $\si{\micro\volt}$ \\
+                    \hline\hline
+                    $\pi/2$ & $1.75(25)$ & $232.01(1527)$ \\
+                    $\pi$ & $3.25(25)$ & $110.56(19157)$
+                \end{tabular}
+                \caption{Max- und minimale Argumente der iterativen Amplitudenmessung zur Bestimmung der optimalen $B_1$ Pulsdauer für $\pi/2$ und $\pi$ Pulse.}
+                \label{tab:5:OptiB1Duration}
+            \end{table}
+            Dies bringt uns insgesamt auf eine Parameterwahl wie in Abbildung \ref{fig:5.2:Abtastparameter} dargestellt.
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=7cm]{../Bilddateien/B1Duration_Abtastparameter.png}
-                \caption{Abtastparameter zur Versuchsdurchführung.}
+                \caption{Abtastparameter zur Bestimmung der optimalen $B_1$ Pulsdauer.}
                 \label{fig:5.2:Abtastparameter}
             \end{figure}
 
         \subsubsection*{Anwendung der optimierten $B_1$ und $C$ Parameter}
-            Unter Verwendung der obig bestimmten Parameter $C$ und $t_{B_1}$ erhalten wir das Spektrum \ref{fig:5:OptiSpectrum}.
-
+            Unter Verwendung der obig bestimmten Parameter $C$ und $t_{B_1}$ erhalten wir das Spektrum \ref{fig:5:OptiSpectrum}. Es besitzt bereits eine zu Abbildung \ref{subfig:5:OptiCSpectrum} ähnliche Form, da effektiv lediglich $t_{B_1}$ um $0.2\si{\milli\second}$ erhöht wurde. Dies führt offen erkennbar dennoch zu einem höheren Amplitudenmaximum.
             \begin{figure}[H]
                 \centering
                 \includegraphics[width=11cm]{../Bilddateien/B1_Opti_Spectrum.png}
