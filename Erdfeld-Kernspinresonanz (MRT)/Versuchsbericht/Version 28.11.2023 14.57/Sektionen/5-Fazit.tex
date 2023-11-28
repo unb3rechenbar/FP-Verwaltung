@@ -1,0 +1,21 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+    Zu Beginn unserer Versuchsreihe haben wir die Parameter zur Aufnahme eines FID an unsere spezifische Umgebung und Wasserprobe optimiert und erhalten eine gemittelte Larmorfrequenz von $f_L = 2003.67(3639)\si{\hertz}$. Die Rauschanalyse des Rauschens mit rms Wert $\textit{rms}=8.7\si{\micro V}$ (ohne Angabe einer Unsicherheit) ergab mithilfe Gaußscher Kurvenanpassung eine Schwingkreisresonanzfrequenz im maximierenden Funktionsargument $\text{argmax}(f_G):=f_S = 2007.715(11610)\si{\hertz}$ und eine durch die Methode der Halbwertsbreite bestimmte Breite von $\text{RWHM}(f)/c = 115.892(12440)\si{\hertz}$, wobei $c:=2\sqrt{2\cdot\ln(2)}$. \\
+    Wir konnten auf größeren Skalen des fouriertransformierten FIDs mehrere Nebenpeaks in Abständen von approx. $50\si{\hertz}$ erkennen, welche auf die Netzfrequenz von $50\si{\hertz}$ zurückzuführen sind. \\
+
+    Unter Kurvenanpassung einer kapazitätsabhängigen Resonanzfrequenzverteilung unserer Messwerte konnten wir die Schwingkreiseigene Induktivität $L = 1.64\cdot 10^{-8}\pm3.31\cdot 10^{-11}\si{\henry}$ und eine Kapazitätsverschiebung von $C_0 = 4.27(3)\si{\nano\farad}$ bestimmen. Mithilfe dieser Werte kamen wir rechnerisch auf eine optimale Kondensatorkapazität von $C_{opt} = 10.92(18)\si{\nano\farad}$. \\
+    Durch zusätzliches Shimming konnten wir die Messparameter weiter verfeinern, welche jedoch zu Versuchsbeginn bereits gut konfiguriert waren. Zusätzliche Anpassung der $B_1$ Pulsdauer mit für $\pi/2$ und $\pi$ Pulse bestimmte Zeiten führte zu ebenfalls schärferen Peaks. Somit konnten wir scharfe spektrale Peaks und gute überlagerung der Resonanzfrequenz des Schwingkreises mit der Larmorfrequenz beobachten. \\
+        
+    Ferner bestimmten wir mithilfe weiterer theoretischer Kurvenanpassung die Relaxationszeiten $T_1$ und $T_2$ sowie $T_2^*$ durch Kenntnis von $T_2$.
+
+    Bei der Variation des Phasenwinkels konnten wir verschiedene unerwartete Asymmetrien feststellen. Der Echoverlauf entsprach jedoch weitgehend seiner theoretischen Voraussage. Es konnten keine deutlich erkennbaren oder physikalisch anschaulichen Muster in den Daten beobachtet werden, hier sind weitere Tests vonnöten, um eventuell aus statistischer Betrachtung physikalische Relationen zu extrahieren.\\
+
+    Für die $T_1$,$T_2$-Relaxionskonstraste in Abhängigkeit von der Konzentration paramagnetischer Lösungen wurde ein lineare Zusammenhang festgestellt mit den Steigungskoeffizienten 
+    \begin{align*}
+        r_{1} = \SI{0,029 +- 0,028}{\litre \per \micro \mol \second} \\
+        r_{2} = \SI{0,043 +- 0,038}{\litre \per \micro \mol \second}
+    \end{align*}.
+    
+    Im Rahmen des eindimensionalen MRI konnten Schnittbilder beider Proben entlang der x-,y-,z-Achse berechnet werden. Aus dem x-Schnitt wurde die Probenlänge als \SI{100(20)}{\milli\metre} bestimmt, aus dem z-Schnitt eine Probenbreite und je \SI{34.4(50)}{\milli\metre}. Insbesondere zeigen beide Peaks im z-Schnitt eine unterschiedliche Amplitude, was das Vorhandensein der Ionenlösung bestätigt. Mehrere aufgenommene zweidimensionale MRI bestätigen, dass die Wasserprobe für kürzere Polarisationszeiten inaktiver ist als die wässrige Lösung. 
+
+\end{document}
