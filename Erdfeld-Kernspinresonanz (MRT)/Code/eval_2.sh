@@ -57,15 +57,15 @@ for f in */; do
     (
         echo ">--------file: $f---------<"
         cd "$DIR/$f"
-        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/${f%/}.svg ..."
+        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/2/${f%/}.svg ..."
         FID=$(ls | grep *FID.txt)
         Spectrum=$(ls | grep *Spectrum.txt)
 
         FIDNAME=${FID%.*}
         SPECNAME=${Spectrum%.*}
 
-        inkscape -w 4000 -h 2400 "$FIDNAME.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_FID.png"
-        inkscape -w 4000 -h 2400 "$SPECNAME.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+        inkscape -w 4000 -h 2400 "$FIDNAME.svg" -o "$FPMRT/Vorschriebe/Bilddateien/2/${f%/}_FID.png"
+        inkscape -w 4000 -h 2400 "$SPECNAME.svg" -o "$FPMRT/Vorschriebe/Bilddateien/2/${f%/}_Spectrum.png"
         echo "   done"
     )
 done

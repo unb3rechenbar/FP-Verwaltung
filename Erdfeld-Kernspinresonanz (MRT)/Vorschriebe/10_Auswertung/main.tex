@@ -8,7 +8,7 @@
         Im Modell mehrerer Nukleonenspins in inhomogener Magnetfeldumgebung kommt es nach einer $\pi/2$ Pulsausrichtung zu einer zeitlichen Defokussierung der Spins, gemeint in Form eines zeitlich wachsenden relativen Phasenverschubs. Im theoretischen Modell lässt sich dieses Driften durch einen $\pi$ Puls kompensieren, sodaß ein erneutes FID der Form \ref{fig:sine-bell-func_example} messbar wird. Dies verlangt jedoch die Annahme einer konstanten Ebene, auf welcher sich die Spinvektoren bewegen. Im Experiment stellt man hingegen fest, daß die Spins sich aus dieser theoretischen Ebene hinausverschieben. Das allgemeine Vorgehen ist jedoch identisch: Nach einer $\pi/2$ Pulsausrichtung wird nach einer Zeitdauer $\tau_E$ ein $\pi$ Puls gesendet. Nach weiterem Ablauf von $\tau_E$ kann dann mittels Sensorik ein Echo-FID gemessen werden. Beim Erreichen des Peaks kann die Sequenz erneut gestartet werden, schaublidlich dargestellt in Abbildung \ref{fig:CPMG-Prozess}.
         \begin{figure}[H]
             \centering
-            \includegraphics[width=11cm]{../Bilddateien/CPMG_Prozess.png}
+            \includegraphics[width=11cm]{../Bilddateien/10/CPMG_Prozess.png}
             \caption{Schaubildliche Darstellung des CPMG Prozesses. Die Zeit verläuft nach rechts, wohingegen die Systemantwort in Form des FIDs vertikal aufgetragen ist. Die Blockweise Datensammlung ist Hardware- und softwareseitig festgelegt und zur $T_2$ Bestimmung verwendet. \cite[ch 5.3.1]{doc:EFNMRStudentManual}}
             \label{fig:CPMG-Prozess}
         \end{figure}
@@ -16,14 +16,14 @@
         Abhilfe schafft hier ein konstanter bzw. alternierender Phasenwinkel $\alpha$ zwischen dem initialen $\pi/2$ und den folgenen $\pi$ Pulsen (Car-Purcell-Meiboom-Gill Methode, CPMG). Dazu stellen wir in der Prospa Software die jeweiligen Phasenwinkel relativ zur Nullposition des einzelnen $\pi/2$ bzw. $\pi$ Pulses ein und berechnen die effektive Phasenverschiebung durch Subtraktion. Abbildung \ref{fig:CPMG_Parameter} zeigt dabei unsere verwendeten Parameter, die Phasenwinkel sind speziell unter \enquote{$90$ pulse phase (deg)} bzw. \enquote{$180$ pulse phase (deg)} zu finden \cite[ch 5.3]{doc:EFNMRStudentManual}.
         \begin{figure}[H]
             \centering
-            \includegraphics[width=11cm]{../Bilddateien/CPMG_Parameter.png}
+            \includegraphics[width=11cm]{../Bilddateien/10/CPMG_Parameter.png}
             \caption{Versuchsparameter zur Messung des CPMG Echos.}
             \label{fig:CPMG_Parameter}
         \end{figure}
         Nach konkreter Ausführung des Experimentes für einen Phasenwinkel $\alpha = 0$ erhält man bereits mit guten Parametern ein der Theorie entsprechendes Echobild, siehe Abbildung \ref{fig:sine-bell-func_example}. Da die effektive Phasenverschiebung lediglich in einer sinnvollen Menge $\{0,\pi/2,\pi,\pi/3\}$ durch Verschiebung um $\pi/2$ liegen sollte, können wir die Messergebnisse in kompakter Form in Tabelle \ref{tab:CPMG-avg} zusammenfassen. Bei der Messung haben wir dabei die Option der Mittelung im Kontrollfenster der Parameter (siehe Abb. \ref{fig:CPMG_Parameter}) aktiviert.
         \begin{figure}[H]
             \centering
-            \includegraphics[width=11cm]{../Bilddateien/sine-bell-func_example.png}
+            \includegraphics[width=11cm]{../Bilddateien/10/sine-bell-func_example.png}
             \caption{Beispielverlauf des Echos, einer \emph{sine bell function} folgend. Die Phaenverschiebungen sind hier auf $0$ Grad gesetzt.}
             \label{fig:sine-bell-func_example} 
         \end{figure}
@@ -84,14 +84,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-0-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-0-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-0-0-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-0-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-0-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-0-0-alternating-avg}
             \end{subfigure}
@@ -103,14 +103,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-90-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-90-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-0-90-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-90-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-90-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-0-90-alternating-avg}
             \end{subfigure}
@@ -122,14 +122,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-180-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-180-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-0-180-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-0-180-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-0-180-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-0-180-alternating-avg}
             \end{subfigure}
@@ -141,14 +141,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-0-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-90-0-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-90-0-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-0-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-90-0-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-90-0-alternating-avg}
             \end{subfigure}
@@ -160,14 +160,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-180-0-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-180-0-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-180-0-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-180-0-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-180-0-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-180-0-alternating-avg}
             \end{subfigure}
@@ -179,14 +179,14 @@
             \centering
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-270-constant-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-90-270-constant-avg.png}
                 \caption{mod. const.}
                 \label{fig:CPMG-90-270-constant-avg}
             \end{subfigure}
             \
             \begin{subfigure}[b]{0.4\textwidth}
                 \centering
-                \includegraphics[width=6cm]{../Bilddateien/CPMG-90-270-alternating-avg.png}
+                \includegraphics[width=6cm]{../Bilddateien/10/CPMG-90-270-alternating-avg.png}
                 \caption{mod. alt.}
                 \label{fig:CPMG-90-270-alternating-avg}
             \end{subfigure}
@@ -195,5 +195,5 @@
         \end{figure}
         
 
-    \bibliography{../Literatur.bib}
+    % \bibliography{../Literatur.bib}
 \end{document}

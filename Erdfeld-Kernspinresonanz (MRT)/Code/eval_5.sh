@@ -48,12 +48,12 @@ for f in */; do
         # evaluate the FID
             plotandinfoFID $FID 1000000
 
-            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_FID.png"
+            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_FID.png"
 
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 25
 
-            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_Spectrum.png"
 
         # evaluate the max amplitude per iteration data
             gnuplot -e "filename='Iteration.txt'; \
@@ -64,7 +64,7 @@ for f in */; do
                         outputname='Iteration.svg'" \
                     "$CODEMRI"/BasicPlot.gp 2> "Iteration_info.txt"
 
-            inkscape -w 4000 -h 2400 "Iteration.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Iteration.png"
+            inkscape -w 4000 -h 2400 "Iteration.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_Iteration.png"
 
             echo "\n >-------Details zu x-------<" >> "Iteration_info.txt"
             gnuplot -e "set datafile separator ','; stats \"Iteration.txt\" using 1" 2>> "Iteration_info.txt"
@@ -103,12 +103,12 @@ for f in */; do
         # evaluate the FID
             plotandinfoFID $FID 400
 
-            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_FID.png"
+            inkscape -w 4000 -h 2400 "${FID%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_FID.png"
 
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 350
 
-            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_Spectrum.png"
 
         elif [[ $f =~ "B1_Opti" ]]; then
             echo "Evaluating B_Opti"
@@ -125,7 +125,7 @@ for f in */; do
         # evaluate the spectrum
             plotandinfoSpectrum $Spectrum 350
 
-            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Spectrum.png"
+            inkscape -w 4000 -h 2400 "${Spectrum%.*}.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_Spectrum.png"
 
 
 
@@ -182,7 +182,7 @@ for f in */; do
             echo "\n >-------Details zu y-------<" >> "${Error_name}_info.txt"
             gnuplot -e "set datafile separator ','; stats '"$Error"' using 2" 2>> "${Error_name}_info.txt"
 
-            inkscape -w 4000 -h 2400 "$Error_name.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_${Error_name}.png"
+            inkscape -w 4000 -h 2400 "$Error_name.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_${Error_name}.png"
 
             gnuplot -e "filename='"$Error"'; \
                 legname='datapoints'; \
@@ -192,7 +192,7 @@ for f in */; do
                 outputname='${Error_name}_poly.svg'" \
             "$CODEMRI"/PolyPlot.gp 2> "${Error_name}_poly.txt"
 
-            inkscape -w 4000 -h 2400 "${Error_name}_poly.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_${Error_name}_poly.png"
+            inkscape -w 4000 -h 2400 "${Error_name}_poly.svg" -o "$FPMRT/Vorschriebe/Bilddateien/5/${f%/}_${Error_name}_poly.png"
 
         fi
     )

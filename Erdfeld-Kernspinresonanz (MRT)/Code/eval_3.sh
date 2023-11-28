@@ -63,10 +63,10 @@ for f in */; do
     (
         echo ">--------file: $f---------<"
         cd "$DIR/$f"
-        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/${f%/}.svg ..."
-        inkscape -w 4000 -h 2400 "rms_noise.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_rms_noise.png"
-        inkscape -w 4000 -h 2400 "Noise_Spectrum.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Noise_Spectrum.png"
-        inkscape -w 4000 -h 2400 "Noise_Spectrum_Gaussian.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Noise_Spectrum_Gaussian.png"
+        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/3/${f%/}.svg ..."
+        inkscape -w 4000 -h 2400 "rms_noise.svg" -o "$FPMRT/Vorschriebe/Bilddateien/3/${f%/}_rms_noise.png"
+        inkscape -w 4000 -h 2400 "Noise_Spectrum.svg" -o "$FPMRT/Vorschriebe/Bilddateien/3/${f%/}_Noise_Spectrum.png"
+        inkscape -w 4000 -h 2400 "Noise_Spectrum_Gaussian.svg" -o "$FPMRT/Vorschriebe/Bilddateien/3/${f%/}_Noise_Spectrum_Gaussian.png"
         echo "   done"
     )
 done

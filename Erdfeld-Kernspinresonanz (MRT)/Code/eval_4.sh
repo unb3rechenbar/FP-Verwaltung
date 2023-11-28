@@ -25,8 +25,8 @@ for f in */; do
     (
         echo ">--------file: $f---------<"
         cd "$DIR/$f"
-        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/${f%/}.svg ..."
-        inkscape -w 4000 -h 2400 "Resonance_Freq_vs_Capacitance.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}_Resonance_Freq_vs_Capacitance.png"
+        echo "   converting to $FPMRT/Vorschriebe/Bilddateien/4/${f%/}.svg ..."
+        inkscape -w 4000 -h 2400 "Resonance_Freq_vs_Capacitance.svg" -o "$FPMRT/Vorschriebe/Bilddateien/4/${f%/}_Resonance_Freq_vs_Capacitance.png"
         echo "   done"
     )
 done

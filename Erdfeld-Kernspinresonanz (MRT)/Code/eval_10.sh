@@ -50,14 +50,14 @@ done
 echo "\n>--------Results---------<"
 cat "$DIR/T2_times.txt"
 
-echo "\n>--------copying---------<
+echo "\n>--------copying---------<"
 
 for f in */; do
 	(
 		echo ">--------file: $f---------<"
 		cd "$DIR/$f"
-		echo "   converting to $FPMRT/Vorschriebe/Bilddateien/${f%/}.svg ..."
-		inkscape -w 4000 -h 2400 "FID_data.svg" -o "$FPMRT/Vorschriebe/Bilddateien/${f%/}.png"
+		echo "   converting to $FPMRT/Vorschriebe/Bilddateien/10/${f%/}.svg ..."
+		inkscape -w 4000 -h 2400 "FID_data.svg" -o "$FPMRT/Vorschriebe/Bilddateien/10/${f%/}.png"
 		echo "   done"
 	)
 done

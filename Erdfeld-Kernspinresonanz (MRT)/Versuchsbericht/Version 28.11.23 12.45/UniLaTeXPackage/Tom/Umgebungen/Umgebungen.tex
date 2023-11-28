@@ -1,0 +1,69 @@
+\declaretheoremstyle[
+    			headfont=\bfseries\sffamily\color{black!70!black}, bodyfont=\normalfont,
+    			mdframed={
+       				linewidth=1pt,
+        			rightline=false, topline=false, bottomline=false,
+    			}
+			]{Begruendungsbox}
+\declaretheoremstyle[
+    			headfont=\bfseries\sffamily\color{black!70!black}, bodyfont=\normalfont,
+    			mdframed={
+       				linewidth=1pt,
+        			rightline=false, topline=false, bottomline=false,
+    			}
+			]{Erinnerungsbox}
+\declaretheoremstyle[
+    			headfont=\bfseries\sffamily\color{black!70!black}, bodyfont=\normalfont, numbered=no,
+    			mdframed={
+       				linewidth=false,
+        			rightline=false, topline=false, bottomline=false,
+    			}
+			]{Zusammenfassungsbox}
+\declaretheoremstyle[
+    			headfont=\bfseries\sffamily\color{black!70!black}, bodyfont=\normalfont, numbered=no,
+    			mdframed={
+       				linewidth=0.5pt,
+        			rightline=0.5pt, topline=false, bottomline=false,
+    			}
+			]{Voraussetzungsbox}
+\declaretheorem[style=Voraussetzungsbox, name=Voraussetzung]{vrr}
+\declaretheorem[style=Zusammenfassungsbox, name=Zusammenfassen]{zsmfs}
+\newenvironment{Voraussetzung}{\begin{vrr}}{\end{vrr}}
+\newenvironment{Zusammenfassen}{\begin{zsmfs}}{\end{zsmfs}}
+\declaretheorem[style=Erinnerungsbox, name=Vermutung]{verm}
+\declaretheorem[style=Begruendungsbox, name=Begründung]{begr}
+\newenvironment{begruendung}{\begin{begr}}{\end{begr}}
+
+\declaretheorem[style=Erinnerungsbox, name=Erinnerung]{Erinnerungsdef}
+\newenvironment{Erinnerung}{\begin{Erinnerungsdef}}{\end{Erinnerungsdef}}
+
+\newcommandx{\subsubaufgabe}[1][1={}]{\ifthenelse{\isempty{#1}}
+					{\stepcounter{subsubex}\subsubsection*{(\roman{subsubex})}\label{subsubex:\theex-\thesubex-\thesubsubex}}
+					{\stepcounter{subsubex}\subsubsection*{(#1)}\label{subsubex:\theex-\thesubex-#1}}}
+			\newcommand{\refsubex}[3]{[$\rightarrow$ A.#1(#2,#3)\ref{subsubex:#1.0-#2-#3}]}
+
+
+\newcounter{def}
+\newtheorem{mdefthm}{Definition}[section]
+\newenvironment{mdef}[1]{%
+    \begin{framed}
+    \begin{center}
+	\stepcounter{def}
+    \begin{minipage}{0.95\textwidth}
+    \begin{mdefthm}#1.\end{mdefthm}
+}{
+    \end{minipage}
+    \end{center}
+    \end{framed}
+}
+
+
+\declaretheorem[title=Beweis, numbered=no, qed=\qedsymbol]{newproof}
+\newtcolorbox{Beweisbox}{
+	enhanced,
+	frame hidden,
+	borderline west = 1pt,
+	colback = black!2,
+	breakable
+}
+\renewenvironment{proof}{\begin{Beweisbox}\begin{newproof}}{\end{newproof}\end{Beweisbox}}
