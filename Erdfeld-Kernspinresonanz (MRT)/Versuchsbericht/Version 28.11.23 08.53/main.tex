@@ -1,0 +1,78 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\input{UniLaTeXPackage/UniLaTeXPackage}
+\usepackage{svg}
+\usepackage[version=4]{mhchem}
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{Vesuchsberichtvorlage}
+    \subtitle{Fortgeschrittenen-Praktikum in Physik (Universität Konstanz)}
+    \author{Autoren: Tom Folgmann, David Jannack, Tiark Tiwary \\ \large{Tutor: Stefan Kraner}}
+    \date{Experiment durchgeführt am 15.11.2023}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    \section*{Einleitung}
+        \subfile{Sektionen/0-Einleitung.tex}
+
+    \newpage
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{Grundlagen}
+    \subfile{Sektionen/1-Grundlagenteil.tex}
+
+\newpage
+\section{Versuchsdurchführung} %@David
+    \subfile{Sektionen/3-Versuchsdurchfuehrung.tex}
+
+\newpage
+\section{Auswertung}
+    \subfile{Sektionen/4-Auswertung.tex}
+
+\newpage
+\section{Fazit}
+    \subfile{Sektionen/5-Fazit.tex}
+
+% -----------------------------------------------------------
+% Abspann und Credits
+
+\newpage
+    \bibliography{Literatur.bib}
+\newpage
+    \listoffigures
+    \listoftables
+
+
+\newpage
+    \section*{Messdaten}
+    \subfile{Sektionen/7-Messdaten.tex}
+\newpage
+    \subfile{Sektionen/8-Auswertungscode.tex}
+
+
+
+%\includepdf[pages=1-1,scale=0.9,frame=true]{Protokolle/PATH.pdf}
+\end{document}

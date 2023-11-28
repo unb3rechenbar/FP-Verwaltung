@@ -1,0 +1,8 @@
+Unknown flag: 850
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/10/CPMG-90-0-constant-avg
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+Found FID.txt: FID.txt
+Maximum value of FID: 345.23 56.039
+Line of max_FID in dataset: 972
+using lines 122 to 1822 (range = 850)

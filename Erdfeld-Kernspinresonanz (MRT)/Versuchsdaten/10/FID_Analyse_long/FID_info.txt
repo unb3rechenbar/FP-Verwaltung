@@ -1,0 +1,8 @@
+Unknown flag: 850
+Looking for files in: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Versuchsdaten/10/FID_Analyse_long
+Code directory: /Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code
+
+Found FID.txt: FID.txt
+Maximum value of FID: 0.0177612 85.7391
+Line of max_FID in dataset: 195
+using lines 1 to 1045 (range = 850)

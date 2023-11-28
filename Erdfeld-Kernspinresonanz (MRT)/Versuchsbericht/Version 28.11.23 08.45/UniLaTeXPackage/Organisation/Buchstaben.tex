@@ -1,0 +1,173 @@
+%% ----------------------------------------------
+%% Vorbereitung
+\DeclareFontFamily{U}{BOONDOX-calo}{\skewchar\font=45 }
+\DeclareFontShape{U}{BOONDOX-calo}{m}{n}{
+  <-> s*[1.05] BOONDOX-r-calo}{}
+\DeclareFontShape{U}{BOONDOX-calo}{b}{n}{
+  <-> s*[1.05] BOONDOX-b-calo}{}
+\DeclareMathAlphabet{\mathcalb}{U}{BOONDOX-calo}{m}{n}
+\SetMathAlphabet{\mathcalb}{bold}{U}{BOONDOX-calo}{b}{n}
+\DeclareMathAlphabet{\mathbcalb}{U}{BOONDOX-calo}{b}{n}
+    
+%% ----------------------------------------------
+%% Grundlegende Mengen
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Prim}{\mathbb{P}}
+\newcommand{\K}{\mathbb K}
+\newcommand{\F}{\mathbb{F}}
+
+
+%% ----------------------------------------------
+%% Definition
+\newcommand{\mca}{\mathcalb{a}}			
+\newcommand{\mcb}{\mathcalb{b}}
+\newcommand{\mcc}{\mathcalb{c}}
+\newcommand{\mcd}{\mathcalb{d}}
+\newcommand{\mce}{\mathcalb{e}}
+\newcommand{\mcf}{\mathcalb{f}}
+\newcommand{\mcg}{\mathcalb{g}}
+\newcommand{\mch}{\mathcalb{h}}
+\newcommand{\mci}{\mathcalb{i}}
+\newcommand{\mcj}{\mathcalb{j}}
+\newcommand{\mck}{\mathcalb{k}}
+\newcommand{\mcm}{\mathcalb{l}}
+\newcommand{\mcn}{\mathcalb{m}}
+\newcommand{\mco}{\mathcalb{n}}
+\newcommand{\mcp}{\mathcalb{o}}
+\newcommand{\mcq}{\mathcalb{q}}
+\newcommand{\mcr}{\mathcalb{r}}
+\newcommand{\mcs}{\mathcalb{s}}
+\newcommand{\mct}{\mathcalb{t}}
+\newcommand{\mcu}{\mathcalb{u}}
+\newcommand{\mcv}{\mathcalb{v}}
+\newcommand{\mcw}{\mathcalb{w}}
+\newcommand{\mcx}{\mathcalb{x}}
+\newcommand{\mcy}{\mathcalb{y}}
+\newcommand{\mcz}{\mathcalb{z}}
+    
+%% --------------------------------------------------
+%% Variablennamen kursiv groß
+\newcommand{\mcA}{\mathcal A}
+\newcommand{\mcB}{\mathcal B}
+\newcommand{\mcC}{\mathcal C}
+\newcommand{\mcD}{\mathcal D}
+\newcommand{\mcE}{\mathcal E}
+\newcommand{\mcF}{\mathcal F}
+\newcommand{\mcG}{\mathcal G}
+\newcommand{\mcH}{\mathcal H}
+\newcommand{\mcI}{\mathcal I}
+\newcommand{\mcJ}{\mathcal J}
+\newcommand{\mcK}{\mathcal K}
+\newcommand{\mcL}{\mathcal L}
+\newcommand{\mcM}{\mathcal M}
+\newcommand{\mcN}{\mathcal N}
+\newcommand{\mcO}{\mathcal O}
+\newcommand{\mcP}{\mathcal P}
+\newcommand{\mcQ}{\mathcal Q}
+\newcommand{\mcR}{\mathcal R}
+\newcommand{\mcS}{\mathcal S}
+\newcommand{\mcT}{\mathcal T}
+\newcommand{\mcU}{\mathcal U}
+\newcommand{\mcV}{\mathcal V}
+\newcommand{\mcW}{\mathcal W}
+\newcommand{\mcX}{\mathcal X}
+\newcommand{\mcY}{\mathcal Y}
+\newcommand{\mcZ}{\mathcal Z}
+    
+%% --------------------------------------------------
+%% Variablennamen kursiv overline groß
+\newcommand{\omcA}{\overline{\mathcal A}}
+\newcommand{\omcB}{\overline{\mathcal B}}
+\newcommand{\omcC}{\overline{\mathcal C}}
+\newcommand{\omcD}{\overline{\mathcal D}}
+\newcommand{\omcE}{\overline{\mathcal E}}
+\newcommand{\omcF}{\overline{\mathcal F}}
+\newcommand{\omcG}{\overline{\mathcal G}}
+\newcommand{\omcH}{\overline{\mathcal H}}
+\newcommand{\omcI}{\overline{\mathcal I}}
+\newcommand{\omcJ}{\overline{\mathcal J}}
+\newcommand{\omcK}{\overline{\mathcal K}}
+\newcommand{\omcL}{\overline{\mathcal L}}
+\newcommand{\omcM}{\overline{\mathcal M}}
+\newcommand{\omcN}{\overline{\mathcal N}}
+\newcommand{\omcO}{\overline{\mathcal O}}
+\newcommand{\omcP}{\overline{\mathcal P}}
+\newcommand{\omcQ}{\overline{\mathcal Q}}
+\newcommand{\omcR}{\overline{\mathcal R}}
+\newcommand{\omcS}{\overline{\mathcal S}}
+\newcommand{\omcT}{\overline{\mathcal T}}
+\newcommand{\omcU}{\overline{\mathcal U}}
+\newcommand{\omcV}{\overline{\mathcal V}}
+\newcommand{\omcW}{\overline{\mathcal W}}
+\newcommand{\omcX}{\overline{\mathcal X}}
+\newcommand{\omcY}{\overline{\mathcal Y}}
+\newcommand{\omcZ}{\overline{\mathcal Z}}
+    
+
+%% --------------------------------------------------
+%% Variablennamen mbb groß
+\newcommand{\mbbA}{\mathbb A}
+\newcommand{\mbbB}{\mathbb B}
+\newcommand{\mbbC}{\mathbb C}
+\newcommand{\mbbD}{\mathbb D}
+\newcommand{\mbbE}{\mathbb E}
+\newcommand{\mbbF}{\mathbb F}
+\newcommand{\mbbG}{\mathbb G}
+\newcommand{\mbbH}{\mathbb H}
+\newcommand{\mbbI}{\mathbb I}
+\newcommand{\mbbJ}{\mathbb J}
+\newcommand{\mbbK}{\mathbb K}
+\newcommand{\mbbL}{\mathbb L}
+\newcommand{\mbbM}{\mathbb M}
+\newcommand{\mbbN}{\mathbb N}
+\newcommand{\mbbO}{\mathbb O}
+\newcommand{\mbbP}{\mathbb P}
+\newcommand{\mbbQ}{\mathbb Q}
+\newcommand{\mbbR}{\mathbb R}
+\newcommand{\mbbS}{\mathbb S}
+\newcommand{\mbbT}{\mathbb T}
+\newcommand{\mbbU}{\mathbb U}
+\newcommand{\mbbV}{\mathbb V}
+\newcommand{\mbbW}{\mathbb W}
+\newcommand{\mbbX}{\mathbb X}
+\newcommand{\mbbY}{\mathbb Y}
+\newcommand{\mbbZ}{\mathbb Z}
+
+%% --------------------------------------------------
+%% Variablennamen mbb overline groß
+\newcommand{\ombbA}{\overline{\mathbb A}}
+\newcommand{\ombbB}{\overline{\mathbb B}}
+\newcommand{\ombbC}{\overline{\mathbb C}}
+\newcommand{\ombbD}{\overline{\mathbb D}}
+\newcommand{\ombbE}{\overline{\mathbb E}}
+\newcommand{\ombbF}{\overline{\mathbb F}}
+\newcommand{\ombbG}{\overline{\mathbb G}}
+\newcommand{\ombbH}{\overline{\mathbb H}}
+\newcommand{\ombbI}{\overline{\mathbb I}}
+\newcommand{\ombbJ}{\overline{\mathbb J}}
+\newcommand{\ombbK}{\overline{\mathbb K}}
+\newcommand{\ombbL}{\overline{\mathbb L}}
+\newcommand{\ombbM}{\overline{\mathbb M}}
+\newcommand{\ombbN}{\overline{\mathbb N}}
+\newcommand{\ombbO}{\overline{\mathbb O}}
+\newcommand{\ombbP}{\overline{\mathbb P}}
+\newcommand{\ombbQ}{\overline{\mathbb Q}}
+\newcommand{\ombbR}{\overline{\mathbb R}}
+\newcommand{\ombbS}{\overline{\mathbb S}}
+\newcommand{\ombbT}{\overline{\mathbb T}}
+\newcommand{\ombbU}{\overline{\mathbb U}}
+\newcommand{\ombbV}{\overline{\mathbb V}}
+\newcommand{\ombbW}{\overline{\mathbb W}}
+\newcommand{\ombbX}{\overline{\mathbb X}}
+\newcommand{\ombbY}{\overline{\mathbb Y}}
+\newcommand{\ombbZ}{\overline{\mathbb Z}}
+
+
+%% --------------------------------------------------
+%% Mathbb Zeichen
+\newcommand{\mbbEins}{\mathbb 1}	
+

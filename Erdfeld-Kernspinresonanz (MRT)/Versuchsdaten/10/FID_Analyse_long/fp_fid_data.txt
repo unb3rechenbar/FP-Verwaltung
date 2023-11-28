@@ -1,6 +1,6 @@
-"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/BasicDualPlot.gp" line 17: warning: Cannot find or open file "data_comma.txt"
+"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/BasicDualPlot.gp" line 20: warning: Cannot find or open file "data_comma.txt"
 
 fit f(x) data using 1:2 via a, b, d
          ^
-"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/BasicDualPlot.gp" line 17: Can't read data from
+"/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Konstanz/Studium/5. Semester (WiSe 2023)/(P) Fortgeschrittenenpraktikum/Erdfeld-Kernspinresonanz (MRT)/Code/BasicDualPlot.gp" line 20: Can't read data from
 
