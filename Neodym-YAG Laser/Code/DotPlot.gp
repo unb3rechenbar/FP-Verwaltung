@@ -10,5 +10,7 @@ set title font "Helvetica,25"
 
 set lmargin 20
 set rmargin 10
+set bmargin 5
+set tmargin 5
 
 plot filename every ::1 using 1:2 title legname

@@ -13,4 +13,5 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-plot filename every ::1 using 1:3 w lines title legname
+plot filename1 every ::1 using xline:yline:yerror with yerrorbars title legname1, \
+    filename2 every ::1 using xline:yline:xerror:yerror w yerrorbars title legname2

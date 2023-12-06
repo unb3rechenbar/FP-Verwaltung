@@ -26,6 +26,7 @@ for d in */; do
                 yline=3; \
                 xerror=2; \
                 yerror=4; \
+                set key right bottom; \
             " "$CODENDYAG/ErrorPlot.gp"
 
         echo "--> Converting svg to png and moving .."

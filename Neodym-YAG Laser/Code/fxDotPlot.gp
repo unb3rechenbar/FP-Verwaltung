@@ -13,4 +13,9 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-plot filename every ::1 using 1:3 w lines title legname
+a=5.000000e-06
+b=-2.930000e-03
+
+f(x)=a*x+b
+
+plot filename every ::2 using (f($1)):2 title legname

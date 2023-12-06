@@ -10,7 +10,14 @@ set title font "Helvetica,25"
 
 set lmargin 20
 set rmargin 10
-set bmargin 5
-set tmargin 5
 
-plot filename every ::1 using 1:3 w lines title legname
+a = 1
+t = 1
+c = 1
+
+f(x) = a * exp(-1/t * x) + c
+
+fit f(x) filename using 1:2 via a, t, c
+
+plot filename using 1:2 title legname, \
+     f(x) with lines lc rgb "red" lw 3 title "exp. fit"

@@ -10,6 +10,8 @@ set title font "Helvetica,25"
 
 set lmargin 20
 set rmargin 10
+set bmargin 5
+set tmargin 5
 
 a = 1
 b = -2000
