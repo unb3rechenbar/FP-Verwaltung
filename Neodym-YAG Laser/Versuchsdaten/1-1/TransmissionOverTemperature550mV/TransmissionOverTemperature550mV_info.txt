@@ -1,0 +1,68 @@
+
+ >-------Minima-------<
+x  f(x)
+21 28
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           18
+  Out of range:       0
+  Invalid:            0
+  Header records:     0
+  Blank:              0
+  Data Blocks:        1
+
+* COLUMN: 
+  Mean:              32.0000
+  Std Dev:           10.3763
+  Sample StdDev:     10.6771
+  Skewness:           0.0000
+  Kurtosis:           1.7926
+  Avg Dev:            9.0000
+  Sum:              576.0000
+  Sum Sq.:        20370.0000
+
+  Mean Err.:          2.4457
+  Std Dev Err.:       1.7294
+  Skewness Err.:      0.5774
+  Kurtosis Err.:      1.1547
+
+  Minimum:           15.0000 [ 0]
+  Maximum:           49.0000 [17]
+  Quartile:          23.0000 
+  Median:            32.0000 
+  Quartile:          41.0000 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           18
+  Out of range:       0
+  Invalid:            0
+  Header records:     0
+  Blank:              0
+  Data Blocks:        1
+
+* COLUMN: 
+  Mean:              78.1111
+  Std Dev:           32.5779
+  Sample StdDev:     33.5224
+  Skewness:          -0.1703
+  Kurtosis:           1.6766
+  Avg Dev:           28.4321
+  Sum:             1406.0000
+  Sum Sq.:       128928.0000
+
+  Mean Err.:          7.6787
+  Std Dev Err.:       5.4297
+  Skewness Err.:      0.5774
+  Kurtosis Err.:      1.1547
+
+  Minimum:           28.0000 [ 3]
+  Maximum:          124.0000 [15]
+  Quartile:          41.0000 
+  Median:            85.0000 
+  Quartile:         106.0000 
+
