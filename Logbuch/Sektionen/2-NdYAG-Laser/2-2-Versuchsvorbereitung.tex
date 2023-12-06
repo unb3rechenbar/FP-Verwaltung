@@ -102,9 +102,9 @@
         \end{itemize}
         Der Quotient $E_{3,2}/E_{4,1}$ heißt \emph{quantum efficiency}.
         Als Funktion sieht das ganze dann so aus:
-        \begin{figure}
+        \begin{figure}[H]
             \centering
-            \includegraphics[options]{Bilddateien/Pumpleistung.png}
+            \includegraphics[[width=0.7\textwidth]]{Bilddateien/Pumpleistung.png}
             \caption{Outputleistung als Funktion der Inputleistung.}
             \label{fig:Pumpleistung}
         \end{figure}
@@ -210,6 +210,22 @@
         Wie ist das zeitliche Verhalten eines Lasers (Spiking)?
     \end{Frage}
     \begin{Antwort}
+        Bei starken Störungen des Gleichgewichtszustands der Besetzungsinversion $n$ und der Photonendichte treten anharmonische Schwingungen auf. Diese können erwünscht oder unerwünscht sein:\\
+
+        \textbf{Spiking}. Wird der Laser eingeschaltet, wird erstmal keine Photonendichte $p$ vorhanden sein. Erst, wenn die Laserleistung $P_a$ einen Schwellwert $P_{th}$ überschreitet, kann prinzipiell $p>0$ sein. Da sich die Photonen im Resonator aber mit einer endlichen Geschwindigkeit bewegen, kommt es zunächst einer Überpopulation der Besetzungsinversion. Dadurch können aber anschließend mehr Photonen pro Zeiteinheit erzeugt werden (induzierte Emission), was zu einer Unterbevölkerung führt - dieser Prozess wiederholt sich, bis sich $n$ und $p$ eingeschwungen haben.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.6\textwidth]{Bilddateien/Spiking.jpg}
+            \caption{Output-Leistung eines gepulsten Laser: unten ist der ieale Verlauf, oben ein realer mit Spikes am Anfang jedes Pulses.}
+        \end{figure}
+
+        Der erste \textit{Spike} einer solchen Schwingen kann die 100- bis 1000-fache Leistung des Equilibriums hervorrufen und zu Schäden am Material führen!\\
+
+        \noindent\textbf{Q-Switching}. Z.B. durch absorbierende Kristalle im Resonator können Photonverluste dort künstlich hochgehalten werden. Dadurch kann die Besetzungsinversion $n_i$ größer werden als normal möglich ($n_{th}$), da $p\approx 0$ gerade wegen der Absorbtion und dadurch keine induzierte Emission stattfinden kann. Wird der Kristall nun entfern, kommt es zu einer Kettenreaktion der Photonentladung und zu einem kontrollierten Spike mit Peak 
+        \[
+            p_{max} = n_{th}\cdot\ln(n_{th} / n_i) - (n_{th} - n_i).    
+        \]
         
     \end{Antwort}
 
@@ -222,7 +238,45 @@
         \end{itemize}
     \end{Frage}
     \begin{Antwort}
+        \textbf{Anmerkung}: In der linearen Optik werden u.a. zwei Annahmen gemacht: für Licht gilt das Superpositionsprinzip und die Frequenz von Licht liegt keinen Änderungen zugrunde. 
+
+        \begin{itemize}[label=$\to$]
+            \item Prozesse werden grob in zwei Kategorien unterteilt:
+            \begin{itemize}
+                \item[(A)] Resonante Phenomäne: das Licht bewirkt Übergänge in Materie.
+                \item[(B)] Nicht-resonante Phenomäne: das Licht ist zu niederenergetisch, um relevante Übergänge zu bewirken.
+            \end{itemize}
+            In beiden Fällen gibt es trotzdem eine Wechselwirkung von Licht und Materie. Der Photonenhagel auf ein Medium regt Dipolschwingungen der Elektronen. Der Polarisationsvektor ist bei großen $E$-Feldern aber komplex abhängig von deren Auslenkung. Einer erste nichtharmonische Näherung wäre:
+            \[
+                P = \chi_L\cdot E + \chi_{NL} \cdot E^2\qquad \chi_L,\chi_{NL}\in\R.    
+            \]
+
+            \item Quadratische Effekte wie oben für $P$ können zu einer Frequenzverdopplung führen. Dort wird also auch Licht der doppelten Frequenz gestreut. \textit{Allerdings muss $P$ auch anharmonisch sein, also richtungsunabhängig}. Ansonsten lässt sich mittels Zerlegung des erzeugten Lichts in eine Fourierreihe zeigen, dass keine geraden Koeffizienten auftreten können (also keine Frequenzverdopplung, -vervierfachung, ...). Ebenso sollte das Medium eine hohe Suszeptibilität haben. Beides kann man mit Kristallen bestimmter, richtungsunabhängiger Gitterstruktur realisieren.\\
+            
+            Der Effizienzgrad von Frequenzverdopplung ist gegeben durch 
+            \[
+                \nu_{SHG} = \frac{P_{2f}}{P_f} \propto P_f\cdot  F(\delta k).    
+            \]
+            Dabei sind $P_{2f}$, $P_f$ die Leistungen der Wellen mit Frequenz $2f$, $f$; $F$ ist eine Funktion die für das Argument $\delta k=0$ maximal Eins wird; und $\delta k = k_{2f} - k_f$ ist die Differenz der Wellenvektorbeträge der Wellen mit Frequenzt $2f$, $f$. 
         
+            \item Maximale Effizienz wird also erreicht durch $k_{2f} - k_f$. Quantenmechanisch haben wir zwei Photonen mit Vektor $k_f$, die absorbiert werden und so ein Photon mit Vektor $k_{2f}$ erzeugt wird. Die Impulserhaltung verlangt also idealerweise $2\cdot k_f = k_{2f}$. Zusammen mit der Dispersionrelation
+            \[
+                k_{f'} = \frac{2\pi}{n(f')\cdot\lambda_0}    
+            \]
+            mit $\lambda_0$ als Wellenlänge \textit{im Vakuum}, führt dies auf $n(2f) = n(f)$ (???). Genau dann schwingen beide Wellen in Phase. Um dies zu erfüllen, braucht man nichtisotrope Medien. Man zielt dort auf
+            \[
+                n_o(f) = n_{ao}(\theta)(2f)    
+            \]
+            ab, wobei $n_o$ der ordentliche Brechungsindex ist und $n_{ao}(\theta)$ der außerordentliche ist für einen Winkel $\theta$  zur optischen Achse. Folgende Abbilung illustriert dies:
+            
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.6\textwidth]{Bilddateien/Phasenanpassung (Doppelbrechender Kristall).jpg}
+                \caption{Die gewünschte Phasenanpassung geschieht genau für den Strahl mit dem Winkel $\theta$, wo sich $n_o$ und $n_{ao}$ kreuzen. \textit{Die Wellen mit Frequenz $f$ muss hier die ordentliche Welle sein!}}
+            \end{figure}
+
+            Bei erfolgreicher Phasenanpassung gilt $P_{2f}\propto P_f^2$!
+        \end{itemize}
     \end{Antwort}
 
     \begin{Frage}
