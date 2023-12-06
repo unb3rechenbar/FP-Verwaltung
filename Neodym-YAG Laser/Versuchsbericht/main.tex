@@ -1,0 +1,98 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\usepackage{UniLaTeXPackage}
+\usepackage{svg}
+\usepackage[version=4]{mhchem}
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{Neodym-YAG Laser}
+    \subtitle{Fortgeschrittenen-Praktikum in Physik (Universität Konstanz)}
+    \author{Autoren: Tom Folgmann, David Jannack \\ \large{Tutor: Peter Fischer}}
+    \date{Experiment durchgeführt am 6.12.2023}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    
+    % Abstract
+    \section*{Abstract}
+        \subfile{Sektionen/0-Abstract.tex}
+
+    % Kennzeichnung Arbeitsaufteilung
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{ll}
+            Sektion & Beiträge \\\hline\hline
+            Abstrakt/ Einleitung & \\
+            Grundlagen & \\
+            Versuchsdurchführung & \\
+            Analyse und Diskussion & \\
+            Fazit &
+        \end{tabular}
+        \caption{Aufteilung der Versuchsteile}
+        \label{tab:Aufteilung}
+    \end{table}
+
+    \newpage
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{Einleitung}
+    \subfile{Sektionen/1-Einleitung.tex}
+
+\newpage
+\section{Grundlagen}
+    \subfile{Sektionen/2-Grundlagenteil.tex}
+
+\newpage
+\section{Versuchsdurchführung}
+    \subfile{Sektionen/3-Versuchsdurchfuehrung.tex}
+
+\newpage
+\section{Auswertung}
+    \subfile{Sektionen/4-Auswertung.tex}
+
+\newpage
+\section{Fazit}
+    \subfile{Sektionen/5-Fazit.tex}
+    
+% -----------------------------------------------------------
+% Abspann und Credits
+
+\newpage
+    \bibliography{Literatur.bib}
+\newpage
+    \listoffigures
+    \listoftables
+
+
+\newpage
+    \section*{Messdaten}
+    \subfile{Sektionen/7-Messdaten.tex}
+\newpage
+    \subfile{Sektionen/8-Auswertungscode.tex}
+
+
+%\includepdf[pages=1-1,scale=0.9,frame=true]{Protokolle/PATH.pdf}
+\end{document}
