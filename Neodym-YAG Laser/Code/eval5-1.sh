@@ -1,4 +1,4 @@
-
+mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/5-1"
 
 gnuplot -e "filename='P(NDYAG)overP(Pump).csv'; \
             legname='datapoints'; \

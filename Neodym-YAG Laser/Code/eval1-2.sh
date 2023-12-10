@@ -1,3 +1,4 @@
+mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/1-2"
 rm *_info
 
 # >------- Evaluate T set and I spectrum for minima -------<
@@ -26,7 +27,7 @@ rm *_info
 
             echo "--> Converting svg to png and moving .."
             
-            inkscape -w 4000 -h 2400 "${dataset%.csv}.svg" -o "$FPNDYAG/Vorschriebe/Bilddateien/1-2/Rasterung_${f%/}.png"
+            inkscape -w 4000 -h 2400 "${dataset%.csv}.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/1-2/Rasterung_${f%/}.png"
         )
     done
 )
@@ -53,7 +54,7 @@ echo "> Done with Rasterung_EvalMin for fixed T and variable I\n"
         " "$CODENDYAG/ErrorPlotlin.gp" 2> "Rasterung_EvalMin_chgI_plotinfo.txt"
 
     echo "--> Converting svg to png and moving .."
-    inkscape -w 4000 -h 2400 "Rasterung_EvalMin_chgI.svg" -o "$FPNDYAG/Vorschriebe/Bilddateien/1-2/Rasterung_EvalMin_chgI.png"
+    inkscape -w 4000 -h 2400 "Rasterung_EvalMin_chgI.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/1-2/Rasterung_EvalMin_chgI.png"
 )
 echo "> Done with Rasterung_EvalMin for fixed I and variable T\n"
 
@@ -76,7 +77,7 @@ gnuplot -e "filename='InjectioncurrentOverTemperature.csv'; \
         " "$CODENDYAG/ErrorPlotlin.gp" 2> "InjectioncurrentOverTemperature_plotinfo.txt"
 
 echo "--> Converting svg to png and moving .."
-inkscape -w 4000 -h 2400 "InjectioncurrentOverTemperature.svg" -o "$FPNDYAG/Vorschriebe/Bilddateien/1-2/InjectioncurrentOverTemperature.png"
+inkscape -w 4000 -h 2400 "InjectioncurrentOverTemperature.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/1-2/InjectioncurrentOverTemperature.png"
 
 # >------- Statistics -------<
 echo "--> Calculating stats for InjectioncurrentOverTemperature.csv.."
