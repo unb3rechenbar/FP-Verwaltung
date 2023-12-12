@@ -1,3 +1,4 @@
+mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/4"
 rm *-comp.csv *.txt
 
 for f in */; do
@@ -20,7 +21,7 @@ for f in */; do
             " "$CODENDYAG/ErrorPlot.gp"
 
         echo "-> Converting svg to png and moving .."
-        inkscape -w 4000 -h 2400 "${data%.csv}.svg" -o "$FPNDYAG/Vorschriebe/Bilddateien/1-1/${f%/}.png"
+        inkscape -w 4000 -h 2400 "${data%.csv}.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/4/${f%/}.png"
 
         echo "-> Calculating stats for $data.."
 

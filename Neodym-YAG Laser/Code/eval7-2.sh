@@ -1,4 +1,4 @@
-mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/5-1"
+mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/7-2"
 
 gnuplot -e "filename='P(NDYAG)overP(Pump).csv'; \
             legname='datapoints'; \
@@ -11,6 +11,4 @@ gnuplot -e "filename='P(NDYAG)overP(Pump).csv'; \
             xerror=2; \
             yerror=4; \
             set key right bottom; \
-            f(x) = a*x + b; \
-            vars='a, b'; \
-        " "$CODENDYAG/ErrorPlotlin.gp" 2> "P(NDYAG)overP(Pump)_plotinfo.txt"
+        " "$CODENDYAG/ErrorPlotquad.gp" 2> "P(NDYAG)overP(Pump)_plotinfo.txt"

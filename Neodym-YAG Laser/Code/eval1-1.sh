@@ -1,3 +1,5 @@
+mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/1-1"
+
 
 for d in */; do
     if [[ "$d" =~ "skip" ]]; then
@@ -30,7 +32,7 @@ for d in */; do
             " "$CODENDYAG/ErrorPlot.gp"
 
         echo "--> Converting svg to png and moving .."
-        inkscape -w 4000 -h 2400 "${data%.csv}.svg" -o "$FPNDYAG/Vorschriebe/Bilddateien/1-1/${d%/}.png"
+        inkscape -w 4000 -h 2400 "${data%.csv}.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/1-1/${d%/}.png"
 
         echo "--> Calculating stats for $data.."
 
