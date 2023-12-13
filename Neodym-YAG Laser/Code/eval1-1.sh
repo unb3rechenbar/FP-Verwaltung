@@ -17,7 +17,7 @@ for d in */; do
         echo "--> Plotting $data.."
 
         gnuplot -e "filename='$data'; \
-                legname='datapoints'; \
+                legname='Datenpunkte'; \
                 set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                 set xlabel 'Temperatur [deg C]'; \
                 set ylabel 'Ausgabeleistung [mW]'; \
@@ -49,7 +49,7 @@ for d in */; do
 
         echo "--> Polyfitting $data with degree 7.."
         gnuplot -e "filename='$data'; \
-                    legname='datapoints'; \
+                    legname='Datenpunkte'; \
                     set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                     set xlabel 'Temperatur [deg C]'; \
                     set ylabel 'Ausgabeleistung [mW]'; \
@@ -60,6 +60,7 @@ for d in */; do
                     yline=3; \
                     xerror=2; \
                     yerror=4; \
+                    set key right bottom; \
                 " "$CODENDYAG/PolyPlot.gp" 2> "${data%.*}_plotinfo.txt"
     )
 

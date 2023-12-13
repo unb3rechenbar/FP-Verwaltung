@@ -36,8 +36,8 @@ for f in */; do
         echo "-> Comparing to equivalent data from 1-1.."
         gnuplot -e "filename1='$data'; \
                     filename2='${data%.*}-comp.csv'; \
-                    legname1='datapoints 4'; \
-                    legname2='datapoints 1-1'; \
+                    legname1='Datenpunkt'; \
+                    legname2='Vergleichswerte 1-1'; \
                     set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                     set xlabel 'Temperatur [deg C]'; \
                     set ylabel 'Ausgabeleistung [mW]'; \
@@ -48,8 +48,12 @@ for f in */; do
                     yline=3; \
                     xerror=2; \
                     yerror=4; \
+                    set key right bottom; \
                 " "$CODENDYAG/BasicDualPlot.gp"
 
-            rm *-comp.csv
+        echo "-> Converting svg to png and moving .."
+        inkscape -w 4000 -h 2400 "${data%.csv}_comp.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/4/${f%/}_comp.png"
+
+        rm *-comp.csv
     )
 done
