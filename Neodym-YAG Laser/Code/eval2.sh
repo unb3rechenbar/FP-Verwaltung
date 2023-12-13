@@ -27,6 +27,8 @@ gnuplot -e "filename='$data'; \
             outputname='${data%.csv}_t.svg'; \
             xline=1; \
             yline=2; \
+            a=5.000000e-06
+            b=-2.930000e-03
         " "$CODENDYAG/fxDotPlot.gp"
 inkscape -w 4000 -h 2400 "${data%.csv}_t.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/2/${data%.csv}_t.png"
 

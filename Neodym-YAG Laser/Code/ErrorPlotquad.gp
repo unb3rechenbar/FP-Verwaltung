@@ -20,7 +20,7 @@ a=1
 b=1
 c=1
 
-f(x) = a*x**2 + b*x + c
+f(x) = a * (x - b)**2 + c
 
 fit f(x) filename using xline:yline via a,b,c
 

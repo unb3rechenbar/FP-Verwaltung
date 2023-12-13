@@ -15,4 +15,4 @@ set tmargin 5
 
 f(x)=a*x+b
 
-plot filename every ::2 using (f($1)):2 title legname
+plot filename every ::2 using (f($1)):2 w lines title legname

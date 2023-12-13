@@ -14,7 +14,10 @@ set bmargin 5
 set tmargin 5
 
 set ytics nomirror
-set y2tics nomirror
+set y2tics
+set tics out
+set autoscale  y
+set autoscale y2
 
 plot filename1 every ::1 using xline:yline:yerror with yerrorbars title legname1 axis x1y1, \
     filename2 every ::1 using xline:yline:yerror w yerrorbars title legname2 axis x1y2
