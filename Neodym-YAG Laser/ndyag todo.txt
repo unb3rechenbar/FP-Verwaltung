@@ -1,0 +1,38 @@
+1.1
+	Pumpleistung eigentlich Pumpstrom!
+	Tr(P) -> P_T
+	x0 zu T0 unbennen
+	400 mA + 500mA Plot in eins packen
+
+2
+	x-Skalierung anpassen bis zum vollständigen Abfall
+	Fit direkt in originalen Datenplot packen, andere Farbe für Punkte/ Fit (mehr Kontrast!)
+
+5
+	Unterschied Wirkungsgrad und Quantenausbeute anschauen
+	andere Form linearer Fit: f(P) = a*(P - Pth)
+
+6
+	andere Form parabolischer Fit: f(P') = a * (P' - Pth')^2 + C	
+
+
+ALLGEMEIN
+	Fehlernotation ändern zu +/-?
+	Einheiten in (...) anstannt [...]
+	deg durch Symbol ersetzen?
+	Markerwidth/ Markergröße erhöhen
+	Fehlergrenzen mit horizontalen Balken oben/ unten?
+	Grafik in einheitlicher Sprache
+	Einheiten so wählen, dass Anzahl der Nullen minimal ist
+	Leerzeichen zwischen Zahl und Einheit
+	Einheitspotenzen umwandeln in Einheit mit Präfix
+	nur Fitparameter-Wert angeben, der für Auswertung relevant ist 
+
+
+INFOS
+	Standarduns. bei Fits -> 95% Konfidenzintervall
+	Qualitätsüberprüfung von Fit -> R-Quadratwert 
+		
+
+VORSCHLÄGE
+	Fitparameter-Wert direkt in Plot integrieren?
