@@ -9,8 +9,7 @@ sed 's/ /,/g' "${data%.*}"_tmp > "${data%.*}_t.csv"
 
 # plot raw data
 gnuplot -e "filename='$data'; \
-            legname='datapoints'; \
-            set title 'Abtastung der Anregung'; \
+            legname='Datenpunkte'; \
             set xlabel 'Zeititeration'; \
             set ylabel 'Anregung [V]'; \
             outputname='${data%.csv}_it.svg'; \
@@ -18,24 +17,9 @@ gnuplot -e "filename='$data'; \
             yline=2; \
         " "$CODENDYAG/DotPlot.gp"
 
-# plot time data
-gnuplot -e "filename='$data'; \
-            legname='datapoints'; \
-            set title 'Abtastung der Anregung'; \
-            set xlabel 'Zeit [s]'; \
-            set ylabel 'Anregung [V]'; \
-            outputname='${data%.csv}_t.svg'; \
-            xline=1; \
-            yline=2; \
-            a=5.000000e-06
-            b=-2.930000e-03
-        " "$CODENDYAG/fxDotPlot.gp"
-inkscape -w 4000 -h 2400 "${data%.csv}_t.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/2/${data%.csv}_t.png"
-
 # plot exp curve fit
 gnuplot -e "filename='${data%.*}_t.csv'; \
-            legname='datapoints'; \
-            set title 'Abtastung der Anregung'; \
+            legname='Datenpunkte'; \
             set xlabel 'Zeit [s]'; \
             set ylabel 'Anregung [V]'; \
             outputname='${data%.csv}_t_exp.svg'; \
@@ -44,6 +28,30 @@ gnuplot -e "filename='${data%.*}_t.csv'; \
         " "$CODENDYAG/expPlot.gp" 2> "${data%.*}_t_plotinfo.txt"
 
 inkscape -w 4000 -h 2400 "${data%.csv}_t_exp.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/2/${data%.csv}_t_expfit.png"
+
+# get fit parameters
+a=$(grep -n "a               = " "${data%.*}_t_plotinfo.txt" | sed 's/.*= \([0-9.]*\).*/\1/')
+t=$(grep -n "t               = " "${data%.*}_t_plotinfo.txt" | sed 's/.*= \([0-9.]*\).*/\1/')
+c=$(grep -n "c               = " "${data%.*}_t_plotinfo.txt" | sed 's/.*= \([0-9.]*\).*/\1/')
+
+
+echo "-> f(x) = $a * exp(-x/$t) + $c"
+
+# plot time data in combination with exp curve fit
+gnuplot -e "filename='$data'; \
+            legname='Datenpunkte'; \
+            set xlabel 'Zeit [s]'; \
+            set ylabel 'Anregung [V]'; \
+            outputname='${data%.csv}_t.svg'; \
+            xline=1; \
+            yline=2; \
+            a=$a; \
+            t=$t; \
+            c=$c; \
+        " "$CODENDYAG/custom2.gp"
+inkscape -w 4000 -h 2400 "${data%.csv}_t.svg" -o "$FPNDYAG/Versuchsbericht/Bilddateien/2/${data%.csv}_t.png"
+
+
 
 
 # delete tmp files
