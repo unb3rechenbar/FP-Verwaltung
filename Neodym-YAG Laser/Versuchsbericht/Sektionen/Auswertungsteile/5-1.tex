@@ -27,14 +27,16 @@
 
     Es ist also gerade
     \[
-        P_{th} = f^{-1}_{a, b}(0) = -\frac{b}{a} = 
+        P_{th} = f^{-1}_{a, b}(0) = -\frac{b}{a} = \SI{0.00753(52)}{\m\W}
     \]
-    die Laserschwelle, ab welcher Photonenoszillationen im Laser stattfinden.
-
-    Die theoretische Formel ist gegeben durch 
+    die Laserschwelle, ab welcher Photonenoszillationen im Laser stattfinden. Der theoretische Zusammenhang ist gegeben durch 
     \[
-        P_a = \eta    
+        P_a = \eta\cdot\frac{E_{32}}{E_{41}}\cdot(P_p - P_{th})\cdot \frac{T}{T + L}.
     \]
+    Dabei ist $E_{32} = $ das Energieverhältnis der Laserzustände, $E_{41}=$ das Verhältnis der Pumpzustände, $T$ die Transmissivität des Resonatorspiegels und $L$ die sonstige Photonen-Verlustrate. Im verlustfreien Fall gilt $L=0$, also 
+    \[
+        P_a = \eta\cdot\frac{E_{32}}{E_{41}}\cdot(P_p - P_{th}) \implies eta = \frac{E_{41}}{E_{32}}\cdot \frac{P_a}{P_p - P_{th}}.
+    \] 
 
 
 \end{document}
