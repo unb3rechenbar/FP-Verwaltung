@@ -1,5 +1,6 @@
 mkdir -p "$FPNDYAG/Versuchsbericht/Bilddateien/5-1"
 
+echo "Plotting P(NDYAG)overP(Pump)..."
 gnuplot -e "filename='P(NDYAG)overP(Pump).csv'; \
             legname='datapoints'; \
             set title 'P_ND:YAG in Abhängigkeit von P_Pump'; \
