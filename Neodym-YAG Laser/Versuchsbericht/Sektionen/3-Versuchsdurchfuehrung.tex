@@ -84,22 +84,39 @@
         Anschließend wird der Laser testeshalber in Betrieb genommen und die Resonatspiegel in (D), (E) mittels der Schrauben in den Modulen so ausgerichtet, dass die Laserleistung maximal wird. Weiterhin wird die Gelegenheit genutzt, die Transmissionsdiagramme aus Sektion \ref{sec:Transmissionspektren} zu bestätigen. Hierfür wird wieder bei $I_P = \SI{400}{\n\m}, \SI{550}{\n\m}$ die Laserleistung in Abhängigkeit von der Temperatur gemessen. Die Intervalle der gewählten Temperaturen sind gleich denen in \ref{sec:Transmissionspektren}. Da eine niedrige Transmissionrate des YAG-Kristalls eine hohe Pumpeffizienz des Lasers bedeutet, also eine große Laserleistung, sollten sich die hier aufgenommenen Diagramme genau invers zu denen aus \ref{sec:Transmissionspektren} verhalten.
 
     \subsection{Laserleistung als Funktion der Pumpleistung}
-        
+        Nun wird untersucht, wie sich die Laserleistung $P_a$ in Abhängigkeit von der Pumpleistung $P_p$ vehält. Bis zu einer gewissen Schwellleistung $P_{th}$ der Laserdiode wird dem Nd:YAG-Medium nicht genügend Energie zugeführt hat, dass sich eine stabile Besetzungsinversion bzw. eine stetige Photonenproduktion im Laser ausbilden kann. Für die Laserleistung ist zu erwarte $P_a(P_p\le P_{th}) = 0$. Ab dem Schwellwert $P_{th}$ ergibt sich \textit{im Gleichgewicht} ein linearer Zusammenhang
+        \begin{align*}
+            P_a(P_p) = \mu\cdot \frac{E_{32}}{E_{41}}\cdot (P_p - P_{th})\cdot\frac{T}{T + L}\qquad P_p\ge P_{th}.    
+            \label{eq:Grundlagen:Pumpleistung}
+        \end{align*}
 
-    \subsection{Laserausgangsleistung und Laserschwelle}
+        Der Versuchsaufbau zur Überprüfung des Zusammenhangs ist wieder \ref{fig:Aufbau:Teil4}. Es wird die Diodentemperatur im Bereich von $\SI{15}{\celsius}$ zu $\SI{50}{\celsius}$ variiert. Mit einem mobilen Leistungsmesser kann dann je die Pumpleistung direkt am Modul (C) und die Laserleistung direkt am Modul (F) gemessen werden.
 
     \subsection{Spiking beim Laser-Einschaltvorgang}
+        Gleichung \ref{eq:Grundlagen:Pumpleistung} gilt nur für den Gleichgewichtszustand, d.h. für zeitlich konstantes $P_p$. Schon beim Einschalten der Laserdiode ist diese Bedingung jedoch nicht erfüllt. Für diese Einschaltphase wird deshalb ebenfalls die Laserleistung $P_a(t)$ und Pumpleistung $P_p(t)$ in Abhängigkeit von der Zeit $t$ am Oszilloskzop gemessen. 
 
     \subsection{Phänomene bei Frequenzverdopplung}
+        Zuletzt wird noch demonstriert, wie die hohe zeitliche Kohärenz von Laserlicht genutzt werden kann, um nichtlineare optische Effekte zu untersuchen. Dafür wird inmitten des Resonators ein frequenzverdoppelnder Kristall (K) platziert\footnote{Es handelt sich um einen Kaliumtitanylphosphat-Kristall. Damit ein Kristall frequenzverdoppelnd sein kann, muss mindestens eine asymmetrische Kristallstruktur vorliegen,  damit das Potential der erregbaren Elektronen der Atomen ebenfalls nicht symmetrisch ist. Sonst können nur ungerade Vielfache der anregenden Frequenz erzeugt werden. Außerdem ist eine hohe elektrische Suszeptibilität förderlich.}. Schema \ref{fig:Aufbau:Teil7} zeigt den exakten Versuchaufbaus. Wichtig ist, dass der Filter (F) darauf eingestellt ist, nur das frequenzverdoppelte Laserlicht mit der Wellenlänge $\SI{532}{\n\m}$ durchzulassen. 
+
         \begin{figure}[H]
             \centering
             \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Teil7.jpg}
             \caption{Aufbau zur Untersuchung von nichtlinearen Effekten in Materie bei Bescheinung von Laserlicht}
             \label{fig:Aufbau:Teil7}
         \end{figure}    
+
         
         \paragraph{Lasermoden im Resonator.}
-        
+            Ein Vorteil des frequenzverdoppelnden Kristalls ist, dass das Laserlicht ($\SI{1064}{\n\m}$) Licht im sichtbaren Bereich ($\SI{532}{\n\m}$) erzeugen kann. Die Lichtmoden im Resonator können also explizit durch Lichtstreuung im Kristall beobachtet werden. Erst wird hierfür eine konstante Pumpleistung angelegt. Beide Resonatorspiegel in (D) und (E), sowie der Kristall in (K) können durch die Schrauben in den Modulen leicht rotiert werden, wodurch je unterschiedliche Moden im Resonator bestehen, die beobachtet werden können.
+
         \paragraph{Intensität des frequenzverdoppelten Lichts als Funktion der Pumpleistung.}
+            Qualitativ ist ein quadratischer Zusammenhang zwischen der Leistung $P_f$ der in dem Kristall einfallenden Wellen und der Leistung $P_{2f}$ der frequenzverdoppelten Welle zu erwarten. Der Effekt der Frequenzverdopplung rührt aus einer quadratischen Korrektur des Polarisationsvektors der Elektronen im Kristall, $P^{(2)}\in\R^3$ genannt:
+            \[
+                P^{(2)} \propto \dabs{E_f}{2}.
+            \]
+            $E_f\in\R^3$ ist dabei der elektrische Feldvektor der einfallenden Welle. Die durch Elekronenoszillationen abgestrahlte Welle besitzt aber gerade eine Feldstärke proportional zu $P^{(2)}$. Also ist auch $P_{2f}\propto P_{f}^2$.\\
+
+            Um diesen Zusammenhang experimentell zu überprüfen, werden wieder verschiedene Injektionsströme der Laserdiode angelegt. Für jeden Strom wird dann an (C) die Pumpleistung $P_p$ (zu der $P_f$ ja proportional ist) und an (E) die Laserleistung $P_a$ (welche wegen des Filters (F) gerade durch die frequenzverdoppelte Welle zustande kommt) gemessen.
+            
 
 \end{document}
