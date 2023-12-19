@@ -5,38 +5,43 @@
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=11cm]{../../Bilddateien/5-1/P(NDYAG)overP(Pump).png}
+        \includegraphics[width=11cm]{../../Bilddateien/5/P(NDYAG)overP(Pump).png}
         \caption{Die Laserleistung $P_a$ als Funktion der Pumpleistung $P_p$}
         \label{fig:PumpLaserLeistung}
     \end{figure}
 
-    Wegen des scheinbar linearen Zusammenhangs wurde ein Fit $f_{a,b} := a\cdot x + b$ durchgeführt, die Parameter sind in Tabelle \ref{tab:PumpLaserLeistungFitParameter} zu sehen.
+    Gleichung \eqref{} aus der Theorie sagt einen linearen Zusammenhang voraus, weswegen ein Fit folgener Form angelegt wurde:
+    \[
+        f_{a,b,c}(x) := a\cdot (x - b) + c.      
+    \]
+    Die relevanten Parameter des Fits sind in Tabelle \ref{tab:PumpLaserLeistungFitParameter} zu sehen.
 
     \begin{table}[H]
         \centering
-        \begin{tabular}{c|cc|cc|cc}
+        \begin{tabular}{c|cc |cc}
             \hline
-             & $a$ in $\si{\m\W}$ & $u(a)$ in $\si{\m\W}$ & $b$ in $\si{\m\W}$ & $u(b)$ in $\si{\m\W}$ \\
+            & $a$ in $\si{\per\m\W}$ & $u(a)$ in $\si{\per\m\W}$ & $b$ in $\si{\m\W}$ & $u(b)$ in $\si{\m\W}$\\
             \hline\hline
-            $f_{a, b}$ & $0.0925$ & $0.0038$ & $-12.28$ & $0.67$\\
-            \hline
+            $f_{a, b, c}$ & - & - & - & -
         \end{tabular}
         \caption{Die Parameter der linearen Kurvenanpassung.}
         \label{tab:PumpLaserLeistungFitParameter}
     \end{table}
 
-    Es ist also gerade
+    $b$ ist nach Definition des Fits gerade die Schwellleistung $P_{th}$, ab welcher der Laser Licht produziert. $a$ ist der sogenannte differentielle Wirkungsgrad $\alpha_S$. Eine genaue Inspektion von Gleichung,
     \[
-        P_{th} = f^{-1}_{a, b}(0) = -\frac{b}{a} = \SI{0.00753(52)}{\m\W}
+        P_a = \underbrace{\eta\cdot\frac{E_{32}}{E_{41}}\cdot \frac{T}{T + L}}_{=\alpha_S}\cdot(P_p - \underbrace{P_{th}}_{=b}),
     \]
-    die Laserschwelle, ab welcher Photonenoszillationen im Laser stattfinden. Der theoretische Zusammenhang ist gegeben durch 
+    erlaubt weiter die Bestimmung der Quantenausbeute $\eta$. Dabei ist $E_{32} = \SI{1064}{\n\m}$ das Energieverhältnis der Laserzustände, $E_{41}= \SI{808}{\n\m}$ das Energieverhältnis der Pumpzustände, $T=\SI{20}{\percent}$ die Transmissivität des Resonatorspiegels und $L$ die sonstige Photonen-Verlustrate. Es sei der verlustfreie Fall angenommen ($L=0$), also 
     \[
-        P_a = \eta\cdot\frac{E_{32}}{E_{41}}\cdot(P_p - P_{th})\cdot \frac{T}{T + L}.
-    \]
-    Dabei ist $E_{32} = $ das Energieverhältnis der Laserzustände, $E_{41}=$ das Verhältnis der Pumpzustände, $T$ die Transmissivität des Resonatorspiegels und $L$ die sonstige Photonen-Verlustrate. Im verlustfreien Fall gilt $L=0$, also 
-    \[
-        P_a = \eta\cdot\frac{E_{32}}{E_{41}}\cdot(P_p - P_{th}) \implies eta = \frac{E_{41}}{E_{32}}\cdot \frac{P_a}{P_p - P_{th}}.
+        P_a = \eta\cdot\frac{E_{32}}{E_{41}}\cdot(P_p - P_{th}) \implies \eta = \frac{E_{41}}{E_{32}}\cdot \frac{P_a}{P_p - P_{th}}.
     \] 
+    Einsetzen aller $P_a, P_p$-Messwerte liefert je einen Wert von $\eta$, mit fortgepflanzter Unsicherheit. Im Mittel ergibt sich dann $\eta = \num{}$ mit kombinierter Unsicherheit der Einzeleregebnisse. Um das Ergebnis in den realen Fall nichtverlustfreier Resonatoren ($L\neq 0$) einordnen zu können, wird noch die Quantenausbeute $\eta$ über die Resonatorverluste aufgetragen:
+    \[
+        \alpha_S = \eta(L)\cdot\frac{E_{32}}{E_{41}}\cdot\frac{T}{T + L}\implies \eta(L) = \alpha_S\cdot\frac{E_{41}}{E_{32}}\cdot\frac{T + L}{T}.
+    \]
+    Das Ergebnis ist in Graph gezeigt.
+
 
 
 \end{document}
