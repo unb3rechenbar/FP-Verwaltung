@@ -1,0 +1,810 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2022/10/12 v3.38 KOMA-Script document class (article)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrkbase.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrbase.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/tocbasic.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrsize11pt.clo)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/typearea.sty))
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/UniLaTeXPackage.sty
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Organisation/Pakete.tex
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/babel.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/german.ldf
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/germanb.ldf)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-german.te
+x) (/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/physics/physics.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/euscript.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/mdframed/mdframed.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-abspage.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/zref/zref-base.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/needspace/needspace.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/mdframed/md-frame-0.mdf))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/bbold/bbold.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/import/import.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/was/upgreek.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/calrsfs/calrsfs.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thmtools.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-patch.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/parseargs.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-kv.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/aliasctr.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-listof.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-restate.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thm-amsthm.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
+tered.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex)) (/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty)) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.0.1'
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex))
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.co
+de.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.0.1'
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfcol/pdfcol.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.0.1'
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.0.1'
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.0.1'
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.te
+x
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.te
+x
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.0.1'
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/shellesc.sty))))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty))))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.0.1'
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.0.1'
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbvignette.code.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.0.1'
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcbposter.code.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.0.1'
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
+.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.c
+ode.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_loader.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
+e.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
+soldpgfsupp_pgfutil-common-lists.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
+.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructure.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+liststructureext.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+array.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+matrix.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+shared.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
+deque.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.co
+de.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.da
+ta.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb
+.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
+s.surfshading.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
+.surfshading.pgfsys-pdftex.def)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
+code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.cod
+e.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.c
+ode.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.c
+ode.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandle
+r.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.
+code.tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.
+tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessin
+g.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.cod
+e.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.
+tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex
+)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.te
+x)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
+ts.contourlua.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryplotmarks.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmar
+ks.code.tex))) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tikz-cd/tikz-cd.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarymatrix.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryquotes.code.tex)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pgfplots/pgfplotstable.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+.code.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
+.coltype.code.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty)) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.def)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/csquotes/csquotes.cfg))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption-koma.sto)))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/pifont.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/upzd.fd)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/upsy.fd))
+
+! LaTeX Error: Option clash for package xcolor.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 
+     
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pppdftex.def))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/stringstrings/stringstrings.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xstring/xstring.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xifthen/xifthen.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xargs/xargs.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations.sty))
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Organisation/Buchstaben.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Organisation/Basisfunktionen.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/David/DavidMain.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Tom/TomMain.tex
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Tom/Umgebungen/Umgebungen.tex
+(/usr/local/texlive/2023/texmf-dist/tex/latex/thmtools/thmdef-mdframed.sty))
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Tom/Kurzbefehle/Kurzbefehle.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Tom/Kurzbefehle/Aufgaben.tex)
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Tom/Mathematik/Grundlagen.tex))
+(/Users/tomfolgmann/Library/Mobile Documents/com~apple~CloudDocs/Privat/Creativ
+e/Code/LaTeX/Packages/UniLaTeXPackage/Arto/ArtoMain.tex))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/svg/svg.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/transparent/transparent.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/transparent/transparent-nometadat
+a.sty)) (/usr/local/texlive/2023/texmf-dist/tex/latex/tools/tabularx.sty)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/mhchem/mhchem.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/chemgreek/chemgreek.sty))
+
+LaTeX Warning: Unused global option(s):
+    [DIV].
+
+(./main.aux
+
+LaTeX Warning: Label `fig:PumpLaserLeistung' multiply defined.
+
+
+LaTeX Warning: Label `tab:PumpLaserLeistungFitParameter' multiply defined.
+
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+(./main.out) (./main.out)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty)))
+
+Package siunitx Warning: Detected the "physics" package:
+(siunitx)                omitting definition of \qty.
+(siunitx)                
+(siunitx)                If you want to use \qty with the siunitx definition,
+(siunitx)                add 
+(siunitx)                
+(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
+(siunitx)                
+(siunitx)                to your preamble.
+
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-german.trsl)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
+(./Sektionen/0-Abstract.tex) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdf
+tex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-su
+per/cm-super-ts1.enc} <./Bilddateien/CoffinDance.jpg>] [2] (./main.toc)
+[3] (./Sektionen/1-Einleitung.tex) [1] (./Sektionen/3-Versuchsdurchfuehrung.tex
+
+LaTeX Warning: Reference `fig:Aufbau:Komponenten' on page 2 undefined on input 
+line 5.
+
+
+LaTeX Warning: Reference `fig:Aufbau:KomponentenErklaerung' on page 2 undefined
+ on input line 5.
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10.95 Modul, das rech-ten Re-so-na-tor-spie-gel (Kr[]ummungsrad
+ius $\OML/cmm/m/it/10.95 d \OT1/cmr/m/n/10.95 =
+[2 <./Bilddateien/Versuchsaufbau/Komponenten.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+[3 <./Bilddateien/Versuchsaufbau/Teil1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+
+Overfull \hbox (17.64796pt too wide) in paragraph at lines 53--54
+[]\OT1/cmr/m/n/10.95 Im wei-te-ren Ver-lauf des Ver-suchs l[]asst sich im-mer w
+ie-der auf die-se Kenn-li-nie zur[]uckgreifen:
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 1.8254pt
+(hyperref)                removed on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 55.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 55.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+[4 <./Bilddateien/Versuchsaufbau/Teil2.jpg>]
+Overfull \hbox (3.88449pt too wide) in paragraph at lines 70--71
+\OT1/cmr/m/n/10.95 Nun wird der zwei-te Re-so-na-tor-spie-gel (E) ein-ge-baut, 
+so-dass ein funk-ti-onsf[]ahiger Nd:YAG-
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.84 ...für wird wieder bei $I_P = \SI{400}{\n\m}
+                                                  , \SI{550}{\n\m}$ die Lase...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.84 ...für wird wieder bei $I_P = \SI{400}{\n\m}
+                                                  , \SI{550}{\n\m}$ die Lase...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.84 ... bei $I_P = \SI{400}{\n\m}, \SI{550}{\n\m}
+                                                  $ die Laserleistung in Abh...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.84 ... bei $I_P = \SI{400}{\n\m}, \SI{550}{\n\m}
+                                                  $ die Laserleistung in Abh...
+
+[5 <./Bilddateien/Versuchsaufbau/Teil4.jpg>]
+
+LaTeX Warning: Reference `eq:Grundlagen:Pumpleistung' on page 6 undefined on in
+put line 96.
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.99 ...licht mit der Wellenlänge $\SI{532}{\n\m}
+                                                  $ durchzulassen.
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.99 ...licht mit der Wellenlänge $\SI{532}{\n\m}
+                                                  $ durchzulassen.
+[6]
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.110 ...st, dass das Laserlicht ($\SI{1064}{\n\m}
+                                                  $) Licht im sichtbaren Ber...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.110 ...st, dass das Laserlicht ($\SI{1064}{\n\m}
+                                                  $) Licht im sichtbaren Ber...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.110 ...ht im sichtbaren Bereich ($\SI{532}{\n\m}
+                                                  $) erzeugen kann. Die Lich...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.110 ...ht im sichtbaren Bereich ($\SI{532}{\n\m}
+                                                  $) erzeugen kann. Die Lich...
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/bbold/Ubbold.fd)
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+
+) [7 <./Bilddateien/Versuchsaufbau/Teil7.jpg>] (./Sektionen/4-Auswertung.tex
+(./Sektionen/Auswertungsteile/1-1.tex
+
+Package caption Warning: \label without proper reference on input line 32.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:1-1:OptimaleParameterSpektrum' on page 8 undefine
+d on input line 22.
+
+[8 <./Sektionen/Auswertungsteile//../../Bilddateien/1-1/TransmissionOverTempera
+ture400mA.png> <./Sektionen/Auswertungsteile//../../Bilddateien/1-1/Transmissio
+nOverTemperature550mA.png>]) (./Sektionen/Auswertungsteile/1-2.tex
+
+LaTeX Warning: Reference `tab:1-2:RasterungEvalMinChgI' on page 9 undefined on 
+input line 48.
+
+[9]) (./Sektionen/Auswertungsteile/2.tex [10 <./Sektionen/Auswertungsteile//../
+../Bilddateien/1-2/Rasterung_EvalMin_chgI.png>]
+
+LaTeX Warning: Reference `fig:2:spontaneEmissionDataTExpFit' on page 11 undefin
+ed on input line 17.
+
+
+Overfull \hbox (0.26543pt too wide) in paragraph at lines 40--41
+[]\OT1/cmr/m/n/10.95 Der $\OML/cmm/m/it/10.95 RSS$ \OT1/cmr/m/n/10.95 Wert die-
+ser ex-po-nen-ti-el-len Kur-ven-an-pas-sung liegt bei $\OML/cmm/m/it/10.95 RSS\
+OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f[]\OT1/cmr/m/n/10.95 ) = 1\OML/cmm/m/it
+/10.95 :\OT1/cmr/m/n/10.95 63014 \OMS/cmsy/m/n/10.95 ^^A
+) (./Sektionen/Auswertungsteile/4.tex
+
+LaTeX Warning: Reference `fig:4:PowerOverTemperature_400mA_comp' on page 11 und
+efined on input line 5.
+
+
+LaTeX Warning: Reference `fig:4:PowerOverTemperature_550mA_comp' on page 11 und
+efined on input line 5.
+
+[11 <./Sektionen/Auswertungsteile//../../Bilddateien/2/spontane_emission_data_t
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+) (./Sektionen/Auswertungsteile/5-1.tex [12 <./Sektionen/Auswertungsteile//../.
+./Bilddateien/4/PowerOverTemperature_400mA_comp.png> <./Sektionen/Auswertungste
+ile//../../Bilddateien/4/PowerOverTemperature_550mA_comp.png>]
+
+LaTeX Warning: Reference `' on page 13 undefined on input line 13.
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.35 ... Dabei ist $E_{32} \propto \SI{1064}{\n\m}
+                                                  $ die Energiedifferenz der...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.35 ... Dabei ist $E_{32} \propto \SI{1064}{\n\m}
+                                                  $ die Energiedifferenz der...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.35 ...rzustände, $E_{41} \propto \SI{808}{\n\m}
+                                                  $ die Energiedifferenz der...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.35 ...rzustände, $E_{41} \propto \SI{808}{\n\m}
+                                                  $ die Energiedifferenz der...
+
+! Undefined control sequence.
+<argument> \milli \w 
+                     
+l.39 ...realistisch großen Unsicherheiten führt}
+                                                  . Um das Ergebnis in den r...
+
+! Undefined control sequence.
+<argument> \milli \w 
+                     
+l.39 ...realistisch großen Unsicherheiten führt}
+                                                  . Um das Ergebnis in den r...
+
+
+! Package siunitx Error: Found prefix part with no unit.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.39 ...realistisch großen Unsicherheiten führt}
+                                                  . Um das Ergebnis in den r...
+
+[13 <./Sektionen/Auswertungsteile//../../Bilddateien/5/P(NDYAG)overP(Pump).png>
+]) (./Sektionen/Auswertungsteile/5-2.tex) (./Sektionen/Auswertungsteile/5-3.tex
+) (./Sektionen/Auswertungsteile/5-4.tex) (./Sektionen/Auswertungsteile/6.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.6 ...ößere Injektionsstrom von $\SI{530}{\n\m}
+                                                  $ auch ein ausgeprägteres...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.6 ...ößere Injektionsstrom von $\SI{530}{\n\m}
+                                                  $ auch ein ausgeprägteres...
+
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.13 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.13 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.13 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.13 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.20 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.20 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.20 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+! Undefined control sequence.
+<argument> \n 
+              \m 
+l.20 ...inem Pumpstrom von $I_P = \SI{530}{\n\m}$}
+                                                  
+[14]) (./Sektionen/Auswertungsteile/7-1.tex)
+(./Sektionen/Auswertungsteile/7-2.tex
+
+LaTeX Warning: Citation `doc:experiment08' on page 15 undefined on input line 8
+.
+
+[15 <./Bilddateien/6/spikes_450nm.png> <./Bilddateien/6/spikes_530nm.png>]))
+[16 <./Sektionen/Auswertungsteile//../../Bilddateien/7-2/P(NDYAG)overP(Pump).pn
+g>] (./Sektionen/5-Fazit.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+
+Overfull \hbox (6.71321pt too wide) in paragraph at lines 8--9
+[]\OT1/cmr/m/n/10.95 Bei der Un-ter-su-chung des Trans-mis-si-ons-spek-trums de
+s vollst[]andig auf-ge-bau-ten Nd:YAG
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+) [17]
+No file main.bbl.
+(./main.lof) (./main.lot) [18] (./Sektionen/7-Messdaten.tex) [19]
+(./Sektionen/8-Auswertungscode.tex
+(/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty))
+(./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information)</usr/local/texlive/2023/te
+xmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs
+/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfr
+m1095.pfb>
+Output written on main.pdf (22 pages, 2351572 bytes).
+Transcript written on main.log.

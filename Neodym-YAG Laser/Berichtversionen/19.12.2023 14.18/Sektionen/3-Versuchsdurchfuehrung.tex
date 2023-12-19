@@ -1,0 +1,122 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+    \subsection{Komponenten des Aufbaus}\label{sec:Aufbau:Komponenten}
+        Abbildung \ref{fig:Aufbau:Komponenten} zeigt alle Komponenten des Versuchs. Die Funktion der einzelnen Komponenten sind in \ref{fig:Aufbau:KomponentenErklaerung} erklärt. Der Nd:YAG-Laser wird hier optisch gepumpt durch eine Laserdiode, \textit{idealerweies} mit einer Wellenlänge von ca. $\SI{808}{\nano\metre}$, und produziert Licht mit einer Wellenlänge von ca. $\SI{1064}{\nano\metre}$.
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Komponenten.jpg}
+            \caption{Komponenten zu Nd:YAG-Experimenten}
+            \label{fig:Aubau:Komponenten}
+        \end{figure}
+
+        \begin{table}[H]
+            \centering
+            \begin{tabularx}{\textwidth}{cX}
+                \textbf{Bezeichnung} & \textbf{Funktion}\\\hline\hline
+                (A) & Diodenlaser zum Pumpen des Nd:YAG-Lasers.\\\hline
+                (B) & Kollimator für Diodenlaserstrahl.\\\hline
+                (C) & Fokussierlense für Diodenlaserstrahl ($f=\SI{60}{\milli\metre}$).\\\hline
+                (D) & Modul, welches das aktive YAG-Medium enthält. An der rechten Seite des Mediums ist außerdem der rechte Resonatorspiegel (flach) angebracht. Das Modul besitzt außerdem Schrauben, mit welchen der Resonatorspiegel senkrecht zur optischen Axes des jeweiligen Aufbaus ausgerichtet werden kann. \\\hline
+                (E) & Modul, das rechten Resonatorspiegel (Krümmungsradius $d=\SI{100}{\milli\metre}$) enthält. Auch hier sind Schrauben zur Justierung des Spiegel enthalten.\\\hline 
+                (F) & Filterhalter mit zwei einsetzbaren Filtern: einen, um die Pumpwellenlänge zu blockieren, und einen, der nur die halbe Laserwellenlänge durchlässt.\\\hline
+                (G) & Photodiode, Messung der Laserintensität?\\\hline
+                (H) & Modul zur Steuerung des Injektionsstroms und der Temperatur der Laserdiode.\\\hline
+                (K) & Kristall, in dem nichtlineare optische Effekte untersucht werden können.\\\hline
+                (M) & Generator für periodische Injektionsströme in Modul H.\\\hline
+                (O) & Oszilloskzop zur Messung des Injektionsstroms in Modul H und der Lichtleistung gemessen an Modul G.\\\hline
+                (S) & Schiene zur Platzierung der Lasermodule.\\\hline
+            \end{tabularx}
+            \caption{Beschreibung der einzelnen Komponenten des Versuchaufbaus}
+            \label{tab:Aufbau:KomponentenErklaerung}
+        \end{table}
+
+    
+
+    \subsection{Anregungsspektrum des Nd:YAG-Kristalls}
+        Um den Nd:YAG-Laser effizient betreiben zu können, wird zuerst untersucht, für welche Wellenlänge der Laserdiode die Pumpeffizient am höchsten ist, und wie sich die Wellenlänge der Laserdiode steuern lässt. Verwendet wird der in \ref{fig:Aufbau:Teil1} gezeigte Aufbau.  
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Teil1.jpg}
+            \caption{Aufbau zur Untersuchung der Transmissionsrate des Nd:YAG-Kristall}
+            \label{fig:Aufbau:Teil1}
+        \end{figure}    
+
+        \paragraph{Transmissionsspektren des Kristalls unter Diodenstrom.}\label{sec:Transmissionspektren}
+        Zunächst wird ermittelt, für welche Wellenlänge der Laserdiode der YAG-Kristall minimale Transmissionsraten besitzt. Genau dort haben die Photonen der Laserdiode die passende Wellenlänge, um Anregung des Neodym\\
+        
+        % Die Besetzungsinversion der Laserdiode ist zwischen zwei Zuständen mit einer Bandlücke gegeben. Wie für Halbleiter üblich, ist die Breite dieser Bandlücke temperaturabhängig. Damit geht auch eine Abhängigkeit vom Injektionsstrom daher, welche einen Einfluss auf die Temperatur der Diode hat. Außerdem kann ein hoher Strom auch Übergänge in höhere Zustände bedingen, was zur Emission von Photonen mit kleinerer Wellenlänge führen kann. Um die Abhängigkeit der Diode von Injektionsstrom und Temperatur zu berücksichtigen, werden zwei Transmissionsspektren des Kristalls aufgenommen, aufgetragen über die Temperatur und bei je fixen Injektionsstrom $I_P=\SI{400}{\m\A}, \SI{550}{\m\A}$.
+
+        \paragraph{Kennlinie für Konstante Wellenlänge.} Von den \textit{lokalen} Transmissionsmina eines der Transmissionsspektren wird nun das kleinste ausgewählt, da dort die meisten Zustände angeregt werden, die Pumpeffizienz also am größten ist. Assoziiert mit diesem Minima ist eine bestimmte Temperatur $T_{min}$, ein bestimmter Injektionsstrom $I_{min}$ und eine Pumpwellenlänge $\lambda_P^{(0)}$. Nun wird der Strom schrittweise variiert und für jeden Schritt die Temperatur bestimmt, für welche die Tranmissionrate des Kristalls wieder minimal ist. Der so erhaltene Zusammenhang $T_P(I_P)$ kann gefittet werden, wodurch sich eine kontinuierliche Kennlinie ergibt, entlang derer die Pumpwellenlänge $I_P$ konstant ist.\\
+        
+        Im weiteren Verlauf des Versuchs lässt sich immer wieder auf diese Kennlinie zurückgreifen: wenn ein bestimmter Strom $I_P$ oder eine bestimmte Temperatur $T_P$ eingestellt wird, liefert die Kennlinie die Temperatur $T_P'$ oder den Strom $I_P'$, sodass die Pumpwellenlänge gerade $\lambda_P$ ist.
+
+    \subsection{Lebensdauer des $\,^4F_{3/2}$-Zustands}
+        Als nächstes wird die Lebensdauer des angeregten $\,^4F_{3/2}$-Zustands für das Laserlicht bestimmt. Konkret ist das die Zeit $\tau$, in welcher \textit{durch spontane Emission} die Photonenzahl im $\,^4F_{3/2}$-Zustand auf das $1/e$-fache abgesunken ist. Je größer $\tau$ ist, desto leichter lässt sich eine Besetzungsinversion etablieren, $\tau$ ist also eine tatsächlich relevante Größe für die Charakterisierung eines Lasers.\\
+
+        Der genutzte Versuchsaufbau ist in \ref{fig:Aufbau:Teil2} gezeigt. Hier dient das Filtermodul (F) zum Blockieren der Pumpwellenlänge $\lambda_P^{0}$, damit der Detektor G nur die durch spontane Emission im YAG-Kristall erzeugte Photonen misst.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Teil2.jpg}
+            \caption{Aufbau zur Untersuchung der Lebensdauer von $\,^4F_{3/2}$-Zuständen des Neodyms}
+            \label{fig:Aufbau:Teil2}
+        \end{figure}    
+
+        Im Injektionsstromsgenerator (M) wird ein periodisches Rechteck-Signal angelegt. An dem an (G) gemessenen Signal sollte ein ebenso periodisch ein exponentieller Anstieg und ein exponentieller Abfall beobachtbar sein, aus dem die Lebensdauer $\tau$ berechnet werden kann.  
+
+    \subsection{Aufbau des Nd:YAG-Lasers.}\label{sec:Aufbau:NdYAGLaser}
+        Nun wird der zweite Resonatorspiegel (E) eingebaut, sodass ein funktionsfähiger Nd:YAG-Laser vorliegt (siehe \ref{fig:Aufbau:Teil4})
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Teil4.jpg}
+            \caption{Konstruktion des Nd:YAG-Lasers}
+            \label{fig:Aufbau:Teil4}
+        \end{figure}    
+
+        Wichtig ist eine Wahl des Abstand $L$ derart, dass sich stabile Lichtmoden im zwischen beiden Resonatorspiegel ausbilden können. Für einen flachen und gekrümmten Spiegel (Krümmungsradius $R$, siehe \ref{tab:Aufbau:KomponentenErklaerung}) muss hierfür gelten 
+        \[
+            0\le 1 - \frac{L}{R}\le 1\implies 0\le L\le R.    
+        \]
+
+        Anschließend wird der Laser testeshalber in Betrieb genommen und die Resonatspiegel in (D), (E) mittels der Schrauben in den Modulen so ausgerichtet, dass die Laserleistung maximal wird. Weiterhin wird die Gelegenheit genutzt, die Transmissionsdiagramme aus Sektion \ref{sec:Transmissionspektren} zu bestätigen. Hierfür wird wieder bei $I_P = \SI{400}{\n\m}, \SI{550}{\n\m}$ die Laserleistung in Abhängigkeit von der Temperatur gemessen. Die Intervalle der gewählten Temperaturen sind gleich denen in \ref{sec:Transmissionspektren}. Da eine niedrige Transmissionrate des YAG-Kristalls eine hohe Pumpeffizienz des Lasers bedeutet, also eine große Laserleistung, sollten sich die hier aufgenommenen Diagramme genau invers zu denen aus \ref{sec:Transmissionspektren} verhalten.
+
+    \subsection{Laserleistung als Funktion der Pumpleistung}
+        Nun wird untersucht, wie sich die Laserleistung $P_a$ in Abhängigkeit von der Pumpleistung $P_p$ vehält. Bis zu einer gewissen Schwellleistung $P_{th}$ der Laserdiode wird dem Nd:YAG-Medium nicht genügend Energie zugeführt hat, dass sich eine stabile Besetzungsinversion bzw. eine stetige Photonenproduktion im Laser ausbilden kann. Für die Laserleistung ist zu erwarte $P_a(P_p\le P_{th}) = 0$. Ab dem Schwellwert $P_{th}$ ergibt sich \textit{im Gleichgewicht} ein linearer Zusammenhang
+        \begin{align*}
+            P_a(P_p) = \mu\cdot \frac{E_{32}}{E_{41}}\cdot (P_p - P_{th})\cdot\frac{T}{T + L}\qquad P_p\ge P_{th}.    
+            \label{eq:Grundlagen:Pumpleistung}
+        \end{align*}
+
+        Der Versuchsaufbau zur Überprüfung des Zusammenhangs ist wieder \ref{fig:Aufbau:Teil4}. Es wird die Diodentemperatur im Bereich von $\SI{15}{\celsius}$ zu $\SI{50}{\celsius}$ variiert. Mit einem mobilen Leistungsmesser kann dann je die Pumpleistung direkt am Modul (C) und die Laserleistung direkt am Modul (F) gemessen werden.
+
+    \subsection{Spiking beim Laser-Einschaltvorgang}
+        Gleichung \ref{eq:Grundlagen:Pumpleistung} gilt nur für den Gleichgewichtszustand, d.h. für zeitlich konstantes $P_p$. Schon beim Einschalten der Laserdiode ist diese Bedingung jedoch nicht erfüllt. Für diese Einschaltphase wird deshalb ebenfalls die Laserleistung $P_a(t)$ und Pumpleistung $P_p(t)$ in Abhängigkeit von der Zeit $t$ am Oszilloskzop gemessen. 
+
+    \subsection{Phänomene bei Frequenzverdopplung}
+        Zuletzt wird noch demonstriert, wie die hohe zeitliche Kohärenz von Laserlicht genutzt werden kann, um nichtlineare optische Effekte zu untersuchen. Dafür wird inmitten des Resonators ein frequenzverdoppelnder Kristall (K) platziert\footnote{Es handelt sich um einen Kaliumtitanylphosphat-Kristall. Damit ein Kristall frequenzverdoppelnd sein kann, muss mindestens eine asymmetrische Kristallstruktur vorliegen,  damit das Potential der erregbaren Elektronen der Atomen ebenfalls nicht symmetrisch ist. Sonst können nur ungerade Vielfache der anregenden Frequenz erzeugt werden. Außerdem ist eine hohe elektrische Suszeptibilität förderlich.}. Schema \ref{fig:Aufbau:Teil7} zeigt den exakten Versuchaufbaus. Wichtig ist, dass der Filter (F) darauf eingestellt ist, nur das frequenzverdoppelte Laserlicht mit der Wellenlänge $\SI{532}{\n\m}$ durchzulassen. 
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.8\textwidth]{Bilddateien/Versuchsaufbau/Teil7.jpg}
+            \caption{Aufbau zur Untersuchung von nichtlinearen Effekten in Materie bei Bescheinung von Laserlicht}
+            \label{fig:Aufbau:Teil7}
+        \end{figure}    
+
+        
+        \paragraph{Lasermoden im Resonator.}
+            Ein Vorteil des frequenzverdoppelnden Kristalls ist, dass das Laserlicht ($\SI{1064}{\n\m}$) Licht im sichtbaren Bereich ($\SI{532}{\n\m}$) erzeugen kann. Die Lichtmoden im Resonator können also explizit durch Lichtstreuung im Kristall beobachtet werden. Erst wird hierfür eine konstante Pumpleistung angelegt. Beide Resonatorspiegel in (D) und (E), sowie der Kristall in (K) können durch die Schrauben in den Modulen leicht rotiert werden, wodurch je unterschiedliche Moden im Resonator bestehen, die beobachtet werden können.
+
+        \paragraph{Intensität des frequenzverdoppelten Lichts als Funktion der Pumpleistung.}
+            Qualitativ ist ein quadratischer Zusammenhang zwischen der Leistung $P_f$ der in dem Kristall einfallenden Wellen und der Leistung $P_{2f}$ der frequenzverdoppelten Welle zu erwarten. Der Effekt der Frequenzverdopplung rührt aus einer quadratischen Korrektur des Polarisationsvektors der Elektronen im Kristall, $P^{(2)}\in\R^3$ genannt:
+            \[
+                P^{(2)} \propto \dabs{E_f}{2}.
+            \]
+            $E_f\in\R^3$ ist dabei der elektrische Feldvektor der einfallenden Welle. Die durch Elekronenoszillationen abgestrahlte Welle besitzt aber gerade eine Feldstärke proportional zu $P^{(2)}$. Also ist auch $P_{2f}\propto P_{f}^2$.\\
+
+            Um diesen Zusammenhang experimentell zu überprüfen, werden wieder verschiedene Injektionsströme der Laserdiode angelegt. Für jeden Strom wird dann an (C) die Pumpleistung $P_p$ (zu der $P_f$ ja proportional ist) und an (E) die Laserleistung $P_a$ (welche wegen des Filters (F) gerade durch die frequenzverdoppelte Welle zustande kommt) gemessen.
+            
+
+\end{document}
