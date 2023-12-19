@@ -18,9 +18,9 @@ set errorbars large
 a = -1
 b = 1
 
-f(x) = a * (x - b) + c
+f(x) = a * (x - b)
 
-fit f(x) filename using xline:yline via a, b, c
+fit f(x) filename using xline:yline via a, b
 
 plot filename every ::1 using xline:yline:yerror with yerr title legname, \
     f(x) with lines lc rgb "red" lw 3 title "lin. fit"
