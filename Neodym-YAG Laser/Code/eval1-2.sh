@@ -15,7 +15,6 @@ rm *_info
             echo "--> Plotting.."
             gnuplot -e "filename='$dataset'; \
                     legname='datapoints'; \
-                    set title 'Rasterung über Strombereich bei ${f%/}' ; \
                     set xlabel 'Strom [mA]'; \
                     set ylabel 'Ausgabeleistung [mW]'; \
                     outputname='${dataset%.csv}.svg'; \
@@ -41,7 +40,6 @@ echo "> Done with Rasterung_EvalMin for fixed T and variable I\n"
     echo "-> Plotting.."
     gnuplot -e "filename='Rasterung_EvalMin_chgI.csv'; \
             legname='datapoints'; \
-            set title 'Temperatur in Abhängigkeit gegebenen Injektionsstroms'; \
             set xlabel 'Leistung [mW]'; \
             set ylabel 'Temperatur [deg C]'; \
             outputname='Rasterung_EvalMin_chgI.svg'; \
@@ -63,7 +61,6 @@ echo "> Evaluating I(T)"
 # >------- Plotting and Converting -------<
 gnuplot -e "filename='InjectioncurrentOverTemperature.csv'; \
             legname='datapoints'; \
-            set title 'Temperaturabhängigkeit des Injektionsstroms'; \
             set xlabel 'Temperatur [deg C]'; \
             set ylabel 'Injektionsstrom [mA]'; \
             outputname='InjectioncurrentOverTemperature.svg'; \

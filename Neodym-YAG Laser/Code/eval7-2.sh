@@ -6,9 +6,8 @@ echo "> Evaluating 7-2.."
 
     gnuplot -e "filename='P(NDYAG)overP(Pump).csv'; \
                 legname='Datenpunkte'; \
-                set title 'P(ND:YAG) in Abhängigkeit von P(Pump)'; \
-                set xlabel 'P_Pump [mW]'; \
-                set ylabel 'P_ND:YAG [mW]'; \
+                set xlabel 'P(Pump) [mW]'; \
+                set ylabel 'P(ND:YAG) [mW]'; \
                 outputname='P(NDYAG)overP(Pump).svg'; \
                 xline=1; \
                 yline=3; \

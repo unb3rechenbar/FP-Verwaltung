@@ -147,12 +147,12 @@
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(95.13,300.01) rotate(270)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">N</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">D:YAG [mW]</tspan></text>
+		<text><tspan font-family="Computer Modern" >P(ND:YAG) [mW]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(591.94,582.75)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">P</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">ump [mW]</tspan></text>
+		<text><tspan font-family="Computer Modern" >P(Pump) [mW]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -164,8 +164,10 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M893.70,433.50 L986.70,433.50 M426.06,412.00 L426.06,402.67 M990.64,141.34 L990.64,132.01 M205.50,502.53 L205.50,493.20
-		M716.36,286.01 L716.36,276.67  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M893.70,433.50 L986.70,433.50 M893.70,429.00 L893.70,438.00 M986.70,429.00 L986.70,438.00 M426.06,412.00 L426.06,402.67
+		M421.56,412.00 L430.56,412.00 M421.56,402.67 L430.56,402.67 M990.64,141.34 L990.64,132.01 M986.14,141.34 L995.14,141.34
+		M986.14,132.01 L995.14,132.01 M205.50,502.53 L205.50,493.20 M201.00,502.53 L210.00,502.53 M201.00,493.20 L210.00,493.20
+		M716.36,286.01 L716.36,276.67 M711.86,286.01 L720.86,286.01 M711.86,276.67 L720.86,276.67  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<use xlink:href='#gpPt6' transform='translate(426.06,407.34) scale(4.50)' color='white'/>
 </g>
@@ -220,11 +222,6 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(591.94,45.76)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">N</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">D:YAG in Abhängigkeit von P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">P</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">ump</tspan></text>
-	</g>
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 </g>

@@ -192,10 +192,10 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>Datenpunkt</title>
+	<g id="gnuplot_plot_1" ><title>Datenpunkte</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(872.70,443.25)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="end">
-		<text><tspan font-family="Computer Modern" >Datenpunkt</tspan></text>
+		<text><tspan font-family="Computer Modern" >Datenpunkte</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -378,11 +378,6 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(591.94,45.76)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >Temperaturabhängigkeit des Transmissionsspektrums</tspan></text>
-	</g>
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 </g>

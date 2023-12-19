@@ -19,5 +19,5 @@ set tics out
 set autoscale  y
 set autoscale y2
 
-plot filename1 every ::1 using xline:yline:yerror with yerrorbars title legname1 axis x1y1, \
-    filename2 every ::1 using xline:yline:yerror w yerrorbars title legname2 axis x1y2
+plot filename1 every ::1 using xline:yline:yerror with yerr title legname1 axis x1y1, \
+    filename2 every ::1 using xline:yline:yerror w yerr title legname2 axis x1y2

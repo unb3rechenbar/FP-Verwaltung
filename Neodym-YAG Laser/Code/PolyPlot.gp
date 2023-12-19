@@ -27,4 +27,4 @@ f(x) = a*x**7 + b*x**6 + c*x**5 + d*x**4 + e*x**3 + f*x**2 + g*x + h
 fit f(x) filename using xline:yline via a, b, c ,d, e, f, g, h
 
 plot filename using xline:yline title legname, \
-     f(x) with lines lc rgb "red" lw 3 title "poly. fit 7. order"
+     f(x) with lines lc rgb "red" lw 3 title "poly. fit 7. ord."

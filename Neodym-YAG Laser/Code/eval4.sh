@@ -9,8 +9,7 @@ for f in */; do
 
         echo "-> Plotting $f.."
         gnuplot -e "filename='$data'; \
-                legname='datapoints'; \
-                set title 'Leistung des Nd:YAG Lasers in Abhängigkeit der Temperatur'; \
+                legname='Datenpunkte'; \
                 set xlabel 'Temperatur [deg C]'; \
                 set ylabel 'Leistung [mW]'; \
                 outputname='${data%.csv}.svg'; \
@@ -36,9 +35,8 @@ for f in */; do
         echo "-> Comparing to equivalent data from 1-1.."
         gnuplot -e "filename1='$data'; \
                     filename2='${data%.*}-comp.csv'; \
-                    legname1='Datenpunkt'; \
+                    legname1='Datenpunkte'; \
                     legname2='Vergleichswerte 1-1'; \
-                    set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                     set xlabel 'Temperatur [deg C]'; \
                     set ylabel 'Ausgabeleistung [mW]'; \
                     outputname='${data%.csv}_comp.svg'; \

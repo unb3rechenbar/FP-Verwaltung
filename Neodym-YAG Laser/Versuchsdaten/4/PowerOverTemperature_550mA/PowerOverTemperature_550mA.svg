@@ -122,17 +122,24 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>datapoints</title>
+	<g id="gnuplot_plot_1" ><title>Datenpunkte</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(872.70,131.26)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="end">
-		<text><tspan font-family="Computer Modern" >datapoints</tspan></text>
+		<text><tspan font-family="Computer Modern" >Datenpunkte</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M893.70,121.51 L986.70,121.51 M167.80,209.01 L167.80,202.01 M235.66,219.51 L235.66,198.51 M303.53,198.51 L303.53,163.51
-		M371.39,163.51 L371.39,128.51 M439.25,149.51 L439.25,107.51 M507.12,247.51 L507.12,184.51 M574.98,440.00 L574.98,370.00
-		M642.84,492.50 L642.84,464.50 M710.71,506.50 L710.71,492.50 M778.57,482.00 L778.57,454.00 M846.43,478.50 L846.43,422.50
-		M914.30,454.00 L914.30,384.00 M982.16,443.50 L982.16,401.50  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M893.70,121.51 L986.70,121.51 M893.70,117.01 L893.70,126.01 M986.70,117.01 L986.70,126.01 M167.80,209.01 L167.80,202.01
+		M167.80,209.01 L172.30,209.01 M167.80,202.01 L172.30,202.01 M235.66,219.51 L235.66,198.51 M231.16,219.51 L240.16,219.51
+		M231.16,198.51 L240.16,198.51 M303.53,198.51 L303.53,163.51 M299.03,198.51 L308.03,198.51 M299.03,163.51 L308.03,163.51
+		M371.39,163.51 L371.39,128.51 M366.89,163.51 L375.89,163.51 M366.89,128.51 L375.89,128.51 M439.25,149.51 L439.25,107.51
+		M434.75,149.51 L443.75,149.51 M434.75,107.51 L443.75,107.51 M507.12,247.51 L507.12,184.51 M502.62,247.51 L511.62,247.51
+		M502.62,184.51 L511.62,184.51 M574.98,440.00 L574.98,370.00 M570.48,440.00 L579.48,440.00 M570.48,370.00 L579.48,370.00
+		M642.84,492.50 L642.84,464.50 M638.34,492.50 L647.34,492.50 M638.34,464.50 L647.34,464.50 M710.71,506.50 L710.71,492.50
+		M706.21,506.50 L715.21,506.50 M706.21,492.50 L715.21,492.50 M778.57,482.00 L778.57,454.00 M774.07,482.00 L783.07,482.00
+		M774.07,454.00 L783.07,454.00 M846.43,478.50 L846.43,422.50 M841.93,478.50 L850.93,478.50 M841.93,422.50 L850.93,422.50
+		M914.30,454.00 L914.30,384.00 M909.80,454.00 L918.80,454.00 M909.80,384.00 L918.80,384.00 M982.16,443.50 L982.16,401.50
+		M977.66,443.50 L986.66,443.50 M977.66,401.50 L986.66,401.50  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<use xlink:href='#gpPt6' transform='translate(167.80,205.51) scale(4.50)' color='white'/>
 </g>
@@ -200,11 +207,6 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(591.94,45.76)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >Leistung des Nd:YAG Lasers in Abhängigkeit der Temperatur</tspan></text>
-	</g>
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 </g>

@@ -3390,3 +3390,195 @@
   Median:           530.0000 
   Quartile:         549.9500 
 
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:              21.9900
+  Std Dev:            1.4001
+  Sample StdDev:      1.6167
+  Skewness:          -0.0214
+  Kurtosis:           2.0001
+  Avg Dev:            0.9950
+  Sum:               87.9600
+  Sum Sq.:         1942.0816
+
+  Mean Err.:          0.7001
+  Std Dev Err.:       0.4950
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:           20.0000 [0]
+  Maximum:           23.9600 [3]
+  Quartile:          21.0000 
+  Median:            22.0000 
+  Quartile:          22.9800 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:             529.9750
+  Std Dev:           22.3272
+  Sample StdDev:     25.7812
+  Skewness:          -0.0027
+  Kurtosis:           1.6390
+  Avg Dev:           19.9750
+  Sum:             2119.9000
+  Sum Sq.:       1.12549e+06
+
+  Mean Err.:         11.1636
+  Std Dev Err.:       7.8938
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:          500.0000 [3]
+  Maximum:          559.9000 [0]
+  Quartile:         510.0000 
+  Median:           530.0000 
+  Quartile:         549.9500 
+
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:              21.9900
+  Std Dev:            1.4001
+  Sample StdDev:      1.6167
+  Skewness:          -0.0214
+  Kurtosis:           2.0001
+  Avg Dev:            0.9950
+  Sum:               87.9600
+  Sum Sq.:         1942.0816
+
+  Mean Err.:          0.7001
+  Std Dev Err.:       0.4950
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:           20.0000 [0]
+  Maximum:           23.9600 [3]
+  Quartile:          21.0000 
+  Median:            22.0000 
+  Quartile:          22.9800 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:             529.9750
+  Std Dev:           22.3272
+  Sample StdDev:     25.7812
+  Skewness:          -0.0027
+  Kurtosis:           1.6390
+  Avg Dev:           19.9750
+  Sum:             2119.9000
+  Sum Sq.:       1.12549e+06
+
+  Mean Err.:         11.1636
+  Std Dev Err.:       7.8938
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:          500.0000 [3]
+  Maximum:          559.9000 [0]
+  Quartile:         510.0000 
+  Median:           530.0000 
+  Quartile:         549.9500 
+
+
+ >-------Details zu x-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:              21.9900
+  Std Dev:            1.4001
+  Sample StdDev:      1.6167
+  Skewness:          -0.0214
+  Kurtosis:           2.0001
+  Avg Dev:            0.9950
+  Sum:               87.9600
+  Sum Sq.:         1942.0816
+
+  Mean Err.:          0.7001
+  Std Dev Err.:       0.4950
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:           20.0000 [0]
+  Maximum:           23.9600 [3]
+  Quartile:          21.0000 
+  Median:            22.0000 
+  Quartile:          22.9800 
+
+
+ >-------Details zu y-------<
+
+* FILE: 
+  Records:           4
+  Out of range:      0
+  Invalid:           0
+  Header records:    0
+  Blank:             0
+  Data Blocks:       1
+
+* COLUMN: 
+  Mean:             529.9750
+  Std Dev:           22.3272
+  Sample StdDev:     25.7812
+  Skewness:          -0.0027
+  Kurtosis:           1.6390
+  Avg Dev:           19.9750
+  Sum:             2119.9000
+  Sum Sq.:       1.12549e+06
+
+  Mean Err.:         11.1636
+  Std Dev Err.:       7.8938
+  Skewness Err.:      1.2247
+  Kurtosis Err.:      2.4495
+
+  Minimum:          500.0000 [3]
+  Maximum:          559.9000 [0]
+  Quartile:         510.0000 
+  Median:           530.0000 
+  Quartile:         549.9500 
+

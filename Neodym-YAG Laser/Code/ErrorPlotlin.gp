@@ -13,15 +13,14 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-set bars small
-set style fill solid
+set errorbars large
 
 a = -1
 b = 1
 
-f(x) = a*x + b
+f(x) = a * (x - b) + c
 
-fit f(x) filename using xline:yline via a,b
+fit f(x) filename using xline:yline via a, b, c
 
-plot filename every ::1 using xline:yline:yerror with yerrorbars title legname, \
+plot filename every ::1 using xline:yline:yerror with yerr title legname, \
     f(x) with lines lc rgb "red" lw 3 title "lin. fit"

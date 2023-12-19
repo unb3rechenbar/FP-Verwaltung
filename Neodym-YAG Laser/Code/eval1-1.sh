@@ -18,7 +18,6 @@ for d in */; do
 
         gnuplot -e "filename='$data'; \
                 legname='Datenpunkte'; \
-                set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                 set xlabel 'Temperatur [deg C]'; \
                 set ylabel 'Ausgabeleistung [mW]'; \
                 outputname='${data%.csv}.svg'; \
@@ -50,7 +49,6 @@ for d in */; do
         echo "--> Polyfitting $data with degree 7.."
         gnuplot -e "filename='$data'; \
                     legname='Datenpunkte'; \
-                    set title 'Temperaturabhängigkeit des Transmissionsspektrums'; \
                     set xlabel 'Temperatur [deg C]'; \
                     set ylabel 'Ausgabeleistung [mW]'; \
                     outputname='${data%.csv}_polyfit.svg'; \

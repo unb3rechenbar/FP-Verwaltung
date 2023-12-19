@@ -132,12 +132,12 @@
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(86.74,300.01) rotate(270)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">N</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">D:YAG [mW]</tspan></text>
+		<text><tspan font-family="Computer Modern" >P(ND:YAG) [mW]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(591.94,582.75)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P</tspan><tspan font-family="Computer Modern"  font-size="24.0" dy="9.00px">P</tspan><tspan font-family="Computer Modern"  font-size="30.0" dy="-9.00px">ump [mW]</tspan></text>
+		<text><tspan font-family="Computer Modern" >P(Pump) [mW]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -149,8 +149,10 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M893.70,433.50 L986.70,433.50 M903.69,232.81 L903.69,228.01 M216.58,472.80 L216.58,468.00 M796.59,354.00 L796.59,234.01
-		M949.82,210.01 L949.82,90.01  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M893.70,433.50 L986.70,433.50 M893.70,429.00 L893.70,438.00 M986.70,429.00 L986.70,438.00 M903.69,232.81 L903.69,228.01
+		M899.19,232.81 L908.19,232.81 M899.19,228.01 L908.19,228.01 M216.58,472.80 L216.58,468.00 M212.08,472.80 L221.08,472.80
+		M212.08,468.00 L221.08,468.00 M796.59,354.00 L796.59,234.01 M792.09,354.00 L801.09,354.00 M792.09,234.01 L801.09,234.01
+		M949.82,210.01 L949.82,90.01 M945.32,210.01 L954.32,210.01 M945.32,90.01 L954.32,90.01  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<use xlink:href='#gpPt6' transform='translate(903.69,230.41) scale(4.50)' color='white'/>
 </g>
@@ -174,12 +176,12 @@
 	<use xlink:href='#gpPt0' transform='translate(940.20,433.50) scale(4.50)' color='rgb(148,   0, 211)'/>
 </g>
 	</g>
-	<g id="gnuplot_plot_2" ><title>lin. fit</title>
+	<g id="gnuplot_plot_2" ><title>quad. fit</title>
 <g fill="none" color="white" stroke="rgb(148,   0, 211)" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(872.70,488.25)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="end">
-		<text><tspan font-family="Computer Modern" >lin. fit</tspan></text>
+		<text><tspan font-family="Computer Modern" >quad. fit</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -205,11 +207,6 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(591.94,45.76)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >P(ND:YAG) in Abhängigkeit von P(Pump)</tspan></text>
-	</g>
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 </g>
