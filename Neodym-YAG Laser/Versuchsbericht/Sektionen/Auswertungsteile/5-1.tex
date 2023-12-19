@@ -10,7 +10,7 @@
         \label{fig:PumpLaserLeistung}
     \end{figure}
 
-    Gleichung \eqref{} aus der Theorie sagt einen linearen Zusammenhang voraus, weswegen ein Fit folgener Form angelegt wurde:
+    Gleichung \eqref{eq:Grundlagen:Pumpleistung} aus der Theorie sagt einen linearen Zusammenhang voraus, weswegen ein Fit folgener Form angelegt wurde:
     \[
         f_{a,b}(x) := a\cdot (x - b).      
     \]
@@ -28,7 +28,7 @@
         \label{tab:PumpLaserLeistungFitParameter}
     \end{table}
 
-    $b$ ist nach Definition des Fits gerade die Schwellleistung $P_{th}$, ab welcher der Laser Licht produziert. $a$ ist der sogenannte differentielle Wirkungsgrad $\alpha_S$. Eine genaue Inspektion von Gleichung,
+    $b$ ist nach Definition des Fits gerade die Schwellleistung $P_{th}$, ab welcher der Laser Licht produziert. $a$ ist der sogenannte differentielle Wirkungsgrad $\alpha_S$. Eine genaue Inspektion von Gleichung \eqref{eq:Grundlagen:Pumpleistung},
     \[
         P_a = \underbrace{\eta\cdot\frac{E_{32}}{E_{41}}\cdot \frac{T}{T + L}}_{=\alpha_S}\cdot(P_p - \underbrace{P_{th}}_{=b}),
     \]
@@ -40,7 +40,14 @@
     \[
         \alpha_S = \eta(L)\cdot\frac{E_{32}}{E_{41}}\cdot\frac{T}{T + L}\implies \eta(L) = \alpha_S\cdot\frac{E_{41}}{E_{32}}\cdot\frac{T + L}{T}.
     \]
-    Das Ergebnis ist in Graph gezeigt.
+    Das Ergebnis ist in Graph \ref{fig:Auswertung:5:VerlustAusbeute} gezeigt.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=11cm]{../../Bilddateien/5-1/VerlustAusbeute.png}
+        \caption{Die Quantenausbeute bei gemessenen Wirkungsgrad $\alpha_S$ aufgetragen über die Photonenverlustrate $L$ im Resonato}
+        \label{fig:Auswertung:5:VerlustAusbeute}
+    \end{figure}
 
 
 
