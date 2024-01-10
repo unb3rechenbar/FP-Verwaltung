@@ -1,4 +1,4 @@
-set datafile separator ","
+set datafile separator "\t"
 
 set term svg size 1100,600
 set output outputname
@@ -13,4 +13,4 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-plot filename every ::1 using 1:3 w lines title legname
+plot filename every ::1 using 1:2 w lines title legname
