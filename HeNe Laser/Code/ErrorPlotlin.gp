@@ -13,8 +13,7 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-set bars small
-set style fill solid
+set errorbars large
 
 a = -1
 b = 1

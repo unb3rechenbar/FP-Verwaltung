@@ -13,7 +13,6 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-set bars small
-set style fill solid
+set errorbars large
 
 plot filename every ::1 using xline:yline:yerror with yerrorbars title legname
