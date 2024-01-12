@@ -1,14 +1,17 @@
 
 
 
-for f in *.txt; do
-    echo "Processing file $f .."
+for f in */; do
+    (
+        cd $f
 
-    gnuplot -e "filename='$f'; \
+        echo "Processing folder $f .."
+
+        gnuplot -e "filename='${f%/}.txt'; \
                     legname='Datenpunkte'; \
                     set xlabel 'Wavelenght [nm]'; \
                     set ylabel 'Intensity [Counts]'; \
-                    outputname='${f%.*}.svg'; \
+                    outputname='${f%/}.svg'; \
                 " "$CODEHENE/BasicPlot.gp"
-
+    )
 done
