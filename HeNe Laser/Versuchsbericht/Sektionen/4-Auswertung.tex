@@ -1,30 +1,32 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
-    \subsection{Diodenlasertemperaturoptimierung}\label{subsec:1-1:Diodenlasertemperaturoptimierung}
-        \subfile{Auswertungsteile/1-1.tex}
 
-    \subsection{Kennlinie konstanter Diodenlaserwellenlänge}\label{subsec:1-2:KennlinieKonstanterDiodenlaserwellenlaenge}
-        \subfile{Auswertungsteile/1-2.tex}
+% Methodik: Laserjustage (Grob und fein)
 
-    \subsection{Lebensdauerbestimmung}\label{subsec:1-3:Lebensdauerbestimmung}
-        \subfile{Auswertungsteile/2.tex}
+\subsection{Abhängigkeit der Ausgangsleistung von der Eingangsleistung}
 
-    \subsection{Ausgangsleistungsanalyse Nd:YAG Laser}\label{subsec:1-4:AusgangsleistungsanalyseNdYAGLaser}
-        \subfile{Auswertungsteile/4.tex}
+% Graphen: out-power-over-in-current.csv plotten [eigentlich zuvor Stromstärke I_in in Leistung umrechnen mit P = R * I^2, aber R = ????]
+% Vergleich mit Theorie: zu erwarten kein Lasing bis Schwellleistung P_th, danach in erster Näherung linearer Verlauf P_Laser(P_in) = alpha * (P_in - P_th) [zumindest bei 4-Level-Systemen -> Nd:YAG-Laser]
 
-    \subfile{Auswertungsteile/5-1.tex}
+\subsection{Abhängigkeit der Ausgangsleistung von der Röhrenposition}
 
-    \subfile{Auswertungsteile/5-2.tex}
+% Graphen: power-over-deplacement.csv plotten, fluoreseznezpower von output powerabziehen
+% Vergleich mit Theorie: ??
 
-    \subfile{Auswertungsteile/5-3.tex}
+\subsection{Stabilität des Resonators}
 
-    \subfile{Auswertungsteile/5-4.tex}
+% Graphen: outputpower-over-cavity-displacement.csv plotten, fluoreszenzpower von laserpower abziehen
+% Vergleich mit Theorie: zu erwarten ist Lasing falls -1 \le g_1\cdot g_2\le 1 [HeNe-Manual] mit g_i = 1 - L/R_i, L is cavity width in .csv file, R_i sind Krümmungsradien der Resonatorspiegel 
 
-    \subfile{Auswertungsteile/6.tex}
 
-    \subfile{Auswertungsteile/7-1.tex}
+\subsection{Wellenlängenselektion}
+    \paragraph{Doppelbrechender Kristall als Selektor}
 
-    \subfile{Auswertungsteile/7-2.tex}
+    \paragraph{Fluoreszenzspektrum von Neon}
+
+    \paragraph{Littrow-Prisma als Selektor}
+
+\subsection{Modenselektion}
     
 \end{document}
