@@ -137,16 +137,22 @@
 	<path stroke='black'  d='M167.80,90.01 L167.80,510.00 L1016.09,510.00 L1016.09,90.01 L167.80,90.01 Z  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1" ><title>Datenpunkte</title>
+	<g id="gnuplot_plot_1" ><title>Datapoints</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(872.70,488.25)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="end">
-		<text><tspan font-family="Computer Modern" >Datenpunkte</tspan></text>
+	<g transform="translate(872.70,131.26)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="end">
+		<text><tspan font-family="Computer Modern" >Datapoints</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M893.70,478.50 L986.70,478.50 M167.80,135.31 L167.80,134.71 M285.62,209.71 L285.62,209.11 M403.44,316.80 L403.44,316.20
-		M521.25,414.90 L521.25,414.30 M591.95,412.50 L591.95,410.70 M639.07,481.80 L639.07,481.20 M686.20,471.30 L686.20,470.70
-		M756.89,489.60 L756.89,488.40 M874.71,495.00 L874.71,493.80 M968.96,506.70 L968.96,504.90  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M893.70,121.51 L986.70,121.51 M893.70,117.01 L893.70,126.01 M986.70,117.01 L986.70,126.01 M167.80,135.31 L167.80,134.71
+		M167.80,135.31 L172.30,135.31 M167.80,134.71 L172.30,134.71 M285.62,209.71 L285.62,209.11 M281.12,209.71 L290.12,209.71
+		M281.12,209.11 L290.12,209.11 M403.44,316.80 L403.44,316.20 M398.94,316.80 L407.94,316.80 M398.94,316.20 L407.94,316.20
+		M521.25,414.90 L521.25,414.30 M516.75,414.90 L525.75,414.90 M516.75,414.30 L525.75,414.30 M591.95,412.50 L591.95,410.70
+		M587.45,412.50 L596.45,412.50 M587.45,410.70 L596.45,410.70 M639.07,481.80 L639.07,481.20 M634.57,481.80 L643.57,481.80
+		M634.57,481.20 L643.57,481.20 M686.20,471.30 L686.20,470.70 M681.70,471.30 L690.70,471.30 M681.70,470.70 L690.70,470.70
+		M756.89,489.60 L756.89,488.40 M752.39,489.60 L761.39,489.60 M752.39,488.40 L761.39,488.40 M874.71,495.00 L874.71,493.80
+		M870.21,495.00 L879.21,495.00 M870.21,493.80 L879.21,493.80 M968.96,506.70 L968.96,504.90 M964.46,506.70 L973.46,506.70
+		M964.46,504.90 L973.46,504.90  '/></g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<use xlink:href='#gpPt6' transform='translate(167.80,135.01) scale(4.50)' color='white'/>
 </g>
@@ -188,10 +194,10 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<use xlink:href='#gpPt0' transform='translate(968.96,505.80) scale(4.50)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt6' transform='translate(940.20,478.50) scale(4.50)' color='white'/>
+	<use xlink:href='#gpPt6' transform='translate(940.20,121.51) scale(4.50)' color='white'/>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<use xlink:href='#gpPt0' transform='translate(940.20,478.50) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt0' transform='translate(940.20,121.51) scale(4.50)' color='rgb(148,   0, 211)'/>
 </g>
 	</g>
 <g fill="none" color="white" stroke="rgb(148,   0, 211)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -207,7 +213,7 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(591.94,582.75)" stroke="none" fill="black" font-family="Computer Modern" font-size="30.00"  text-anchor="middle">
-		<text><tspan font-family="Computer Modern" >∆x [cm]</tspan></text>
+		<text><tspan font-family="Computer Modern" >∆L [cm]</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
