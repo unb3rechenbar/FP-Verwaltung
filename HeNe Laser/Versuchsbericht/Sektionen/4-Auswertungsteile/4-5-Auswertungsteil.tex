@@ -6,7 +6,7 @@ The selection of certain laser wavelengths can be achived with the introdcution 
 
 \subsubsection{Birefringent tuner}
     \paragraph{Methodology}
-        One possible realisation for these losses is using a birefringent quartz crystal ($n_Q \approx\num{1.55}$ for the main laser line of $\lambda = \SI{633}{nm}$). The setup used in the experiment is shown in figure \ref{fig:5-Aufbau}.
+        One possible realisation for these losses is using a birefringent quartz crystal ($n_Q \approx\num{1.55}$ for the main laser line of $\lambda = \SI{632.1}{nm}$). The setup used in the experiment is shown in figure \ref{fig:5-Aufbau}.
 
         \begin{figure}[H]
             \centering 
@@ -22,7 +22,7 @@ The selection of certain laser wavelengths can be achived with the introdcution 
     \begin{table}[H]
         \centering 
         \begin{tabular}{c | c c}
-            \textbf{Wavelength} & \textbf{Times observed} & \textbf{Correlated transtion}\\\hline\hline
+            \textbf{wavelength} & \textbf{times observed} & \textbf{correlated transtion}\\\hline\hline
             \SI{633.0(10)}{\nm} & 6 & $3S^2\to 2p^4$\\
             \SI{640.0(10)}{\nm} & 2 & $3S^2\to 2p^2$
         \end{tabular}
@@ -44,12 +44,66 @@ The selection of certain laser wavelengths can be achived with the introdcution 
 
     \begin{figure}[H]
         \centering 
-        \includegraphics[width = 11cm]{Bilddateien/5-NeonSpektren.jpg}
-        \caption{Incoherent scattering spectrum for HeNe-gas. Three main peaks, marked with a red line each, were observed in total. In order of ascending intensity, these peaks occured at \SI{668}{\nm}, \SI{588}{\nm} and \SI{638}{\nm}.}
+        \includegraphics[width = 15cm]{Bilddateien/5-NeonSpektren.jpg}
+        \caption{Incoherent scattering spectrum for HeNe-gas. Three main peaks, marked with a red line each, were observed in total.}
         \label{fig:5-NeonSpektren}
     \end{figure}
 
-    Interestingely, the three larget peaks in spectrum \ref{fig:5-NeonSpektren} do not correspond to any possible transitions in the 
+    \noindent The three larget peaks in figure \ref{fig:5-NeonSpektren} are listed in table \ref{tab:5-NeonSpektren}.
 
+     \begin{table}[H]
+        \centering 
+        \begin{tabular}{c | c c | c}
+            \textbf{wavelength} & \textbf{theoretical laser line} & \textbf{correlated transition} & \textbf{compatible}\\\hline\hline
+            \SI{668.0(10)}{\nm} & - & - & -\\\hline
+            \SI{588.0(10)}{\nm} & \SI{593.0}{\nm} & $3S^2 \to 2P^8$ & \textcolor{red}{No}\\\hline
+            \SI{638.0(10)}{\nm} & \SI{640.1}{\nm} & $3S^2 \to 2P^2$ & \textcolor{red}{No} 
+        \end{tabular}
+        \caption{Observed main peaks in spetrum \ref{fig:5-NeonSpektren} in order of ascending intensity. For each wavelength, the closest theoretical laser line is matched if one exists within $\pm\SI{5}{\nm}$ of the experimental value.}
+        \label{tab:5-NeonSpektren}
+     \end{table}
+
+     \noindent The laser line \SI{640.1}{\nm} thus has the highest spontaneous emission rate. One peak at \SI{668.0(10)}{\nm} does not match to any laser line and is possible due to transitions in helium molecules. Interestingly, the main laser line at \SI{632.1}{\nm} does not appear at all as a peak, much less as a one of the three largest peaks.\\
+
+     \noindent For a identification of all laser lines, the difference of the spcetrum for no lasing and lasing is shown in figure \ref{fig:5-NeonspektrumDifferenz}.
+
+     \begin{figure}[H]
+        \centering 
+        \includegraphics[width = 15cm]{Bilddateien/5-NeonspektrumDifferenz.jpg}
+        \caption{Fluorescence spectrum for HeNe-gas when lasing is active. Peaks are marked with red lines, valley with green lines.}
+        \label{fig:5-NeonspektrumDifferenz}
+    \end{figure}
+
+    \noindent As expected, this spectrum has mostly positive values, meaning the fluorescence of the HeNe-gas is less intense during lasing. This can be explained by the fact that more \textit{coherent} emissions are happening and competing with spontaneous emission. For coherent emission in direction of the light oscillating in the resonator, the photons have no possibility to randomly scatter into the direction of the spectrometer. 
+    
+    However, there are three valleys with negative intensity, meaning an increase for incoherent scattering. For more detail, all observed spectral lines are listed in table
+
+    \begin{table}[H]
+        \centering 
+        \begin{tabular}{c | c c | c}
+            \textbf{wavelength} & \textbf{theoretical laser line} & \textbf{correlated transition} & \textbf{compatible}\\\hline\hline
+            \SI{693.0(10)}{\nm} & - & - & - \\\hline
+            \SI{544.0(10)}{\nm} & \SI{543.3}{\nm} & $3S^2 \to 2P^10$ & \textcolor{ForestGreen}{Yes}\\\hline
+            \SI{612.0(10)}{\nm} & \SI{611.8}{\nm} & $3S^2 \to 2P^6$ & \textcolor{ForestGreen}{Yes}\\\hline
+            \SI{703.0(10)}{\nm} & - & - & - \\\hline
+            \SI{585.0(10)}{\nm} & - & - & - \\\hline
+
+            \SI{651.0(10)}{\nm} & - & - & - \\\hline
+            \SI{614.0(10)}{\nm} & - & - & - \\\hline
+            \SI{588.0(10)}{\nm} & \SI{593.9}{\nm} & $3S^2 \to 2P^8$ & \textcolor{red}{No} \\\hline
+            \SI{660.0(10)}{\nm} & - & - & - \\\hline
+            \SI{640.0(10)}{\nm} & \SI{640.1}{\nm} & $3S^2 \to 2P^2$ & \textcolor{ForestGreen}{Yes}\\\hline
+
+            \SI{633.0(10)}{\nm} & \SI{632.8}{\nm} & $3S^2 \to 2P^4$ & \textcolor{ForestGreen}{Yes}\\\hdashline
+            \SI{668.0(10)}{\nm} & - & - & -\\\hline
+            \SI{610.0(10)}{\nm} & - & - & -\\\hline
+            \SI{595.0(10)}{\nm} & - & - & -\\\hline
+            \SI{627.0(10)}{\nm} & - & - & -
+        \end{tabular}
+        \caption{Observed spectral lines in spetrum \ref{fig:5-NeonSpektren} in order of ascending intensity. The dashed line acts as a separator between peaks and valleys. For each wavelength, the closest theoretical laser line is matched if one exists within $\pm\SI{5}{\nm}$ of the experimental value.}
+        \label{tab:5-NeonSpektren}
+     \end{table}
+
+     \noindent In total, five of the observed peaks can be matched to Neon transitions. 
 
 \end{document}
