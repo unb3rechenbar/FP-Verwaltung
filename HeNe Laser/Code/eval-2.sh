@@ -119,3 +119,18 @@ echo "--> $(grep "Nullstelle: " "fitparam-lin.txt")"
 
 # >------- WIRKUNGSGRAD -------<
 echo "> Plotting efficiency over used current .."
+gnuPlot -e "filename='out-power-over-in-current.csv'; \
+                legname='Datapoints'; \
+                set xlabel 'I(in) [mA]'; \
+                set ylabel 'η'; \
+                outputname='efficiency-over-in-current.svg'; \
+                xline=1; \
+                yline=3; \
+                xerror=2; \
+                yerror=4; \
+                rescale=2000; \
+                offset=0; \
+                set key right bottom; \
+            " "$CODEHENE/fx-quotient,gp"
+
+echo "-> Converting to png .."
