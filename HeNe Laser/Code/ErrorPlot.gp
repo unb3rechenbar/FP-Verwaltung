@@ -15,4 +15,4 @@ set tmargin 5
 
 set errorbars large
 
-plot filename every ::1 using xline:yline:yerror with yerrorbars title legname
+plot filename every ::1 using xline:yline:yerror ps 2 with yerrorbars title legname

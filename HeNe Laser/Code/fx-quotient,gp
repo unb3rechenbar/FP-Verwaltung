@@ -17,4 +17,6 @@ d(x) = rescale * x + offset
 
 q(x,y) = y / d(x)
 
-plot filename using xline:q(xline,yline):xerror:yerror with xyerrorbars title legname
+uq(x,y,ux,uy) = sqrt( (uy / d(x))**2 + (y * ux * rescale / d(x)**2)**2 )
+
+plot filename u 1:(q(column(1),column(3))):2:(uq(column(1),column(3),column(2),column(4))) ps 2 w xyerrorbars title legname

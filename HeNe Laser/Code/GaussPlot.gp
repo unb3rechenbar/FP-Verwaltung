@@ -22,5 +22,5 @@ f(x) = a * exp(-((x + b)/c)**2/2) + d
 
 fit f(x) filename using 1:2 via a, b, c, d
 
-plot filename using 1:2 title legname, \
+plot filename using 1:2 ps 2 title legname, \
      f(x) with lines lc rgb "red" lw 3 title "gaussian fit"

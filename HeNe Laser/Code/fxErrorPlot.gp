@@ -19,4 +19,4 @@ f(x)=a*x+b
 
 ufx(x)=ub
 
-plot filename every ::2 using (f($1)):yline:(ufx($2)):yerror with xyerrorbars title legname
+plot filename every ::2 using (f($1)):yline:(ufx($2)):yerror ps 2 with xyerrorbars title legname

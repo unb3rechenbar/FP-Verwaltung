@@ -18,4 +18,4 @@ b=-2.930000e-03
 
 f(x)=a*x+b
 
-plot filename every ::2 using (f($xline)):yline title legname
+plot filename every ::2 using (f($xline)):yline ps 2 title legname

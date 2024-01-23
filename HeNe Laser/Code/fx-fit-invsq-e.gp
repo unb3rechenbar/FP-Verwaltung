@@ -24,5 +24,5 @@ f(x) = a / ((b * x + c) ** 2) + d
 
 fit f(x) filename using (d(column(xline))):yline:xerror:yerror xyerrors via a, b, c, d
 
-plot filename using (d(column(xline))):yline:xerror:yerror with xyerrorbars title legname, \
+plot filename using (d(column(xline))):yline:xerror:yerror ps 1.5 with xyerrorbars title legname, \
      f(x) with lines lc rgb "red" lw 3 title "inv squared fit"

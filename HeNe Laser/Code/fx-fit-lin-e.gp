@@ -20,9 +20,9 @@ d(x) = rescale * x + offset
 
 f(x) = a * x + b
 
-fit f(x) filename using (d(column(xline))):yline:xerror:yerror xyerrors via a, b, c, d
+fit f(x) filename using (d(column(xline))):yline:xerror:yerror xyerrors via a, b
 
-plot filename using (d(column(xline))):yline:xerror:yerror with xyerrorbars title legname, \
+plot filename using (d(column(xline))):yline:xerror:yerror ps 2 with xyerrorbars title legname, \
      f(x) with lines lc rgb "red" lw 3 title "lin fit"
 
 fit_zero = -b/a

@@ -1,3 +1,8 @@
+if [[ "$(basename "$(pwd)")" != "2-Changing-Input-Current" ]]; then
+    echo "Please execute this script from the 2-Changing-Input-Current directory!"
+    exit 1
+fi 
+
 
 echo "Evaluating 2. Experiment .."
 
@@ -39,6 +44,7 @@ inkscape -w 4000 -h 2400 "P(HeNe)overP(in).svg" -o "$FPHENE/Versuchsbericht/Bild
 
 
 # >------- ANALYSIS -------<
+echo "\n >------- ANALYSIS -------<"
 
 echo "> Fitting sqrt function to power plot .."
 gnuplot -e "filename='out-power-over-in-current.csv'; \
@@ -104,9 +110,8 @@ gnuplot -e "filename='out-power-over-in-current.csv'; \
                 yerror=4; \
                 rescale=2; \
                 offset=0; \
-                ub=0.1; \
-                aguess = 1; \
-                bguess = 100; \
+                aguess = 5; \
+                bguess = 1; \
                 set key right bottom; \
             " "$CODEHENE/fx-fit-lin-e.gp" 2> "fitparam-lin.txt"
 
@@ -118,6 +123,8 @@ echo "--> $(grep "Nullstelle: " "fitparam-lin.txt")"
 
 
 # >------- WIRKUNGSGRAD -------<
+echo "\n >------- WIRKUNGSGRAD -------<"
+
 echo "> Plotting efficiency over used current .."
 gnuPlot -e "filename='out-power-over-in-current.csv'; \
                 legname='Datapoints'; \
@@ -130,7 +137,8 @@ gnuPlot -e "filename='out-power-over-in-current.csv'; \
                 yerror=4; \
                 rescale=2000; \
                 offset=0; \
-                set key right bottom; \
-            " "$CODEHENE/fx-quotient,gp"
+                set key right top; \
+            " "$CODEHENE/fx-quotient,gp" 2> "fitparam-quotient.txt"
 
 echo "-> Converting to png .."
+inkscape -w 4000 -h 2400 "efficiency-over-in-current.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/efficiency-over-in-current.png"

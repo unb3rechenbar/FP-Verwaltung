@@ -13,18 +13,9 @@ set rmargin 10
 set bmargin 5
 set tmargin 5
 
-a = 1
-b = 1
-c = 1
-d = 1
-e = 1
-f = 1
-g = 1
-h = 1
+set errorbars large
 
-f(x) = a*x**7 + b*x**6 + c*x**5 + d*x**4 + e*x**3 + f*x**2 + g*x + h
+d(x,y) = x - y
+ud(x,y) = sqrt(x**2 + y**2)
 
-fit f(x) filename using xline:yline via a, b, c ,d, e, f, g, h
-
-plot filename using xline:yline ps 2 title legname, \
-     f(x) with lines lc rgb "red" lw 3 title "poly. fit 7. order"
+plot filename every ::1 using xline:(d(column(yline),column(6))):(ud(column(yerror),column(7))) ps 2 with yerrorbars title legname
