@@ -2,11 +2,11 @@ set datafile separator ","
 
 set term svg size 1100,600
 set output outputname
-set tics font "Computer Modern,30"
-set key font "Computer Modern,30"
-set xlabel font "Computer Modern,30" offset 0,-1
-set ylabel font "Computer Modern,30" offset -5,0
-set title font "Computer Modern,30"
+set tics font "Times New Roman,30"
+set key font "Times New Roman,30"
+set xlabel font "Times New Roman,30" offset 0,-1
+set ylabel font "Times New Roman,30" offset -5,0
+set title font "Times New Roman,30"
 
 set lmargin 20
 set rmargin 10

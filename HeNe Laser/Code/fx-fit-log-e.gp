@@ -2,11 +2,11 @@ set datafile separator ","
 
 set term svg size 1100,600
 set output outputname
-set tics font "Computer Modern,30"
-set key font "Computer Modern,30"
-set xlabel font "Computer Modern,30" offset 0,-1
-set ylabel font "Computer Modern,30" offset -5,0
-set title font "Computer Modern,30"
+set tics font "Times New Roman,30"
+set key font "Times New Roman,30"
+set xlabel font "Times New Roman,30" offset 0,-1
+set ylabel font "Times New Roman,30" offset -5,0
+set title font "Times New Roman,30"
 
 set lmargin 20
 set rmargin 10
@@ -21,12 +21,13 @@ d = dguess
 
 d(x) = rescale * x + offset
 
+
 f(x) = a * log(b * x + c) + d
 
 fit f(x) filename using (d(column(xline))):yline:xerror:yerror xyerrors via a, b, c, d
 
 plot filename using (d(column(xline))):yline:xerror:yerror ps 2 with xyerrorbars title legname, \
-     f(x) with lines lc rgb "red" lw 3 title "log fit"
+     f(x) with lines lt 2 lc rgb "red" lw 3 title "log fit"
 
 fit_zero = (exp(-d / a) - c) / b
 fit_zero_err = fit_zero * sqrt((d_err / d) ** 2 + (a_err / a) ** 2 + (c_err / c) ** 2 + (b_err / b) ** 2)

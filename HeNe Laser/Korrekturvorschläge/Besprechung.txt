@@ -1,0 +1,11 @@
+Folgende Punkte sollen in einer Verbesserung überarbeitet werden:
+
+	-> Einleitung: Vor-, während und nach des Versuches .. Warum das experiment, was lernen wir dabei und welche Lösungen liefert es?
+		--> Nach dem ersten Paragraph neu schreiben ..
+	
+	-> Brauche einleitende Definition des Versuchsaufbaus .. genereller Aufbau am Anfang
+
+	-> Unsicherheit bei dem Log Graphen in x!
+
+
+Submit: 30.01.2024

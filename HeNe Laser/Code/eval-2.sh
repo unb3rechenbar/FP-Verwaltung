@@ -39,7 +39,8 @@ gnuplot -e "filename='out-power-over-in-current.csv'; \
             " "$CODEHENE/fxErrorPlot.gp"
                 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "P(HeNe)overP(in).svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in).png"
+svg2png -w 4000 -h 2400 "P(HeNe)overP(in).svg" > "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in).png"
+# inkscape -w 4000 -h 2400 "P(HeNe)overP(in).svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in).png"
 
 
 
@@ -93,7 +94,9 @@ gnuplot -e "filename='out-power-over-in-current.csv'; \
             " "$CODEHENE/fx-fit-log-e.gp" 2> "fitparam-log.txt"
 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "P(HeNe)overP(in)-log.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-log.png"
+
+svg2png -w 4000 -h 2400 "P(HeNe)overP(in)-log.svg" > "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-log.png"
+# inkscape -w 4000 -h 2400 "P(HeNe)overP(in)-log.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-log.png"
 
 echo "--> $(grep "Nullstelle: " "fitparam-log.txt")"
 
@@ -116,7 +119,8 @@ gnuplot -e "filename='out-power-over-in-current.csv'; \
             " "$CODEHENE/fx-fit-lin-e.gp" 2> "fitparam-lin.txt"
 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "P(HeNe)overP(in)-linear.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-linear.png"
+svg2png -w 4000 -h 2400 "P(HeNe)overP(in)-linear.svg" > "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-linear.png"
+# inkscape -w 4000 -h 2400 "P(HeNe)overP(in)-linear.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/P(HeNe)overP(in)-linear.png"
 
 echo "--> $(grep "Nullstelle: " "fitparam-lin.txt")"
 
@@ -141,4 +145,5 @@ gnuPlot -e "filename='out-power-over-in-current.csv'; \
             " "$CODEHENE/fx-quotient,gp" 2> "fitparam-quotient.txt"
 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "efficiency-over-in-current.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/efficiency-over-in-current.png"
+svg2png -w 4000 -h 2400 "efficiency-over-in-current.svg" > "$FPHENE/Versuchsbericht/Bilddateien/2/efficiency-over-in-current.png"
+# inkscape -w 4000 -h 2400 "efficiency-over-in-current.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/2/efficiency-over-in-current.png"

@@ -3,6 +3,21 @@
 # 23.01.2024, Tom Folgmann
 # 
 
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -o|--open)
+            open_pdf=true
+            shift
+            ;;
+        *)
+            echo "Usage: $0 [-o|--open]"
+            exit 1
+            ;;
+    esac
+    shift
+done
+
+
 # >------- Variablen -------<
 working_dir=$FPHENE
 export_path="$working_dir/Berichtversionen"
@@ -84,3 +99,8 @@ echo "\n>------- FINISHING -------<"
 echo "Done. The PDF is located at $export_path/$now/main.pdf"
 
 echo ""
+
+if [[ $open_pdf == true ]]; then
+    echo "Opening PDF.."
+    open "$export_path/$now/main.pdf"
+fi

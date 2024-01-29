@@ -19,7 +19,8 @@ gnuplot -e "filename='power-over-deplacement.csv'; \
             " "$CODEHENE/ErrorPlot.gp"
 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "P(HeNe)overDx.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx.png"
+svg2png -w 4000 -h 2400 "P(HeNe)overDx.svg" > "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx.png"
+# inkscape -w 4000 -h 2400 "P(HeNe)overDx.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx.png"
 
 
 echo "> Plotting adjusted power over deplacement .."
@@ -36,7 +37,8 @@ gnuplot -e "filename='power-over-deplacement.csv'; \
             " "$CODEHENE/custom3-ErrorPlot.gp"
 
 echo "-> Converting to png .."
-inkscape -w 4000 -h 2400 "P(HeNe)overDx-adjusted.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx-adjusted.png"
+svg2png -w 4000 -h 2400 "P(HeNe)overDx-adjusted.svg" > "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx-adjusted.png"
+# inkscape -w 4000 -h 2400 "P(HeNe)overDx-adjusted.svg" -o "$FPHENE/Versuchsbericht/Bilddateien/3/P(HeNe)overDx-adjusted.png"
 
 # >------- ANALYSIS -------<
 echo "\n >------- ANALYSIS -------<"

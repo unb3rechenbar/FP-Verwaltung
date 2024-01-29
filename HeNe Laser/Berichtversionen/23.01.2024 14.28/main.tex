@@ -1,0 +1,106 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\usepackage{UniLaTeXPackage}
+\usepackage{svg}
+\usepackage[version=4]{mhchem}
+\usepackage{arydshln}
+
+\newcommand*{\bbra}[1]{\bigl(#1\bigr)}
+
+\newcommand*{\Bbra}[1]{\Bigl(#1\Bigr)}
+
+\newcommand*{\bbbra}[1]{\biggl(#1\biggr)}
+
+\newcommand*{\Bbbra}[1]{\Biggl(#1\Biggr)}
+
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{HeNe-Laser}
+    \subtitle{Fortgeschrittenen-Praktikum in physics (University of Constance)}
+    \author{Authors: Tom Folgmann, David Jannack \\ \large{Tutor: Ron Tenne}}
+    \date{Experiment conducted on 10.1.2024}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    
+    % Abstract
+    \section*{Abstract}
+        \subfile{Sektionen/0-Abstract.tex}
+
+    % Kennzeichnung Arbeitsaufteilung
+    \vspace{2cm}
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{l|l}
+            Section & Contributions \\\hline\hline
+            Abstract/ Introduction & Tom, David\\
+            Experimental prodecure and data analysis & Tom, David \\
+            Conclusion & Tom, David
+        \end{tabular}
+    \end{table}
+
+    \newpage
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{Introduction}
+    \subfile{Sektionen/1-Einleitung.tex}
+
+%\newpage
+%\section{Grundlagen}
+%    \subfile{Sektionen/2-Grundlagenteil.tex}
+
+% \newpage
+% \section{Experimental setup}
+%     \subfile{Sektionen/3-Versuchsdurchfuehrung.tex}
+
+\newpage
+\section{Experimental prodecure and data analysis}
+    \subfile{Sektionen/4-Auswertung.tex}
+
+\newpage
+\section{Conclusion}
+    \subfile{Sektionen/5-Fazit.tex}
+
+% -----------------------------------------------------------
+% Abspann und Credits
+
+\newpage
+    \bibliography{Literatur.bib}
+\newpage
+    \listoffigures
+    \listoftables
+
+
+% \newpage
+%     \section*{Measurement data}
+%     \subfile{Sektionen/7-Messdaten.tex}
+% \newpage
+%     \subfile{Sektionen/8-Auswertungscode.tex}
+
+\newpage
+    \section{Experiment report}
+        \subfile{Sektionen/Anhang-Logbuch.tex}
+\end{document}
