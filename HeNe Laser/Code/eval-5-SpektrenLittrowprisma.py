@@ -3,14 +3,7 @@ import matplotlib.pyplot as plt
 
 #   Spektren laden
 PFAD_DATEN = "../Versuchsdaten/5-Spectrum/"
-LISTE_DATEN = ["Quartz-02-a25-633",
-               "Quartz-03-a45-633",
-               "Quartz-04-a50-633",
-               "Quartz-05-a65-640",
-               "Quartz-06-a70-633",
-               "Quartz-07-a80-640",
-               "Quartz-08-a85-633",
-               "Quartz-09-a90-633"]
+LISTE_DATEN = ["Littrow-Spectrum-00"]
 SPEKTREN_DATEN = {}
 
 
@@ -84,41 +77,24 @@ def bestimmeSkalierung(Spektrum):
     return max(list(abs(c) for c in Spektrum))
 
 
-Wellenlaenge633 = extrahiereWellenlaenge(SPEKTREN_DATEN["Quartz-02-a25-633"])
-Intensitaet633 = extrahiereIntensitaet(SPEKTREN_DATEN["Quartz-02-a25-633"],)
-Intensitaet633Normiert = extrahiereIntensitaet(SPEKTREN_DATEN["Quartz-02-a25-633"],
-                                               scale=bestimmeSkalierung(Intensitaet633))
-Wellenlaenge640 = extrahiereWellenlaenge(SPEKTREN_DATEN["Quartz-05-a65-640"])
-Intensitaet640Normiert = extrahiereIntensitaet(SPEKTREN_DATEN["Quartz-05-a65-640"],
-                                       scale=bestimmeSkalierung(Intensitaet633))
+Wellenlaenge = extrahiereWellenlaenge(SPEKTREN_DATEN["Littrow-Spectrum-00"])
+Intensitaet = extrahiereIntensitaet(SPEKTREN_DATEN["Littrow-Spectrum-00"],)
+IntensitaetNormiert = extrahiereIntensitaet(SPEKTREN_DATEN["Littrow-Spectrum-00"],
+                                               scale=bestimmeSkalierung(Intensitaet))
 
 
 
 plt.style.use("classic")
 plt.rcParams["font.family"] = "Times New Roman"
 
-fig, ax1 = plt.subplots()
-fig.set_size_inches(18.5, 10)
 
-ax1.plot(Wellenlaenge633, Intensitaet633Normiert, label="Spectrum for 633 nm", color="blue")
-ax1.axvline(633, color="red")
-ax2 = ax1.twinx()
-ax2.plot(Wellenlaenge640, Intensitaet640Normiert, label="Spectrum for 640nm", color="green")
-ax2.axvline(640, color="red")
+plt.plot(Wellenlaenge, IntensitaetNormiert, label="Spectrum for 633 nm", color="blue")
+plt.axvline(633, color="red")
 
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.ylabel("Normed intensity", fontsize=16)
+plt.xlabel("Wavelength [nm]", fontsize=16)
 
-ax1.spines["left"].set_color("blue")
-ax1.tick_params(axis="y", colors="blue")
-ax1.tick_params(axis="both", labelsize=16)
-ax1.yaxis.label.set_color("blue")
-ax2.spines["left"].set_color("green")
-ax2.tick_params(axis="y", colors="green", labelsize=16)
-ax2.yaxis.label.set_color("green")
-
-ax1.set_ylabel("Normed intensity", fontsize=16)
-ax1.set_xlabel("Wavelength [nm]", fontsize=16)
-ax2.set_ylabel("Normed intensity", fontsize=16)
-
-ax1.legend(fontsize=16, loc="upper left", framealpha=0, markerfirst=False)
-ax2.legend(fontsize=16, loc="upper right", framealpha=0, markerfirst=False)
-plt.savefig("../Versuchsbericht/Bilddateien/5/5-Spektrendoppelbrechung.jpg", dpi=400)
+plt.legend(fontsize=16, loc="upper right", framealpha=0, markerfirst=False)
+plt.savefig("../Versuchsbericht/Bilddateien/5/5-Spektrenlittrowprisma.jpg", dpi=400)

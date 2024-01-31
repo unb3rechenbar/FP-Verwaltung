@@ -5,8 +5,8 @@ import scipy.signal as sgn
 
 PFAD_DATEN = "../Versuchsdaten/5-Spectrum/"
 
-SPEKTRUM_START = 500
-SPEKTRUM_ENDE = 750
+SPEKTRUM_START = 540
+SPEKTRUM_ENDE = 710
 
 # Daten einlesen
 def ladeDaten(Datei):
@@ -47,11 +47,12 @@ Intensitaet = extrahiereIntensitaet(Spektrum)
 IntensitaetNormiert = extrahiereIntensitaet(Spektrum,
                                             scale=bestimmeSkalierung(Intensitaet))
 
-# finde grob größte Peaks
+# finde grob größte Peaks/ Valley
 Peaks = sgn.find_peaks(Intensitaet, threshold=1, height=3)[0]
+Valleys = sgn.find_peaks(list(-i for i in Intensitaet), threshold=1, height=3)[0]
 
 # Wellenlängen mit theoretischen Laserwellenlängen vergleichen bzw. mit Literatur
-LaserlinienTheorie = [730.5, 640.1, 635.2, 632.8, 692.4, 611.8, 604.6, 593.9, 543.3]
+LaserlinienTheorie = [730.5, 640.1, 635.2, 632.8, 629.4, 611.8, 604.6, 593.9, 543.3]
 LaserlinienTheorieEntsprechung = {}
 
 def IdentifiziereLaserlinie(Wert, Unsicherheit=1):
@@ -75,8 +76,12 @@ def IdentifiziereLaserlinie(Wert, Unsicherheit=1):
 for p in Peaks:
     LaserlinienTheorieEntsprechung[p] = IdentifiziereLaserlinie(p)
 
+for v in Valleys:
+    LaserlinienTheorieEntsprechung[v] = IdentifiziereLaserlinie(v)
+
 
 Peaks = sorted(Peaks, key=lambda x: Intensitaet[x])
+Valleys = sorted(Valleys, key=lambda x: Intensitaet[x])
 print("Peaks in aufsteigender Intensität")
 for p in Peaks:
     for l in LaserlinienTheorie:
@@ -86,14 +91,32 @@ for p in Peaks:
     else:
         print("Wellenlänge: ", Wellenlaenge[p], "+/- 1")
 
+print("\n Valleys in aufsteigender Intensität")
+for v in Valleys:
+    for l in LaserlinienTheorie:
+        if LaserlinienTheorieEntsprechung[v] == l:
+            print("Wellenlänge: ", Wellenlaenge[v], "+/- 1; theoretischer Wert: ", l)
+            break
+    else:
+        print("Wellenlänge: ", Wellenlaenge[v], "+/- 1")
+
 # Daten plotten
 
-for i in Peaks:
-    plt.axvline(Wellenlaenge[i], color="red", alpha=0.7)
+plt.style.use("classic")
+plt.rcParams["font.family"] = "Times New Roman"
 
-plt.plot(Wellenlaenge, Intensitaet, label="no lasing minus lasing")
+for p in Peaks:
+    plt.axvline(Wellenlaenge[p], color="red", alpha=0.7)
 
-plt.xlabel("wavelength [nm]", fontsize=14)
-plt.ylabel("normed intensity", fontsize=14)
-plt.legend(fontsize=14)
-plt.show()
+for v in Valleys:
+    plt.axvline(Wellenlaenge[v], color="green", alpha=0.7)
+
+plt.plot(Wellenlaenge, Intensitaet, label="No lasing minus lasing")
+
+plt.xlabel("Wavelength [nm]", fontsize=16)
+plt.ylabel("Normed intensity", fontsize=16)
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.legend(fontsize=16, loc="lower left", framealpha=0, markerfirst=False)
+plt.savefig("../Versuchsbericht/Bilddateien/5/5-NeonspektrumDifferenz.jpg", dpi=400)
+

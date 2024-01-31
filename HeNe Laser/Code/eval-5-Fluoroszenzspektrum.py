@@ -6,8 +6,8 @@ import scipy.signal as sgn
 PFAD_DATEN = "../Versuchsdaten/5-Spectrum/"
 LISTE_DATEN = ["Fluor-Spectrum-Lasing-633-ii", "Fluor-Spectrum-NoLasing-633"]
 
-SPEKTRUM_START = 400
-SPEKTRUM_ENDE = 900
+SPEKTRUM_START = 550
+SPEKTRUM_ENDE = 750
 
 # Daten einlesen
 def ladeDaten(Datei):
@@ -61,15 +61,21 @@ PeaksKeinLasing = sgn.find_peaks(IntensitaetLasing, threshold=10, height=500)[0]
 
 # Daten plotten
 
+plt.style.use("classic")
+plt.rcParams["font.family"] = "Times New Roman"
+
 print("beobachtete Wellenlängen")
 for i in PeaksKeinLasing:
     print(WellenlaengeKeinLasing[i])
     plt.axvline(WellenlaengeKeinLasing[i], color="red", alpha=0.7)
 
-plt.plot(WellenlaengeLasing, IntensitaetLasingNormiert, label="lasing active")
-plt.plot(WellenlaengeKeinLasing, IntensitaetKeinLasingNormiert, label="lasing inactive")
+plt.plot(WellenlaengeLasing, IntensitaetLasingNormiert, label="Lasing active")
+plt.plot(WellenlaengeKeinLasing, IntensitaetKeinLasingNormiert, label="Lasing inactive")
 
-plt.xlabel("Wavelength [nm]", fontsize=14)
-plt.ylabel("normed intensity", fontsize=14)
-plt.legend(fontsize=14)
-plt.show()
+plt.xlabel("Wavelength [nm]", fontsize=16)
+plt.ylabel("Normed intensity", fontsize=16)
+plt.xticks(fontsize=16)
+plt.yticks(fontsize=16)
+plt.legend(fontsize=16, loc="upper right", framealpha=0, markerfirst=False)
+plt.savefig("../Versuchsbericht/Bilddateien/5/5-Neonspektren.jpg", dpi=400)
+
