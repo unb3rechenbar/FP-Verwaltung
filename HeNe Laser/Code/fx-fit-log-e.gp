@@ -20,13 +20,13 @@ d = dguess
 
 
 d(x) = rescale * x + offset
-
+udx(x)=ub
 
 f(x) = a * log(b * x + c) + d
 
 fit f(x) filename using (d(column(xline))):yline:xerror:yerror xyerrors via a, b, c, d
 
-plot filename using (d(column(xline))):yline:xerror:yerror ps 2 with xyerrorbars title legname, \
+plot filename using (d(column(xline))):yline:(udx(column(xerror))):yerror ps 2 with xyerrorbars title legname, \
      f(x) with lines lt 2 lc rgb "red" lw 3 title "log fit"
 
 fit_zero = (exp(-d / a) - c) / b
