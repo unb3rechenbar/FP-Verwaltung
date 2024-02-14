@@ -1,0 +1,97 @@
+\newcommand{\diff}[4]{%
+			\ifthenelse{\isempty{#2}}
+				{\ifthenelse{\isempty{#3}}
+					{\ifthenelse{\isempty{#4}}
+						{\ensuremath{d#1}}
+						{\ensuremath{d^{#4}#1}}}
+					{\ifthenelse{\isempty{#4}}
+						{\ensuremath{d#1\nbra{#3}}}
+						{\ensuremath{d^{#4}#1\nbra{#3}}}}}
+				{\ifthenelse{\isempty{#3}}
+					{\ifthenelse{\isempty{#4}}
+						{\ensuremath{d#1()\nbra{#2}}}
+						{\ensuremath{d^{#4}#1()\nbra{#2}}}}
+					{\ifthenelse{\isempty{#4}}
+						{\ensuremath{d#1\nbra{#3}\nbra{#2}}}
+						{\ensuremath{d^{#4}#1\nbra{#3}\nbra{#2}}}}}%
+		}
+\newcommand{\Diff}[4]{%
+			\ifthenelse{\isempty{#3}}
+				{\ifthenelse{\isempty{#4}}
+					{\ensuremath{\text{D}_{#2}#1}}
+					{\ensuremath{\text{D}_{#2}^{#4}#1}}}
+				{\ifthenelse{\isempty{#4}}
+					{\ensuremath{\text{D}_{#2}#1\nbra{#3}}}
+					{\ensuremath{\text{D}_{#2}^{#4}#1\nbra{#3}}}}%
+		}
+\newcommand{\pdiff}[4]{%
+			\ifthenelse{\isempty{#3}}
+				{\ifthenelse{\isempty{#4}}
+					{\ensuremath{\partial_{#2}#1}}
+					{\ensuremath{\partial_{#2}^{#4}#1}}}
+				{\ifthenelse{\isempty{#4}}
+					{\ensuremath{\partial_{#2}#1\nbra{#3}}}
+					{\ensuremath{\partial_{#2}^{#4}#1\nbra{#3}}}}%
+		}
+
+\newcommand{\scpr}[2]{\left\langle #1,#2\right\rangle}
+\DeclareMathOperator{\mal}{mal}
+\DeclareMathOperator{\plus}{plus}
+\renewcommand{\neg}{\text{neg}}
+\DeclareMathOperator{\inv}{inv}
+\DeclareMathOperator{\laplace}{\text{lap}}
+\DeclareMathOperator{\id}{id}
+
+
+\newcommand{\Bij}[2]{\Operatorschriftdesign{Bij}\nbra{#1,#2}}
+
+\newcommand{\clfdef}[4]{
+	\nbra{\begin{array}{@{}r@{\;}l@{}}
+			#1 &\to #2\\
+			#3 &\mapsto #4
+		\end{array}}
+}
+
+\newcommand{\lint}[3]{
+	\ifthenelse{\isempty{#3}}
+		{\int #1\,\uplambda\nbra{d#2}}
+		{\int#1\,\uplambda_{#3}\nbra{d#2}}
+}
+
+\newcommand{\BETAdmint}[2]{
+	\IfSubStr{#1}{(d}
+		{
+			\StrBefore{#1}{(d}[\mass]
+			\StrBehind{#1}{(d}[\tvar]
+			\StrSubstitute{\tvar}{)}{}[\var]
+			\ifthenelse{\isempty{#2}}
+				{\mass\nbra{d\var}}
+				{\nbra{\mbbEins_{#2}\cdot\mass}\nbra{d\var}}
+		}
+		{\ifthenelse{\isempty{#2}}
+			{#1}
+			{\nbra{\mbbEins_{#2}\cdot #1}}
+		}
+}
+\newcommand{\genmint}[2]{
+	\int#1\,\dmint{#2}{}
+}
+\newcommand{\restmint}[3]{
+	\int#1\,\dmint{#2}{#3}
+}
+
+\newcommand{\BETAmint}[3]{
+	\ifthenelse{\isempty{#3}}
+		{\genmint{#1}{#2}}
+		{\restmint{#1}{#2}{#3}}
+}
+
+\newcommand{\mint}[3]{
+	\ifthenelse{\isempty{#3}}
+	{\int#1\,{#2}}
+	{\int#1\,\nbra{\mbbEins_{#3}\cdot #2}}
+}
+
+
+
+

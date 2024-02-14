@@ -1,0 +1,7 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+The top-level auxiliary file: main.aux
+The style file: ieeetr.bst
+Database file #1: Literatur.bib
+Too many commas in name 1 of "Cathy Horellou, Daniel Johansson, Eskil Varenius, Grzegorz Klopotek; Onsala Space Observatory; Chalmers University of Technology" for entry doc:SalsaManual
+while executing---line 969 of file ieeetr.bst
+(There was 1 error message)

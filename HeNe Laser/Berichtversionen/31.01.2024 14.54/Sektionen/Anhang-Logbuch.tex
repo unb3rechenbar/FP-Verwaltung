@@ -1,0 +1,39 @@
+\documentclass[../../main.tex]{subfiles}
+
+\begin{document}
+    \subsection*{Versuchsprotokoll} 
+    \marginnote{Start approx. 9:30}
+    \subsubsection*{Alignment: Setup}\label{subsubsec:AlignmentSetup}
+        We first align the left cavity mirror with the help of the alignment laser to see the pulsating inward motion on the reflected light projection. This motion tells us that the alignment is optimal. Repeating this procedure on the right cavity mirror we get a well aligned combined cavity of the length $L = (60\pm 0.5)\,\si{\cm}$.
+
+        Inserting the HeNe laser medium into the cavity we aim to find the optimal position for the mirrors such that a red laser beam is emitted and projected onto the testing surface. For optimal gain we place the medium in the cavitys center. Trying out many combinations of mirror alignment screw positions we find a setup sufficiently working for the first section of our experiment. 
+
+    \subsubsection*{Alignment: Maximizing the output power}\label{subsubsec:AlignmentMaxPower}
+        In the next step we try to optimize our measured output power of the already functional HeNe laser. Therefore we also include the alignment screws of the laser medium as degrees of freedom. We end up with a total of $8$ changeable parameters to optimize. The goal is $220\,\si{\micro\watt}$, after approximately $20$ minutes of adjusting we reach a maximum of (only) $(145.1\pm 0.1)\,\si{\micro\watt}$. 
+
+    \subsubsection*{Measurement: Power dependency on input current}\label{subsubsec:MeasurementPowerdependencyOnCurrent}
+        We now measure the power of the HeNe laser beam for different input currents. Our starting point is $(6.5\pm 0)\,\si{\mA}$, where we extract the uncertainty from the given uncertainty of $V_{\textit{in}}$ at $u(V_{\textit{in}}):=0.1\,\si{\mV}$ to get the uncertainty of the input power at $P = I\cdot V$, so $u(P) = \sqrt{(u(V_{\textit{in}})\cdot V_{\textit{in}})^2 + 0}$.
+
+
+    \subsubsection*{Measurement: Power dependency on medium displacement}\label{subsubsec:MeasurementPowerdependencyOnDisplacement}
+        We now carefully displace the medium from its original position we found during adjustment in section \ref{subsubsec:AlignmentMaxPower}. Starting at the position $(35.5\pm 0.1)\,\si{\cm}$ we increase by steps $\delta x := (2.5\pm 0.1)\,\si{\cm}$ in the manner of $s(n):=n\cdot \delta x + (35.5\pm 0.1)\,\si{\cm}$ for the $n$-th step. After every step we readjust the alignmentscrews of the mirrors to maximize the output power. Assuming the summation of slight errors during adjustment we increase the uncertainty of the power value by a suitable value. 
+
+        Realigning the output power to a maximum after seeing an unexpected loss of lasing in the first few steps we get a new maximum output power of $P(HeNe) = (165.0\pm 0.1)\,\si{\mW}$. With this we restart the measurement at $(36\pm 0.1)\,\si{\cm}$ with the same $\delta x$ and an adjusted $s_*$.
+
+    \subsubsection*{Measurement: Power dependency on cavity length}
+        Next we change the length $L$ of the laser cavity by increasing the distance between the mirrors. We start at the length $L = (60\pm 0.5)\,\si{\cm}$ we established in section \ref{subsubsec:AlignmentSetup} and increase by steps $\delta L := (1\pm 0.1)\,\si{\cm}$ in the manner of $L(n):=n\cdot \delta L + (60\pm 0.5)\,\si{\cm}$ for the $n$-th step. After every step we readjust the alignmentscrews of the mirrors to maximize the output power. Our goal is to find the maximum lenght $L_*$ at which the laser still lases; we expect it to be at $L_* = (70\pm 0.5)\,\si{\cm}$. Our measured maximum Value is $L_{**} = (70.7\pm 0.5)\,\si{\cm}$, altough seeing the red laser beam was increasingly difficult from $(70.5\pm 0.5)\,\si{\cm}$ onward. 
+
+    \subsubsection*{Selection: Using Prisms}
+        For the alignment we firstly calculate the brewster angle for quartz using its refractive index $n_{\textit{Quartz}} = 1.55338$ and the brewster angle formula $\Theta_{B} = \arctan(n_{\textit{Quartz}}/n_{\textit{air}}) = \arctan(1.55338) \approx 57.1714582\si{\degree}$.
+
+        With the help of the software we are able to analyse the peaks with respect to the rotation angle of the prism. We found two angles at which the peak appeares at $640\si{\nm}$, every other peak appeares at $633\si{\nm}$. Angainst the paper we did not see any other peaks \enquote{close to} those measured ones. The file naming indicates a guess of the actual angle used to generate the peak found in the file: \texttt{Quartz-0i-a}$\theta$\texttt{-p}, where $0i$ indicates the peak number starting at $\beta=0\si{\degree}$ and $a$ indicates our guessing as in \enquote{approximately}. 
+
+        Next we adjust the prism to a measured angle in such a way that only $633\si{\nm}$ will surpass it and measure the fluorescence spectrum directly. We name the files \texttt{Fluor-Spectrum-Lasing-633}, with \enquote{Lasing} indicating that lasing still occured during the measurement.
+
+    \subsubsection*{Measurement: Using 850 curved mirror}
+        Next we replace the plain mirror we used previously with a curved mirror with a radius of $(850\pm u_R)\,\si{\mm}$, with $u_R$ unknown at the moment. We then again measure the output power dependent on the input current. 
+
+
+    \subsubsection*{Selection: Littrow prism}
+        In this section we tried to follow the instructions given in the script. Unfortunately we did not succed setting up the experiment and therefore only took a spectrum from the inserted prism. This should be discussed in the submit paper. 
+\end{document}

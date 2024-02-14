@@ -1,0 +1,100 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\input{UniLaTeXPackage/UniLaTeXPackage}
+\usepackage{svg}
+\usepackage[version=4]{mhchem}
+\usepackage{colortbl}
+
+\sisetup{locale = DE}  
+\DeclareSIUnit{\arbunits}{arb.u.}
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{SALSA Radioteleskop}
+    \subtitle{Fortgeschrittenen-Praktikum in Physik (Universität Konstanz)}
+    \author{Autoren: Tom Folgmann, David Jannack, Tiark Tiwary \\ \large{Tutor: David Bäurle}}
+    \date{Experiment durchgeführt am 31.01.2024}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    \section*{Abstract}
+        \subfile{Sektionen/0-Abstract.tex}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{ll}
+             Sektion & Beiträge \\\hline\hline
+             Abstrakt/ Einleitung & David \\
+             Grundlagen & David \\
+             Versuchsdurchführung & David \\
+             Analyse und Diskussion & Tom, Tiark \\
+             Fazit & Tom, David
+        \end{tabular}
+        \caption{Aufteilung der Versuchsteile}
+        \label{tab:Aufteilung}
+    \end{table}
+
+    \newpage
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{Einleitung}
+        \subfile{Sektionen/05-Einleitung.tex}
+
+%\newpage
+%\section{Grundlagen}
+%    \subfile{Sektionen/1-Grundlagenteil.tex}
+
+\newpage
+\section{Versuchsaufbau} %@David
+    \subfile{Sektionen/3-Versuchsdurchfuehrung.tex}
+
+\newpage
+\section{Auswertung}
+    \subfile{Sektionen/4-Auswertung.tex}
+
+\newpage
+\section{Fazit}
+    \subfile{Sektionen/5-Fazit.tex}
+
+% -----------------------------------------------------------
+% Abspann und Credits
+
+\newpage
+    \bibliography{Literatur.bib}
+\newpage
+    \listoffigures
+    \listoftables
+
+
+\newpage
+    \section*{Messdaten}
+    \subfile{Sektionen/7-Messdaten.tex}
+\newpage
+    \subfile{Sektionen/8-Auswertungscode.tex}
+
+
+
+%\includepdf[pages=1-1,scale=0.9,frame=true]{Protokolle/PATH.pdf}
+\end{document}
